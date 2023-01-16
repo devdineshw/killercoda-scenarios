@@ -7,8 +7,7 @@
 
 Test the nginx setup by accessing the URL. You should see the nginx home page
 
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
-({{TRAFFIC_HOST1_80}})
+[TRY]({{TRAFFIC_HOST1_80}})
 
 2) Configure the SSL for nginx
 
