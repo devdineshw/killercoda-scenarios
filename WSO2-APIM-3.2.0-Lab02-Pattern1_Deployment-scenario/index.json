@@ -33,7 +33,7 @@
     },
     "assets": {
 		"host01": [
-			{ "file": "apim-nginx.conf", "target": "~/", "chmod": "+w" }
+			{ "file": "apim-nginx.conf", "target": "/root", "chmod": "+w" }
 		]
 	}
   },
