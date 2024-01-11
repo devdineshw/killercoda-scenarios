@@ -32,10 +32,10 @@
       "text": "finish.md"
     },
     "assets": {
-		"host01": [
-			{ "file": "apim-nginx.conf", "target": "/root", "chmod": "+w" }
-		]
-	}
+      "host01": [
+        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"}
+      ]
+    }
   },
   "environment": {
     "hideintro": true,
