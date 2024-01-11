@@ -32,7 +32,7 @@
       "text": "finish.md"
     },
     "assets": {
-		"client": [
+		"host01": [
 			{ "file": "apim-nginx.conf", "target": "~/", "chmod": "+w" }
 		]
 	}
