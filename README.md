@@ -1,10 +1,4 @@
-# Interactive Katacoda Scenarios
+# Interactive WSO2 training scenarios
 
-[![](http://shields.katacoda.com/katacoda/dineshw/count.svg)](https://www.katacoda.com/dineshw "Get your profile on Katacoda.com")
+Visit https://killercoda.com/dineshw to view the profile and interactive scenarios
 
-Visit https://www.katacoda.com/dineshw to view the profile and interactive scenarios
-
-### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
-
-For examples, visit https://github.com/katacoda/scenario-example
