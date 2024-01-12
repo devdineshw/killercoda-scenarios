@@ -1,34 +1,38 @@
 
 Edit the sample nginx config file
 
-Open the file and update the host name placeholders with this playground host
-
-```
-WSO2_HTTP_HOST = {{TRAFFIC_HOST1_80}}
-
-WSO2_HTTPS_HOST = {{TRAFFIC_HOST1_443}}
-
-WSO2_GW_HOST = {{TRAFFIC_HOST1_8243}}
-```
+1) Open the custom nging configuration file
 
 `vi apim-nginx.conf`{{execute}}
 
-copy the file to nginx server
+2) update the host name placeholders with this playground host. Copy only the hostname from below URLs (without https://)
+
+```
+WSO2_WEB_HOST = {{TRAFFIC_HOST1_80}}
+
+WSO2_API_HOST = {{TRAFFIC_HOST1_8080}}
+```{{}}
+
+
+3) copy the file to nginx server
 `cp apim-nginx.conf /etc/nginx/conf.d/`{{execute}}
 
-Update the nginx settings to allow long host names
+4) Update the nginx settings to allow long host names
 
 `vi /etc/nginx/nginx.conf`{{execute}}
 
-set the and save the file
+4.1) Look for the following key and update accordingly
 
 `server_names_hash_bucket_size=128`
 
-restart the nginx service
+4.2) Save and exit from the editor
+
+
+5) restart the nginx service
 
 `/etc/init.d/nginx restart`{{execute}}
 
 
-Verify the nginx https configuration by accessing the following URL
+6) Verify the nginx https configuration by accessing the following URL
 
-{{TRAFFIC_HOST1_443}}
+{{TRAFFIC_HOST1_80}}
