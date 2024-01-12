@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Installing Nginx",
+        "title": "Installing Java and Nginx",
         "text": "step1.md"
       },{
         "title": "Configuring Nginx",

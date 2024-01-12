@@ -4,11 +4,11 @@ Edit the sample nginx config file
 Open the file and update the host name placeholders with this playground host
 
 ```
-KATACODE_HTTP_HOST = [[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+WSO2_HTTP_HOST = {{TRAFFIC_HOST1_80}}
 
-KATACODE_HTTPS_HOST = [[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com
+WSO2_HTTPS_HOST = {{TRAFFIC_HOST1_443}}
 
-KATACODE_GW_HOST = [[HOST_SUBDOMAIN]]-8243-[[KATACODA_HOST]].environments.katacoda.com
+WSO2_GW_HOST = {{TRAFFIC_HOST1_8243}}
 ```
 
 `vi apim-nginx.conf`{{execute}}
@@ -31,4 +31,4 @@ restart the nginx service
 
 Verify the nginx https configuration by accessing the following URL
 
-https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com
+{{TRAFFIC_HOST1_443}}
