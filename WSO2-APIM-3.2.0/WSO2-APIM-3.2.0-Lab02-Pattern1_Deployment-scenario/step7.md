@@ -9,11 +9,11 @@ Check the logs
 
 Access the UIs
 
-https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/carbon
+{{TRAFFIC_HOST1_80}}/carbon
 
-https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/publisher
+{{TRAFFIC_HOST1_80}}/publisher
 
-https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/devportal
+{{TRAFFIC_HOST1_80}}/devportal
 
 Stop the first APIM instance
 

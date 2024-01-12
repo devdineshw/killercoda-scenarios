@@ -28,7 +28,6 @@ password = "root"
 driver = "com.mysql.cj.jdbc.Driver"
 
 [[apim.gateway.environment]]
-http_endpoint = "{{TRAFFIC_HOST1_80}}"
 https_endpoint = "{{TRAFFIC_HOST1_8080}}"
 
 [apim.devportal]
