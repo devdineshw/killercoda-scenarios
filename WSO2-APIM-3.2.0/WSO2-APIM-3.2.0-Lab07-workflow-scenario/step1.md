@@ -1,4 +1,4 @@
-1) update hostname in the config file. This is an optional step needs to be done only in katacode environments.
+1) update hostname in the config file. This is an optional step needs to be done only in this playground environments.
 
 `bash sethostname.sh`{{execute}}
 
@@ -16,10 +16,6 @@ Copy the config file
 
 Start the service
 
-`sh wso2am-3.2.0/bin/wso2server.sh start`{{execute}}
-
-Check the logs
-
-`tail -f wso2am-3.2.0/repository/logs/wso2carbon.log`{{execute}}
+`sh wso2am-3.2.0/bin/wso2server.sh`{{execute}}
 
 Wait till the server starts

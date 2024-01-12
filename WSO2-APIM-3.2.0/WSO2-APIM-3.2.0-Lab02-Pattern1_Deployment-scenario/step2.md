@@ -1,7 +1,7 @@
 
 Edit the sample nginx config file
 
-Open the file and update the host name placeholders with katacode host
+Open the file and update the host name placeholders with this playground host
 
 ```
 KATACODE_HTTP_HOST = [[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com

@@ -1,4 +1,4 @@
-1) update hostname in the config file. This is an optional step needs to be done only in katacode environments.
+1) update hostname in the config file. This is an optional step needs to be done only in this playground environments.
 
 `bash sethostname.sh`{{execute}}
 

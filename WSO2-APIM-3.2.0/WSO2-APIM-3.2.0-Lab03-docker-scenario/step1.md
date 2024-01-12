@@ -21,7 +21,7 @@ In this environment all the tools are pre-installed. You could check the availab
 
 `git checkout tags/v3.2.0.1`{{execute}}
 
-[Optional] Update the following configarations only in the katacode environment
+[Optional] Update the following configarations (Required to do only in this playground environment)
 
 4) Update the hostname
 

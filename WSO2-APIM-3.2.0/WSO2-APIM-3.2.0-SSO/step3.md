@@ -2,7 +2,7 @@
 
 `git clone https://github.com/wso2/samples-is.git`{{execute}}
 
-2) copy the pom file (this is only in the katacode environment)
+2) copy the pom file (this needs to be done only in this playground environment)
 
 `cp pom.xml samples-is/`{{execute}}
 
