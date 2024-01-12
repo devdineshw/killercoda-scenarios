@@ -1,8 +1,8 @@
-1) Open the configuration file
+- Open the configuration file
 
 `vi apim1/wso2am-3.2.0/repository/conf/deployment.toml`{{execute}}
 
-2) Update the WSO2 configuration with below details. 
+- Update the WSO2 configuration with below details. 
 Change the DB password incase if you have changed during the previous MySQL setup step
 
 ```
@@ -35,7 +35,7 @@ url = "{{TRAFFIC_HOST1_80}}/devportal"
 
 ```
 
-3) Copy the MySQL Driver to lib directory
+- Copy the MySQL Driver to lib directory
 
 `cp mysql-connector-java-8.0.27.jar apim1/wso2am-3.2.0/repository/components/lib/`{{execute}}
 
