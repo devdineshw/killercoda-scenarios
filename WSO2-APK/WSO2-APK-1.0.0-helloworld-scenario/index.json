@@ -1,0 +1,44 @@
+{
+  "title": "K8s Gateway API with WSO2 APK",
+  "description": "Running k8s gateway api with WSO2 APK",
+  "difficulty": "Beginner",
+  "time": "1 hour",
+  "details": {
+    "steps": [
+      {
+        "title": "Installing Gateway CRD",
+        "text": "step1.md"
+      }/*,{
+        "title": "Deploy services",
+        "text": "step2.md"
+      },{
+        "title": "Create GatewayClass",
+        "text": "step3.md"
+      },{
+        "title": "Create Gateway (WSO2 APK)",
+        "text": "step4.md"
+      },{
+        "title": "Configure Routes",
+        "text": "step5.md"
+      },
+        "title": "Testing the setup",
+        "text": "step7.md"
+      }*/
+    ],
+    "finish": {
+      "text": "finish.md"
+    }/*,
+    "assets": {
+      "host01": [
+        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"}
+      ]
+    }*/
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node-rapid"
+  }
+}
