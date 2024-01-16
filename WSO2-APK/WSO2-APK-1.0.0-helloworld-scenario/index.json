@@ -8,31 +8,11 @@
       {
         "title": "Installing Gateway CRD",
         "text": "step1.md"
-      }/*,{
-        "title": "Deploy services",
-        "text": "step2.md"
-      },{
-        "title": "Create GatewayClass",
-        "text": "step3.md"
-      },{
-        "title": "Create Gateway (WSO2 APK)",
-        "text": "step4.md"
-      },{
-        "title": "Configure Routes",
-        "text": "step5.md"
-      },
-        "title": "Testing the setup",
-        "text": "step7.md"
-      }*/
+      }
     ],
     "finish": {
       "text": "finish.md"
-    }/*,
-    "assets": {
-      "host01": [
-        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"}
-      ]
-    }*/
+    }
   },
   "environment": {
     "hideintro": true,
