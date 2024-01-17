@@ -6,8 +6,20 @@
   "details": {
     "steps": [
       {
-        "title": "Installing Gateway CRD",
+        "title": "Installing Gateway API CRD",
         "text": "step1.md"
+      },
+      {
+        "title": "Install WSO2 APK (a Gateway API implementation)",
+        "text": "step2.md"
+      },
+      {
+        "title": "Deploy a sample Springboot backend service",
+        "text": "step3.md"
+      },
+      {
+        "title": "Expose the Springboot service through Gateway",
+        "text": "step4.md"
       }
     ],
     "finish": {

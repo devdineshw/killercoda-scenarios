@@ -1,0 +1,1 @@
+- Expose the Springboot service through Gateway
