@@ -24,6 +24,11 @@
     ],
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "sb-deployment.yaml", "target": "~/", "chmod": "+w"}
+      ]
     }
   },
   "environment": {
