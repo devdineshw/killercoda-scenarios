@@ -71,7 +71,7 @@ wso2:
               cpu: "100m"
             limits:
               memory: "1028Mi"
-              cpu: "500m"
+              cpu: "400m"
           readinessProbe:
             initialDelaySeconds: 20
             periodSeconds: 20
@@ -97,7 +97,7 @@ wso2:
               cpu: "100m"
             limits:
               memory: "1028Mi"
-              cpu: "500m"
+              cpu: "400m"
           readinessProbe:
             initialDelaySeconds: 20
             periodSeconds: 20
@@ -130,7 +130,7 @@ wso2:
               cpu: "100m"
             limits:
               memory: "1028Mi"
-              cpu: "500m"
+              cpu: "400m"
           readinessProbe:
             initialDelaySeconds: 20
             periodSeconds: 20
@@ -157,7 +157,7 @@ wso2:
               cpu: "100m"
             limits:
               memory: "1028Mi"
-              cpu: "500m"
+              cpu: "400m"
           readinessProbe:
             initialDelaySeconds: 20
             periodSeconds: 20
@@ -188,7 +188,7 @@ wso2:
                 cpu: "100m"
               limits:
                 memory: "1028Mi"
-                cpu: "500m"
+                cpu: "400m"
             readinessProbe:
               initialDelaySeconds: 20
               periodSeconds: 20
@@ -219,7 +219,7 @@ wso2:
                 cpu: "100m"
               limits:
                 memory: "1028Mi"
-                cpu: "500m"
+                cpu: "400m"
             readinessProbe:
               initialDelaySeconds: 20
               periodSeconds: 20
@@ -271,7 +271,7 @@ idp:
           cpu: "100m"
         limits:
           memory: "1028Mi"
-          cpu: "500m"
+          cpu: "400m"
       readinessProbe:
         initialDelaySeconds: 20
         periodSeconds: 20
@@ -292,7 +292,7 @@ idp:
           cpu: "100m"
         limits:
           memory: "1028Mi"
-          cpu: "500m"
+          cpu: "400m"
       readinessProbe:
         initialDelaySeconds: 20
         periodSeconds: 20
