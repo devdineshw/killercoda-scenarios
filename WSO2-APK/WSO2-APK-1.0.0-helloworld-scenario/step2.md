@@ -18,4 +18,4 @@ NOTE: You could customize the gateway runtime parameters using the values file, 
 
 - Test the WSO2 APK
 
-`kubectl get pods`{{execute}}
+`kubectl get pods -n wso2-apk`{{execute}}
