@@ -32,7 +32,7 @@
     "assets": {
       "host01": [
         {"file": "sb-deployment.yaml", "target": "~/", "chmod": "+w"},
-        {"file": "values.yaml", "target": "~/", "chmod": "+w"}
+        {"file": "values.yaml", "target": "~/", "chmod": "+w"},
         {"file": "sb-api.yaml", "target": "~/", "chmod": "+w"}
       ]
     }
