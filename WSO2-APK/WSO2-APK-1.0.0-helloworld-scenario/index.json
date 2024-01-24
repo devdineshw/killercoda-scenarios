@@ -14,12 +14,16 @@
         "text": "step2.md"
       },
       {
-        "title": "Deploy a sample Springboot backend service",
+        "title": "Playground specific optimizations",
         "text": "step3.md"
       },
       {
-        "title": "Expose the Springboot service through Gateway",
+        "title": "Deploy the sample Springboot application",
         "text": "step4.md"
+      },
+      {
+        "title": "Test the API",
+        "text": "step5.md"
       }
     ],
     "finish": {
@@ -29,6 +33,7 @@
       "host01": [
         {"file": "sb-deployment.yaml", "target": "~/", "chmod": "+w"},
         {"file": "values.yaml", "target": "~/", "chmod": "+w"}
+        {"file": "sb-api.yaml", "target": "~/", "chmod": "+w"}
       ]
     }
   },

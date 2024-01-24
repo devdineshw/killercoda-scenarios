@@ -13,10 +13,10 @@ spec:
         app: spring-helloworld
     spec:
       containers:
-      – name: spring-helloworld
+      - name: spring-helloworld
         image: devxdineshw/spring-helloworld:latest
         ports:
-        – containerPort: 8080
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -26,6 +26,6 @@ spec:
   selector:
     app: spring-helloworld
   ports:
-    – protocol: TCP
+    - protocol: TCP
       port: 8080
       targetPort: 8080
