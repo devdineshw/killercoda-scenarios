@@ -1,0 +1,1 @@
+This scenario shows how to prepare the local environment to run the WSO2 API Manager 4.2.0 and how to download and configurate the standalone WSO2 API Manager 4.2.0 with minimum configuration.
