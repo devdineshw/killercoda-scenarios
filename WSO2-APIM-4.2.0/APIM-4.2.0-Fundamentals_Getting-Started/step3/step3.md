@@ -1,6 +1,6 @@
 - Start the WSO2 API Manager
 
-`sh apim1/wso2am-4.2.0/bin/wso2server.sh start`{{execute}}
+`sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{execute}}
 
 - Check the logs
 
@@ -18,7 +18,7 @@
 
 - Stop the first APIM instance
 
-`sh apim1/wso2am-4.2.0/bin/wso2server.sh stop`{{execute}}
+`sh apim1/wso2am-4.2.0/bin/api-manager.sh stop`{{execute}}
 
 Make sure the first instance is stoped by checking the logs again
 

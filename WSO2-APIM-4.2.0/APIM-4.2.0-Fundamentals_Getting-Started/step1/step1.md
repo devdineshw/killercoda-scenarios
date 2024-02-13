@@ -13,7 +13,7 @@ Once the Java runtime is installed, JAVA_HOME environment variable needs to be c
 
 - Create environment variable
 
-`echo "export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/jre/'" >> /etc/profile && source /etc/profile`{{execute}}
+`echo "export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/'" >> /etc/profile && source /etc/profile`{{execute}}
 
 - Test the Java version
 

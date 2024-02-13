@@ -12,13 +12,14 @@
     "steps": [
       {
         "title": "Installing Java",
-        "text": "step1.md"
+        "text": "step1/step1.md"
       },{
         "title": "Download and extract the APIM",
-        "text": "step2.md"
+        "text": "step2/step2.md"
       },{
         "title": "Testing the setup",
-        "text": "step3.md"
+        "text": "step3/step3.md",
+        "background": "step3/background.sh"
       }
     ],
     "finish": {
@@ -27,7 +28,8 @@
     "assets": {
       "host01": [
         {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"},
-        {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"}
+        {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"},
+        {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"}
       ]
     }
   },
