@@ -1,11 +1,13 @@
 {
-  "title": "WSO2 APIM 4.2.0 - Getting Started",
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Getting Started",
   "description": "Running WSO2 APIM 4.2.0",
   "difficulty": "Beginner",
   "time": "1 hour",
   "details": {
     "intro":{
-      "text" : "intro.md"
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
     },
     "steps": [
       {
