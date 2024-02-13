@@ -1,5 +1,6 @@
 Download the WSO2 APIM binary.
- **_NOTE:_** You could download the WSO2 product binary files from the WSO2 website.
+
+> **_NOTE:_** You could download the WSO2 product binary files from the WSO2 website.
 
 - Use the following command to download the WSO2 API Manager binary file. Replace the <DOWNLOAD_LINK> with the URL you obtained
 
