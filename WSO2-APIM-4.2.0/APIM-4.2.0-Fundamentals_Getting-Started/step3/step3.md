@@ -6,7 +6,7 @@
 
 `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{execute}}
 
- **_NOTE:_**: Prese Ctrl+C to exit from the logs
+ **_NOTE:_** Prese Ctrl+C to exit from the logs
 
 - Access the UIs. you could deploy the sample API
 
