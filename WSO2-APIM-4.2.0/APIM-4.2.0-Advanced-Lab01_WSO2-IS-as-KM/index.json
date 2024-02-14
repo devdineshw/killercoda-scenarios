@@ -1,0 +1,44 @@
+{
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Getting Started",
+  "description": "Running WSO2 APIM 4.2.0",
+  "difficulty": "Beginner",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Installing Java",
+        "text": "step1/step1.md"
+      },{
+        "title": "Download and extract the APIM",
+        "text": "step2/step2.md"
+      },{
+        "title": "Testing the setup",
+        "text": "step3/step3.md",
+        "background": "step3/background.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"},
+        {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"},
+        {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"},
+        {"file": "original-is-deployment.toml", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
