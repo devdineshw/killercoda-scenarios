@@ -21,7 +21,7 @@ Configure the WSO2 APIM
   - Update the Key Manager details
     ```
     [apim.key_manager]
-    service_url="{{TRAFFIC_HOST1_81}}/services/"
+    service_url="https://localhost:9444/services/"
     type="WSO2-IS"
     ```{{copy}}
 
