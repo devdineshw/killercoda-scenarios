@@ -22,9 +22,9 @@
 
 - Create a two schemas in the MySQL
 
-`create database wso2am_db;`{{execute}}
+`create database wso2am_db CHARACTER SET latin1;`{{execute}}
 
-`create database wso2shared_db;`{{execute}}
+`create database wso2shared_db CHARACTER SET latin1;`{{execute}}
 
 - Exit from the MySQL console 
 
@@ -32,9 +32,9 @@
 
 - Create the tables using the DB scripts comes with the WSO2 APIM. Use root as the password.
 
-`mysql -u root -p -v wso2am_db < apim1/wso2am-3.2.0/dbscripts/apimgt/mysql.sql`{{execute}}
+`mysql -u root -p -v wso2am_db < apim1/wso2am-4.2.0/dbscripts/apimgt/mysql.sql`{{execute}}
 
-`mysql -u root -p -v wso2shared_db< apim1/wso2am-3.2.0/dbscripts/mysql.sql`{{execute}}
+`mysql -u root -p -v wso2shared_db< apim1/wso2am-4.2.0/dbscripts/mysql.sql`{{execute}}
 
 - Download the MySQL JDBC Driver
 
