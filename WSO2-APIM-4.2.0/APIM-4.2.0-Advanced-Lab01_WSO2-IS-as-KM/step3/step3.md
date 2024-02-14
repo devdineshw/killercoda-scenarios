@@ -1,27 +1,41 @@
-- Start the WSO2 API Manager
+- Install the MySQL 
 
-`sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{execute}}
+`apt install mysql-server -y`{{execute}}
 
-- Check the logs
+- Check the service status
 
-`tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{execute}}
+`systemctl status mysql`{{execute}}
 
-> **_NOTE:_** Prese Ctrl+C to exit from the logs
+- Configure the MySQL instance. Click Enter for all the questions.
 
-- Access the UIs. you could deploy the sample API
+`mysql_secure_installation`{{execute}}
 
-{{TRAFFIC_HOST1_80}}/publisher
+- Connect to MySQL. Hit Enter as there is no password.
 
-{{TRAFFIC_HOST1_80}}/devportal
+`mysql -u root -p`{{execute}}
 
-{{TRAFFIC_HOST1_80}}/admin
+- Reset the root user password. In this step we are setting 'root' as the password for the root user
 
-{{TRAFFIC_HOST1_80}}/carbon
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';`{{execute}}
 
-- Stop the APIM instance
+`FLUSH PRIVILEGES;`{{execute}}
 
-`sh apim1/wso2am-4.2.0/bin/api-manager.sh stop`{{execute}}
+- Create a two schemas in the MySQL
 
-Make sure the instance is stoped by checking the logs again
+`create database wso2am_db;`{{execute}}
 
-`tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{execute}}
+`create database wso2shared_db;`{{execute}}
+
+- Exit from the MySQL console 
+
+`exit`{{execute}}
+
+- Create the tables using the DB scripts comes with the WSO2 APIM. Use root as the password.
+
+`mysql -u root -p -v wso2am_db < apim1/wso2am-3.2.0/dbscripts/apimgt/mysql.sql`{{execute}}
+
+`mysql -u root -p -v wso2shared_db< apim1/wso2am-3.2.0/dbscripts/mysql.sql`{{execute}}
+
+- Download the MySQL JDBC Driver
+
+`wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.27/mysql-connector-java-8.0.27.jar`{{execute}}

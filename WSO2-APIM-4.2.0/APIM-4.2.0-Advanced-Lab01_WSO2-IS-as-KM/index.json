@@ -1,5 +1,5 @@
 {
-  "title": "WSO2 APIM 4.2.0 FAdvanced - Lab 01",
+  "title": "WSO2 APIM 4.2.0 Advanced - Lab 01",
   "description": "Identity Server 6.1.0 as Key Manager",
   "difficulty": "Intermediate",
   "time": "1 hour",
@@ -17,9 +17,18 @@
         "title": "Download and extract the APIM and IS",
         "text": "step2/step2.md"
       },{
-        "title": "Testing the setup",
-        "text": "step3/step3.md",
-        "background": "step3/background.sh"
+        "title": "Install and configure the DB",
+        "text": "step3/step3.md"
+      },{
+        "title": "Configure the WSO2 IS",
+        "text": "step4/step4.md",
+        "background": "step4/background.sh"
+      },{
+        "title": "Configure the WSO2 APIM",
+        "text": "step5/step5.md"
+      },{
+        "title": "Test the scenario",
+        "text": "step6/step6.md"
       }
     ],
     "finish": {
