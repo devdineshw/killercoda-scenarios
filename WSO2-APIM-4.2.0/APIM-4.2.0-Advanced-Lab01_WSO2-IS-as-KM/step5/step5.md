@@ -21,18 +21,18 @@ Configure the WSO2 APIM
   - Update the Key Manager details
     ```
     [apim.key_manager]
-    service_url="https://localhost:9444/services/"
+    service_url="{{TRAFFIC_HOST1_81}}/services/"
     type="WSO2-IS"
     ```{{copy}}
 
   - Save and Close the file
 
 - Import the KeyManager's public certificate to WSO2 API-M's client-truststore.jks
-  - Export the public key from the IS 
+  - Export the public key from the IS. Enter wso2carbon as the password
   
     `keytool -export -alias wso2carbon -keystore is1/wso2is-6.1.0/repository/resources/security/wso2carbon.jks -file is_km_public.pem`{{execute}}
 
-  - Import the public key to APIM trust store
+  - Import the public key to APIM trust store. Enter 'yes' to confirm
 
     `keytool -import -alias wso2carbonis -file is_km_public.pem -keystore apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks -storepass wso2carbon`{{execute}}
 
@@ -43,3 +43,7 @@ Configure the WSO2 APIM
 - Start the API Manager service
 
   `sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{execute}}
+
+- Check the logs and wait till startup compleation
+  
+  `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{execute}}

@@ -134,3 +134,9 @@ Configure the WSO2 IS
 - Start the Identity Server
 
   `sh is1/wso2is-6.1.0/bin/wso2server.sh start`{{execute}}
+
+- Check the logs and wait till startup compleation
+  
+  `tail -f is1/wso2is-6.1.0/repository/logs/wso2carbon.log`{{execute}}
+
+- Exit from the logs and continue to next steps
