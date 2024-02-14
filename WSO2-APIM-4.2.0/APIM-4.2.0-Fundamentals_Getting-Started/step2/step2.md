@@ -1,8 +1,8 @@
 Download the WSO2 APIM binary.
 
-> **_NOTE:_** You could download the WSO2 product binary files from the WSO2 website.
+> **_NOTE:_** [Optional] You could download the WSO2 product binary files from the WSO2 website.
 
-- Use the following command to download the WSO2 API Manager binary file. Replace the <DOWNLOAD_LINK> with the URL you obtained
+- Use the following command to download the WSO2 API Manager binary file.
 
 `wget -O wso2am-4.2.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/APIM/4.2.0/wso2am-4.2.0.zip?download=true`{{execute}}
 
