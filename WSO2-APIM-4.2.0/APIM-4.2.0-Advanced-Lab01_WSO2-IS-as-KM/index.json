@@ -1,7 +1,7 @@
 {
-  "title": "WSO2 APIM 4.2.0 Fundamentals - Getting Started",
-  "description": "Running WSO2 APIM 4.2.0",
-  "difficulty": "Beginner",
+  "title": "WSO2 APIM 4.2.0 FAdvanced - Lab 01",
+  "description": "Identity Server 6.1.0 as Key Manager",
+  "difficulty": "Intermediate",
   "time": "1 hour",
   "details": {
     "intro":{
@@ -14,7 +14,7 @@
         "title": "Installing Java",
         "text": "step1/step1.md"
       },{
-        "title": "Download and extract the APIM",
+        "title": "Download and extract the APIM and IS",
         "text": "step2/step2.md"
       },{
         "title": "Testing the setup",
