@@ -13,8 +13,7 @@ Configure the WSO2 APIM
 
     [database.shared_db]
     type="mysql"
-    url="jdbc:mysql://localhost:3306/wso2shared_db?
-    useSSL=false"
+    url="jdbc:mysql://localhost:3306/wso2shared_db?useSSL=false"
     username="root"
     password="root"
     ```{{copy}}
@@ -36,6 +35,10 @@ Configure the WSO2 APIM
   - Import the public key to APIM trust store
 
     `keytool -import -alias wso2carbonis -file is_km_public.pem -keystore apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks -storepass wso2carbon`{{execute}}
+
+- Copy the JDBC driver to APIM
+
+  `cp mysql-connector-java-8.0.27.jar apim1/wso2am-4.2.0/repository/components/lib/`{{execute}}
 
 - Start the API Manager service
 

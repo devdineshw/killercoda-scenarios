@@ -119,6 +119,10 @@ Configure the WSO2 IS
 
   `unzip distribution-1.6.8.zip`{{execute}}
 
+- Copy the JDBC driver to IS
+
+  `cp mysql-connector-java-8.0.27.jar is1/wso2is-6.1.0/repository/components/lib/`{{execute}}
+
 - Copy jar files to the IS dropins directory
 
   `cp wso2is-extensions-1.6.8/dropins/wso2is*.jar is1/wso2is-6.1.0/repository/components/dropins/`{{execute}}
