@@ -1,7 +1,7 @@
 Configure the WSO2 APIM
 - Open the APIM configuration file
 
-`vi apim1/wso2am-4.2.0/repository/conf/deployment.toml`{{execute}}
+  `vi apim1/wso2am-4.2.0/repository/conf/deployment.toml`{{execute}}
 
   - Update the Database configuration
     ```
@@ -31,12 +31,12 @@ Configure the WSO2 APIM
 - Import the KeyManager's public certificate to WSO2 API-M's client-truststore.jks
   - Export the public key from the IS 
   
-`keytool -export -alias wso2carbon -keystore is1/wso2is-6.1.0/repository/resources/security/wso2carbon.jks -file is_km_public.pem`{{execute}}
+    `keytool -export -alias wso2carbon -keystore is1/wso2is-6.1.0/repository/resources/security/wso2carbon.jks -file is_km_public.pem`{{execute}}
 
   - Import the public key to APIM trust store
 
-`keytool -import -alias wso2carbonis -file is_km_public.pem -keystore apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks -storepass wso2carbon`{{execute}}
+    `keytool -import -alias wso2carbonis -file is_km_public.pem -keystore apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks -storepass wso2carbon`{{execute}}
 
 - Start the API Manager service
 
-`sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{execute}}
+  `sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{execute}}

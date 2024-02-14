@@ -1,7 +1,7 @@
 Configure the WSO2 IS
 - Open the IS configuration file
 
-`vi is1/wso2is-6.1.0/repository/conf/deployment.toml`{{execute}}
+  `vi is1/wso2is-6.1.0/repository/conf/deployment.toml`{{execute}}
 
 - Change the port offset (because we are running both APIM and IS in the same server)
 
@@ -115,18 +115,18 @@ Configure the WSO2 IS
 
 - Download the WSO2 IS Connector and extract
 
-`wget -O distribution-1.6.8.zip https://repo1.maven.org/maven2/org/wso2/km/ext/wso2is/distribution/1.6.8/distribution-1.6.8.zip`{{execute}}
+  `wget -O distribution-1.6.8.zip https://repo1.maven.org/maven2/org/wso2/km/ext/wso2is/distribution/1.6.8/distribution-1.6.8.zip`{{execute}}
 
-`unzip distribution-1.6.8.zip`{{execute}}
+  `unzip distribution-1.6.8.zip`{{execute}}
 
 - Copy jar files to the IS dropins directory
 
-`cp wso2is-extensions-1.6.8/dropins/wso2is*.jar is1/wso2is-6.1.0/repository/components/dropins/`{{execute}}
+  `cp wso2is-extensions-1.6.8/dropins/wso2is*.jar is1/wso2is-6.1.0/repository/components/dropins/`{{execute}}
 
 - Copy the war files to the IS webapp directory
 
-`cp wso2is-extensions-1.6.8/webapps/keymanager-operations.war is1/wso2is-6.1.0/repository/deployment/server/webapps/`{{execute}}
+  `cp wso2is-extensions-1.6.8/webapps/keymanager-operations.war is1/wso2is-6.1.0/repository/deployment/server/webapps/`{{execute}}
 
 - Start the Identity Server
 
-`sh is1/wso2is-6.1.0/bin/wso2server.sh start`{{execute}}
+  `sh is1/wso2is-6.1.0/bin/wso2server.sh start`{{execute}}
