@@ -20,7 +20,7 @@ Configure the WSO2 IS
     password="root"
     ```{{copy}}
 
-- Add the Event hub endpoints to IS configurations
+- Add the KeyManager API configurations to IS
 
     ```
     [[event_listener]]
@@ -80,7 +80,6 @@ Configure the WSO2 IS
 
     [tenant_context.rewrite]
     custom_webapps=["/keymanager-operations/"]
-
     ```{{copy}}
 
 - Configure the event listener endpoint to publish controller events to the event hub

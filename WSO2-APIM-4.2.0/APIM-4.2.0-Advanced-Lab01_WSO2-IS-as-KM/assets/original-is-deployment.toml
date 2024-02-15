@@ -1,21 +1,11 @@
 [server]
-hostname = "<IS_HOST>"
-internal_hostname = "<IS_HOST>"
-offset=0    # <-------------------- Update this
+#hostname = "<IS_HOST>"
+#internal_hostname = "<IS_HOST>"
+hostname = "localhost"
+# v------------------- Update this
+offset=0    
 node_ip = "127.0.0.1"
 base_path = "https://$ref{server.hostname}:${carbon.management.port}"
-
-#---------------------------------------------------
-# Pre-configured for the playground environment
-# Dont remove
-
-[transport.https.properties]
-proxyPort = 443
-
-[system_applications]
-read_only_apps = []
-
-#---------------------------------------------------
 
 [super_admin]
 username = "admin"
@@ -25,7 +15,6 @@ create_admin_account = true
 [user_store]
 type = "database_unique_id"
 
-# v-------------------- Update this section
 [database.identity_db]
 type = "h2"
 url = "jdbc:h2:./repository/database/WSO2IDENTITY_DB;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000"
@@ -39,18 +28,31 @@ url = "jdbc:h2:./repository/database/WSO2SHARED_DB;DB_CLOSE_ON_EXIT=FALSE;LOCK_T
 username = "wso2carbon"
 password = "wso2carbon"
 
-# v-------------------- Append other configurations here
+# v-------------------- Append KM API configurations here
 
 
-# v-------------------- Remove this section
+# v-------------------- Remove this section and add encription section
 [keystore.primary]
 file_name = "wso2carbon.jks"
 password = "wso2carbon"
+
+----------------------------------------------------------------------
 
 [truststore]
 file_name="client-truststore.jks"
 password="wso2carbon"
 type="JKS"
+
+################################################
+# Pre-configured for the playground environment
+# Dont remove
+
+#[transport.https.properties]
+#proxyPort = 443
+
+[system_applications]
+read_only_apps = []
+################################################
 
 [account_recovery.endpoint.auth]
 hash= "66cd9688a2ae068244ea01e70f0e230f5623b7fa4cdecb65070a09ec06452262"
