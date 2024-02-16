@@ -56,6 +56,10 @@ Install and configure the Nginx
 
   - Restart the nginx
 
-    `/etc/init.d/nginx restart`{{execute}}
+    `systemctl restart nginx.service`{{execute}}
+
+  - Check the nginx status
+
+    `systemctl status nginx.service`{{execute}}
 
 If there is no issue with the restart, continue to the next section
