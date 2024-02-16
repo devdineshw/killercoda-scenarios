@@ -38,6 +38,15 @@ Install and configure the Nginx
 
     `cp nginx.crt /etc/nginx/ssl/`{{execute}}
 
+- Update the nginx hostname bucket length configuration. Please note that this is required only if you have lenghty hostnames.
+  - Open the nginx configuration file
+    `vi /etc/nginx/nginx.conf`{{execute}}
+
+  - Look for the following property and update as below
+    `server_names_hash_bucket_size=128`{{}}
+
+  - Save and close the file
+
 - Configurate the Nginx for API Manager. 
 
   - Open the pre-configured config file.
