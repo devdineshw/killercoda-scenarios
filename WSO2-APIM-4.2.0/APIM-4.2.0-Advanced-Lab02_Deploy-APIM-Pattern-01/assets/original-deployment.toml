@@ -107,6 +107,7 @@ auth_token = ""
 
 [apim.key_manager]
 enable_apikey_subscription_validation = true
+service_url = "https://localhost:${mgt.transport.https.port}/services/"
 #service_url = "https://localhost:${mgt.transport.https.port}/services/"
 #username = "$ref{super_admin.username}"
 #password = "$ref{super_admin.password}"
