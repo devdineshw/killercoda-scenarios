@@ -54,6 +54,10 @@
 
     `cp mysql-connector-java-8.0.27.jar apim1/wso2am-4.2.0/repository/components/lib/`{{execute}}
 
+  - Import the nginx public certificate to the APIM truststore. This is because there could be scenarios whethere APIM trying to call some services through the load balancer.
+
+    `keytool -importcert -file nginx.crt -keystore apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks -alias nginx`{{execute}}
+
 - Create the second API Manager
 
   - Make a copy of the apim1 directory to create the second APIM instance

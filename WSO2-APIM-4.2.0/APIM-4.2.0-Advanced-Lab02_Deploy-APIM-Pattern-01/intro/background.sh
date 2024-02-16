@@ -10,8 +10,11 @@ sed -i 's|https://||g' /tmp/apihost
 sed -ie "s|<WSO2_WEB_HOST>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/apim-nginx.conf
 sed -ie "s|<WSO2_API_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/apim-nginx.conf
 
+sed -ie "s|<WSO2_WEB_HOST>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/apim-nginx.conf
+
 sed -ie "s|<HOST_NAME>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/original-deployment.toml
 sed -ie "s|<GW_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/original-deployment.toml
 
+echo "127.0.0.1 $(sed 's:http:http:g' /tmp/uihost)" >> /etc/hosts
 
 echo done > /tmp/background0
