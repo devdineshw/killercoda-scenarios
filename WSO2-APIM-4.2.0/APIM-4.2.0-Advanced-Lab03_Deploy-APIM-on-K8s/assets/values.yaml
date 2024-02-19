@@ -38,7 +38,7 @@ wso2:
           memory: "1Gi"
           cpu: "500m"
         limits:
-          memory: "1Gi"
+          memory: "2Gi"
           cpu: "1000m"
         # JVM settings
         # These are the resource allocation configurations associated with the JVM
@@ -50,4 +50,4 @@ wso2:
               # Initial and minimum Heap size
               xms: "512m"
               # Maximum Heap size
-              xmx: "512m"
+              xmx: "1024m"

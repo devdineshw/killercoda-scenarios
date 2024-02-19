@@ -8,7 +8,7 @@
     `git clone https://github.com/wso2/kubernetes-apim.git`{{execute}}
     
 
-    It will take 3 to 5 mins to compleat the server startup.
+    It will take 3 to 5 mins to complete the server startup.
     You could check the status of the pods using 
 
     `kubectl get pods -n wso2am`{{execute}}
