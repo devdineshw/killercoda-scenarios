@@ -2,21 +2,12 @@
 
     `kubectl get nodes`{{execute}}
 
-- Find the IP of the worker node. This might be required when running the next step.
+- Install the Nginx Ingress Controller. There are many ways of doing this, but easiest way to get started is using the default installation artifacts
 
-    `ping -c 1 node01`{{execute}}
+    `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml`{{execute}}
 
-- Update the hostname
+- Add WSO2 helm repo and update.
 
-    `bash sethostname.sh`{{execute}}
+    `helm repo add wso2 https://helm.wso2.com && helm repo update`{{execute}}
 
-- Launch the setup script.
-
-    `bash wso2am-ga.sh --deploy`{{execute}}
-
-- Once "Processing WSO2 API Manager" appears, distrupt the Progress bar by pressing the Ctrl+C
-
-- Change the namespace for the current session
-
-    `kubectl config set-context --current --namespace=wso2`{{execute}}
-
+Continue to the next section.

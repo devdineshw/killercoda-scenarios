@@ -5,11 +5,13 @@
   "time": "1 hour",
   "details": {
     "intro":{
-      "text" : "intro/intro.md"
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
     },
     "steps": [
       {
-        "title": "Installing Nginx",
+        "title": "Installing prerequisites",
         "text": "step1/step1.md"
       }
     ],
@@ -26,6 +28,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-1node"
+    "imageid": "kubernetes-kubeadm-1node-4GB"
   }
 }
