@@ -12,9 +12,12 @@ wso2:
 
   deployment:
     am:
-      dockerRegistry: "docker.wso2.com"
-      imageName: "wso2am"
-      imageTag: "4.2.0.0"
+      #dockerRegistry: "docker.wso2.com"
+      #imageName: "wso2am"
+      #imageTag: "4.2.0.0"
+      dockerRegistry: "registry.hub.docker.com"
+      imageName: "wso2am/wso2am"
+      imageTag: "4.2.0-alpine"
       imagePullPolicy: Always
       livenessProbe:
         # Number of seconds after the container has started before liveness probes are initiated
