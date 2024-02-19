@@ -1,0 +1,31 @@
+{
+  "title": "WSO2 APIM 4.2.0 Advanced - Lab 03",
+  "description": "Deploy API Manager on K8s",
+  "difficulty": "Intermediate",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md"
+    },
+    "steps": [
+      {
+        "title": "Installing Nginx",
+        "text": "step1/step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
