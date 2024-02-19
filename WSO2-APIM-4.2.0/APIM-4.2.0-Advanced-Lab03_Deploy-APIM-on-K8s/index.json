@@ -23,6 +23,7 @@
     },
     "assets": {
       "host01": [
+        {"file": "values.yaml", "target": "~/", "chmod": "+w"}
       ]
     }
   },
