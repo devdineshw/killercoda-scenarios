@@ -43,7 +43,7 @@ Install and configure the Nginx
     `vi /etc/nginx/nginx.conf`{{execute}}
 
   - Look for the following property and update as below
-    `server_names_hash_bucket_size=128`{{}}
+    `server_names_hash_bucket_size 128`{{}}
 
   - Save and close the file
 
