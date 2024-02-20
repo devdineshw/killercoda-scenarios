@@ -1,4 +1,3 @@
-Access the URLs and verify the setup
+- Access the URLs and verify the setup
 
-
-{{TRAFFIC_HOST1_80}}/publisher
+    {{TRAFFIC_HOST1_80}}/publisher
