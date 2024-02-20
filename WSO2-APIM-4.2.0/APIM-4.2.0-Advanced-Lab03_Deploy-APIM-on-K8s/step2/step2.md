@@ -13,4 +13,11 @@
 
     `kubectl get pods -n wso2am`{{execute}}
 
-- 
+    ```
+    NAME                                             READY  STATUS 
+    wso2am-mysql-db-service-64878867d-drw7x          1/1    Running
+    wso2am-single-node-am-deployment-959b6855-j78jp  1/1    Running
+    wso2am420-nfs-server-provisioner-0               1/1    Running
+    ```
+
+Once all the pods are in Running state, continue to the next section.

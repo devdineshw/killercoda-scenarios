@@ -16,6 +16,9 @@
       },{
         "title": "Install APIM using Helm",
         "text": "step2/step2.md"
+      },{
+        "title": "Testing the scenario",
+        "text": "step3/step3.md"
       }
     ],
     "finish": {

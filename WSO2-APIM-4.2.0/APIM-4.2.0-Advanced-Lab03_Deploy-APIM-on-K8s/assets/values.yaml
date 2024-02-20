@@ -11,6 +11,9 @@ wso2:
   #  onpremKey: ""
 
   deployment:
+    persistentRuntimeArtifacts:
+      apacheSolrIndexing:
+        enabled: false
     am:
       #dockerRegistry: "docker.wso2.com"
       #imageName: "wso2am"
