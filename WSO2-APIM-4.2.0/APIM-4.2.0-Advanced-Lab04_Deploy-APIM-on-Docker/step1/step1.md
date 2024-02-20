@@ -25,10 +25,10 @@
 
     `vi docker-compose/apim-with-analytics/conf/apim/repository/conf/deployment.toml`{{execute}}
 
-    ```
-    [server]
-    hostname = "<HOST_NAME>"
+    Copy the hostname from the below URL and update the hostname under the [server] section
+    {{TRAFFIC_HOST1_80}}
 
+    ```
     [transport.https.properties]
     proxyPort = 443
     ```{{copy}}

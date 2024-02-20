@@ -5,7 +5,9 @@
   "time": "1 hour",
   "details": {
     "intro":{
-      "text" : "intro/intro.md"
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
     },
     "steps": [
       {
