@@ -1,13 +1,11 @@
 {
-  "title": "WSO2 APIM 4.2.0 Advanced - Lab 03",
-  "description": "Deploy API Manager on K8s",
+  "title": "WSO2 APIM 4.2.0 Advanced - Lab 04",
+  "description": "Deploy API Manager using Docker Compose",
   "difficulty": "Intermediate",
   "time": "1 hour",
   "details": {
     "intro":{
-      "text" : "intro/intro.md",
-      "foreground": "intro/foreground.sh",
-      "background": "intro/background.sh"
+      "text" : "intro/intro.md"
     },
     "steps": [
       {
@@ -35,6 +33,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-1node-4GB"
+    "imageid": "ubuntu"
   }
 }
