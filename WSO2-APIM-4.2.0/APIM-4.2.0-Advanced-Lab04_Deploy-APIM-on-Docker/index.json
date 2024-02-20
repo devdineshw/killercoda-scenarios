@@ -26,7 +26,8 @@
     },
     "assets": {
       "host01": [
-        {"file": "values.yaml", "target": "~/", "chmod": "+w"}
+        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"},
+        {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"}
       ]
     }
   },
