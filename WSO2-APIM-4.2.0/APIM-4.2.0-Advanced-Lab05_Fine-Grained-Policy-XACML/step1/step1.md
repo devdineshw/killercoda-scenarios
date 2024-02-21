@@ -1,7 +1,7 @@
 - Download and copy the entitlement jar to API Manager
-    `wget -o entitlement-1.0-SNAPSHOT.jar https://github.com/nadeesha5814/XACML-APIManager/blob/master/target/entitlement-1.0-SNAPSHOT.jar`
+    `wget -o entitlement-1.0-SNAPSHOT.jar https://github.com/nadeesha5814/XACML-APIManager/blob/master/target/entitlement-1.0-SNAPSHOT.jar`{{exec}}
 
-    `cp mysql-connector-java-8.0.27.jar /root/apim1/wso2am-4.2.0/repository/components/lib/`
+    `cp mysql-connector-java-8.0.27.jar /root/apim1/wso2am-4.2.0/repository/components/lib/`{{exec}}
 
 - Start the API Manager using the below command
 
