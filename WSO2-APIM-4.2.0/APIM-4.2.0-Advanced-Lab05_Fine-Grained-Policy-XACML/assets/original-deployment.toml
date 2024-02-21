@@ -23,10 +23,10 @@ username = "wso2carbon"
 password = "wso2carbon"
 
 [database.shared_db]
-type = "h2"
-url = "jdbc:h2:./repository/database/WSO2SHARED_DB;DB_CLOSE_ON_EXIT=FALSE"
-username = "wso2carbon"
-password = "wso2carbon"
+type="mysql"
+url="jdbc:mysql://localhost:3306/wso2shared_db?useSSL=false"
+username="root"
+password="root"
 
 [keystore.tls]
 file_name =  "wso2carbon.jks"

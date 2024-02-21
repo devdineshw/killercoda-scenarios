@@ -40,13 +40,25 @@ mkdir /root/is1
 unzip /root/wso2am-4.2.0.zip -d /root/apim1/
 unzip /root/wso2is-6.1.0.zip -d /root/is1/
 cp /root/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
-cp /root/original-is-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
+cp /root/original-is-deployment.toml /root/is1/wso2is-6.1.0/repository/conf/deployment.toml
 
 /etc/init.d/nginx restart
 
 export DEBIAN_FRONTEND=noninteractive
-cat /root/debconf-slapd.conf | debconf-set-selections
-apt install ldap-utils slapd -y
+#cat /root/debconf-slapd.conf | debconf-set-selections
+#apt install ldap-utils slapd -y
+cat /root/mysql-sel.conf | debconf-set-selections
+apt install mysql-server -y
 
+#mysql -e "create database wso2am_db CHARACTER SET latin1;"
+mysql -e "create database wso2shared_db CHARACTER SET latin1;"
+
+#mysql -u root wso2am_db < apim1/wso2am-4.2.0/dbscripts/apimgt/mysql.sql
+mysql -u root wso2shared_db < apim1/wso2am-4.2.0/dbscripts/mysql.sql
+
+wget -O mysql-connector-java-8.0.27.jar https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.27/mysql-connector-java-8.0.27.jar
+
+cp mysql-connector-java-8.0.27.jar /root/apim1/wso2am-4.2.0/repository/components/lib/
+cp mysql-connector-java-8.0.27.jar /root/is1/wso2is-6.1.0/repository/components/lib/
 
 echo done > /tmp/background0

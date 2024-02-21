@@ -30,7 +30,8 @@
         {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"},
         {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"},
         {"file": "original-is-deployment.toml", "target": "~/", "chmod": "+w"},
-        {"file": "debconf-slapd.conf", "target": "~/", "chmod": "+w"}
+        {"file": "mysql-setup.conf", "target": "~/", "chmod": "+w"},
+        {"file": ".my.cnf", "target": "~/", "chmod": "+w"}
       ]
     }
   },
