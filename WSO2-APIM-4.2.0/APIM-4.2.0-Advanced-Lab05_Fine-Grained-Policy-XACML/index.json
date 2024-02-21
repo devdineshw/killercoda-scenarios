@@ -28,7 +28,9 @@
       "host01": [
         {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"},
         {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"},
-        {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"}
+        {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"},
+        {"file": "original-is-deployment.toml", "target": "~/", "chmod": "+w"},
+        {"file": "debconf-slapd.conf", "target": "~/", "chmod": "+w"}
       ]
     }
   },
