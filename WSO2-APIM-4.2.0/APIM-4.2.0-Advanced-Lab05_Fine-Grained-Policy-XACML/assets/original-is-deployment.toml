@@ -13,15 +13,18 @@ password = "admin"
 create_admin_account = true
 
 [user_store]
-type = "read_write_ldap_unique_id"
-base_dn  = "dc=wso2,dc=org"
-connection_url = "ldap://localhost:389"
-connection_name = "cn=admin,dc=wso2,dc=org"
-connection_password = "admin"
-SCIMEnabled="false"
-UserIDAttribute="uid"
-user_search_base = "ou=Groups,dc=wso2,dc=org"
-read_groups = "false"
+type = "database_unique_id"
+
+#[user_store]
+#type = "read_write_ldap_unique_id"
+#base_dn  = "dc=wso2,dc=org"
+#connection_url = "ldap://localhost:389"
+#connection_name = "cn=admin,dc=wso2,dc=org"
+#connection_password = "admin"
+#SCIMEnabled="false"
+#UserIDAttribute="uid"
+#user_search_base = "ou=Groups,dc=wso2,dc=org"
+#read_groups = "false"
 
 [database.identity_db]
 type = "h2"

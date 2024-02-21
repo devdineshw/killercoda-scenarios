@@ -50,9 +50,10 @@ export DEBIAN_FRONTEND=noninteractive
 cat /root/mysql-sel.conf | debconf-set-selections
 apt install mysql-server -y
 
+mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';"
+mysql -e "FLUSH PRIVILEGES;"
 #mysql -e "create database wso2am_db CHARACTER SET latin1;"
 mysql -e "create database wso2shared_db CHARACTER SET latin1;"
-
 #mysql -u root wso2am_db < apim1/wso2am-4.2.0/dbscripts/apimgt/mysql.sql
 mysql -u root wso2shared_db < apim1/wso2am-4.2.0/dbscripts/mysql.sql
 
