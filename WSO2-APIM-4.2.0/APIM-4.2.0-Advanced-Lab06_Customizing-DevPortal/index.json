@@ -1,0 +1,39 @@
+{
+  "title": "WSO2 APIM 4.2.0 Advanced - Lab 05",
+  "description": "Fine grained access control with XACML",
+  "difficulty": "Intermediate",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Start the WSO2 APIM",
+        "text": "step1/step1.md"
+      },{
+        "title": "Customize the UI components",
+        "text": "step2/step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"},
+        {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"},
+        {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
