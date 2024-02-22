@@ -1,22 +1,22 @@
-- Go to the Identity server carbon console
+- Download and copy the entitlement jar to API Manager
+    `wget -o entitlement-1.0-SNAPSHOT.jar https://github.com/nadeesha5814/XACML-APIManager/blob/master/target/entitlement-1.0-SNAPSHOT.jar`{{exec}}
 
-    {{TRAFFIC_HOST1_81}}/carbon
+    `cp entitlement-1.0-SNAPSHOT.jar /root/apim1/wso2am-4.2.0/repository/components/lib/`{{exec}}
 
-- Create a new user role. Add login permission to the role.
+- Start the API Manager using the below command
 
-    `webuser`
+    `sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{exec}}
 
-- Create new users
+    Check the logs and wait till server starts.
 
-    ```
-    Username   Password   Group
-    -----------------------------
-    api_user   apiuser    webuser
-    api_admin  apiadmin   admin
-    ```
-- Create new policy by following the steps in below doc
+    `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
+
+- Go to the API Publisher
+
+    {{TRAFFIC_HOST1_80}}/publisher
+
+- Create the sample Pizza shack API and continue the steps from 11
 
     https://apim.docs.wso2.com/en/latest/design/api-security/authorization/role-based-access-control-using-xacml/#enabling-role-based-access-control
-
 
 Continue to the next section.

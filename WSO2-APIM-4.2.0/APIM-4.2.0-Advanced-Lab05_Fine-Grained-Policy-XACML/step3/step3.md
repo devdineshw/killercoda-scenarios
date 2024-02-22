@@ -1,3 +1,1 @@
-- Access the URLs and verify the setup
-
-    {{TRAFFIC_HOST1_80}}/publisher
+- Invoke the API and test the scenario

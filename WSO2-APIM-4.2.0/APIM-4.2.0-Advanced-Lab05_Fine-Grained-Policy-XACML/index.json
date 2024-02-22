@@ -11,10 +11,10 @@
     },
     "steps": [
       {
-        "title": "Installing prerequisites",
+        "title": "Configure the WSO2 IS",
         "text": "step1/step1.md"
       },{
-        "title": "Start APIM using Docker Compose",
+        "title": "Configure the WSO2 APIM",
         "text": "step2/step2.md"
       },{
         "title": "Testing the scenario",
