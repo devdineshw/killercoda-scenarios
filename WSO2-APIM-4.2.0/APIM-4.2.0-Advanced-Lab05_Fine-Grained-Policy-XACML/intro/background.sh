@@ -19,16 +19,20 @@ sed -ie "s|<HOST_NAME>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/original-depl
 sed -ie "s|<GW_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/original-deployment.toml
 sed -ie "s|<IS_HOST>|$(sed 's:http:http:g' /tmp/ishost)|g" /root/original-is-deployment.toml
 
-openssl genrsa -passout pass:nginx -des3 -out nginx.key 2048
-host=$(cat /tmp/uihost)
-cm="openssl req -new -key nginx.key -out nginx.csr -passin pass:nginx -passout pass:nginx -subj '/C=US/O=WSO2/OU=CS/CN=*.killercoda.com' -addext 'subjectAltName = DNS:(${host})' -newkey rsa:2048"
-eval "$cm"
-cp nginx.key nginx.key.org
-openssl rsa -in nginx.key.org -passin pass:nginx -out nginx.key
-openssl x509 -req -days 365 -in nginx.csr -signkey nginx.key -out nginx.crt
+echo "127.0.0.1 $(sed 's:http:http:g' /tmp/uihost)" >> /etc/hosts
+
+#keytool -importcert -file nginx.crt -keystore apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks -alias nginx
+
+#openssl genrsa -passout pass:nginx -des3 -out nginx.key 2048
+#host=$(cat /tmp/uihost)
+#cm="openssl req -new -key nginx.key -out nginx.csr -passin pass:nginx -passout pass:nginx -subj '/C=US/O=WSO2/OU=CS/CN=*.killercoda.com' -addext 'subjectAltName = DNS:(${host})' -newkey rsa:2048"
+#eval "$cm"
+#cp nginx.key nginx.key.org
+#openssl rsa -in nginx.key.org -passin pass:nginx -out nginx.key
+#openssl x509 -req -days 365 -in nginx.csr -signkey nginx.key -out nginx.crt
 mkdir /etc/nginx/ssl/
-cp nginx.key /etc/nginx/ssl/
-cp nginx.crt /etc/nginx/ssl/
+cp resources/nginx.key /etc/nginx/ssl/
+cp resources/nginx.crt /etc/nginx/ssl/
 
 cp /root/apim-nginx.conf /etc/nginx/conf.d/
 cp original-nginx.conf /etc/nginx/nginx.conf
@@ -41,6 +45,7 @@ unzip /root/wso2am-4.2.0.zip -d /root/apim1/
 unzip /root/wso2is-6.1.0.zip -d /root/is1/
 cp /root/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
 cp /root/original-is-deployment.toml /root/is1/wso2is-6.1.0/repository/conf/deployment.toml
+cp /root/resources/client-truststore.jks apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks
 
 /etc/init.d/nginx restart
 
