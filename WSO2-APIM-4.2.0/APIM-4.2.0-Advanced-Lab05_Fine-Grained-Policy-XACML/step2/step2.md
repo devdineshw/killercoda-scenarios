@@ -1,5 +1,5 @@
 - Download and copy the entitlement jar to API Manager
-    `wget -o entitlementMediator.jar https://github.com/devdineshw/resources/raw/main/lib/wso2/entitlementMediator.jar?download=true`{{exec}}
+    `wget -O entitlementMediator.jar https://github.com/devdineshw/resources/raw/main/lib/wso2/entitlement-1.0-SNAPSHOT.jar`{{exec}}
 
     `cp entitlementMediator.jar /root/apim1/wso2am-4.2.0/repository/components/lib/`{{exec}}
 
