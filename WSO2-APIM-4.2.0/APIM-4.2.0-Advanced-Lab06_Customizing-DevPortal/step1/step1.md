@@ -6,6 +6,10 @@
 
     `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
 
+- Go to the Publisher portal and deploy the sample PizzaShack API
+
+    {{TRAFFIC_HOST1_80}}/publisher
+
 - Go to the API DevPortal and check the current UI
 
     {{TRAFFIC_HOST1_80}}/devportal
