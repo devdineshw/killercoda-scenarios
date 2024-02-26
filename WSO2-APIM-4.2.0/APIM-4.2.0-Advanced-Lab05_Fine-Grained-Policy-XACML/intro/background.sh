@@ -31,11 +31,11 @@ echo "127.0.0.1 $(sed 's:http:http:g' /tmp/uihost)" >> /etc/hosts
 #openssl rsa -in nginx.key.org -passin pass:nginx -out nginx.key
 #openssl x509 -req -days 365 -in nginx.csr -signkey nginx.key -out nginx.crt
 mkdir /etc/nginx/ssl/
-cp resources/nginx.key /etc/nginx/ssl/
-cp resources/nginx.crt /etc/nginx/ssl/
+cp /root/resources/nginx.key /etc/nginx/ssl/
+cp /root/resources/nginx.crt /etc/nginx/ssl/
 
-cp /root/apim-nginx.conf /etc/nginx/conf.d/
-cp original-nginx.conf /etc/nginx/nginx.conf
+cp /root/resources/apim-nginx.conf /etc/nginx/conf.d/
+cp /root/resources/original-nginx.conf /etc/nginx/nginx.conf
 
 wget -O /root/wso2am-4.2.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/APIM/4.2.0/wso2am-4.2.0.zip?download=true
 wget -O wso2is-6.1.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/IS/6.1.0/wso2is-6.1.0.zip?download=true
@@ -43,16 +43,17 @@ mkdir /root/apim1
 mkdir /root/is1
 unzip /root/wso2am-4.2.0.zip -d /root/apim1/
 unzip /root/wso2is-6.1.0.zip -d /root/is1/
-cp /root/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
-cp /root/original-is-deployment.toml /root/is1/wso2is-6.1.0/repository/conf/deployment.toml
+cp /root/resources/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
+cp /root/resources/original-is-deployment.toml /root/is1/wso2is-6.1.0/repository/conf/deployment.toml
 cp /root/resources/client-truststore.jks apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks
+cp /root/resources/log4j2.properties apim1/wso2am-4.2.0/repository/conf/log4j2.properties
 
 /etc/init.d/nginx restart
 
 export DEBIAN_FRONTEND=noninteractive
 #cat /root/debconf-slapd.conf | debconf-set-selections
 #apt install ldap-utils slapd -y
-cat /root/mysql-sel.conf | debconf-set-selections
+cat /root/resources/mysql-sel.conf | debconf-set-selections
 apt install mysql-server -y
 
 mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';"
