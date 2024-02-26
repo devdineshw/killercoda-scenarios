@@ -11,6 +11,10 @@
 
     `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
 
+- Go to the APIM admin portal and map newly created role as a subscriber role
+
+    {{TRAFFIC_HOST1_80}}/admin
+
 - Go to the API Publisher
 
     {{TRAFFIC_HOST1_80}}/publisher

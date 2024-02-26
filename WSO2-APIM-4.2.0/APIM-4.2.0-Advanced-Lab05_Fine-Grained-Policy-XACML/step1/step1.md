@@ -10,7 +10,8 @@
 
     {{TRAFFIC_HOST1_81}}/carbon
 
-- Create a new user role. Add login permission to the role.
+- Create a new user role. 
+    > Add login permission to the role.
 
     `webuser`
 
