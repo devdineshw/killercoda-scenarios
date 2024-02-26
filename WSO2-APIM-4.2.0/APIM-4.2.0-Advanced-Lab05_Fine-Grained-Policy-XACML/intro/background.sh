@@ -11,13 +11,13 @@ sed -i 's|https://||g' /tmp/apihost
 sed 's/PORT/81/g' /etc/killercoda/host > /tmp/ishost
 sed -i 's|https://||g' /tmp/ishost
 
-sed -ie "s|<WSO2_WEB_HOST>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/apim-nginx.conf
-sed -ie "s|<WSO2_API_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/apim-nginx.conf
-sed -ie "s|<WSO2_IS_HOST>|$(sed 's:http:http:g' /tmp/ishost)|g" /root/apim-nginx.conf
+sed -ie "s|<WSO2_WEB_HOST>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/resources/apim-nginx.conf
+sed -ie "s|<WSO2_API_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/resources/apim-nginx.conf
+sed -ie "s|<WSO2_IS_HOST>|$(sed 's:http:http:g' /tmp/ishost)|g" /root/resources/apim-nginx.conf
 
-sed -ie "s|<HOST_NAME>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/original-deployment.toml
-sed -ie "s|<GW_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/original-deployment.toml
-sed -ie "s|<IS_HOST>|$(sed 's:http:http:g' /tmp/ishost)|g" /root/original-is-deployment.toml
+sed -ie "s|<HOST_NAME>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/resources/original-deployment.toml
+sed -ie "s|<GW_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/resources/original-deployment.toml
+sed -ie "s|<IS_HOST>|$(sed 's:http:http:g' /tmp/ishost)|g" /root/resources/original-is-deployment.toml
 
 echo "127.0.0.1 $(sed 's:http:http:g' /tmp/uihost)" >> /etc/hosts
 

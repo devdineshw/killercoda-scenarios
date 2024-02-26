@@ -10,8 +10,7 @@
 
     {{TRAFFIC_HOST1_81}}/carbon
 
-- Create a new user role. 
-    > Add login permission to the role.
+- Create a new user role. Add 'login' permission to the role.
 
     `webuser`
 
@@ -27,5 +26,7 @@
   API manager related steps from 11 could be followed in the next stage.
 
     https://apim.docs.wso2.com/en/latest/design/api-security/authorization/role-based-access-control-using-xacml/#enabling-role-based-access-control
+
+  > Please note that due to a design level change in the recent WSO2 IS products, after creating the policies, open the policy in XML edit view and update the roles claim to groups 
 
 Continue to the next section.
