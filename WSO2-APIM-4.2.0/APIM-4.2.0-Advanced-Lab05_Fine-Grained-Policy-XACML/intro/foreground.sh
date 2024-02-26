@@ -11,7 +11,7 @@ do
   do
         clear
         echo -ne "[Loading] \b$i"
-        sleep 0.1
+        sleep 0.2
   done
 done
 
