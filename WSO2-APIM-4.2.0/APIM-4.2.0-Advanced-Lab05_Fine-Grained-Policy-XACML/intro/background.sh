@@ -53,7 +53,7 @@ cp /root/resources/log4j2.properties apim1/wso2am-4.2.0/repository/conf/log4j2.p
 export DEBIAN_FRONTEND=noninteractive
 #cat /root/debconf-slapd.conf | debconf-set-selections
 #apt install ldap-utils slapd -y
-cat /root/resources/mysql-sel.conf | debconf-set-selections
+cat /root/resources/mysql-setup.conf | debconf-set-selections
 apt install mysql-server -y
 
 mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';"
