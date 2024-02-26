@@ -1,9 +1,9 @@
 echo "Please wait until we prepare the environment !"
 
 spin[0]="-"
-spin[1]="/"
+spin[1]="\\"
 spin[2]="|"
-spin[3]="\\"
+spin[3]="/"
 echo -n "[Loading] ${spin[0]}"
 while [ ! -f /tmp/background0 ];
 do
