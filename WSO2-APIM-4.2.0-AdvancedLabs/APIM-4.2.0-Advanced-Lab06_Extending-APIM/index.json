@@ -1,0 +1,46 @@
+{
+  "title": "WSO2 APIM 4.2.0 Advanced - Lab 06",
+  "description": "Extending the API Manager",
+  "difficulty": "Intermediate",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Start the WSO2 APIM",
+        "text": "step1/step1.md"
+      },{
+        "title": "Customize the DevPortal",
+        "text": "step2/step2.md"
+      },{
+        "title": "Customize the Login page",
+        "text": "step3/step3.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/apim-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-deployment.toml", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/client-truststore.jks", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/nginx.crt", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/nginx.key", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/images/logo.png", "target": "~/resources/images", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
