@@ -36,7 +36,7 @@ password = "wso2carbon"
 file_name = "wso2carbon.jks"
 password = "wso2carbon"
 
-----------------------------------------------------------------------
+#----------------------------------------------------------------------
 
 [truststore]
 file_name="client-truststore.jks"
