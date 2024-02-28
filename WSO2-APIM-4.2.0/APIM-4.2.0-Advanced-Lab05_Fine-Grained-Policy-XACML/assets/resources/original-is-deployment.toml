@@ -34,7 +34,7 @@ password = "wso2carbon"
 
 [database.shared_db]
 type="mysql"
-url="jdbc:mysql://localhost:3306/wso2shared_db?allowPublicKeyRetrieval=true&useSSL=false"
+url="jdbc:mysql://localhost:3306/wso2shared_db?allowPublicKeyRetrieval=true&amp;useSSL=false"
 username="root"
 password="root"
 
