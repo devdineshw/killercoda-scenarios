@@ -17,6 +17,7 @@ sed -ie "s|<GW_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/resources/orig
 
 echo "127.0.0.1 $(sed 's:http:http:g' /tmp/uihost)" >> /etc/hosts
 
+mkdir /etc/nginx/ssl/
 cp /root/resources/nginx.key /etc/nginx/ssl/
 cp /root/resources/nginx.crt /etc/nginx/ssl/
 
