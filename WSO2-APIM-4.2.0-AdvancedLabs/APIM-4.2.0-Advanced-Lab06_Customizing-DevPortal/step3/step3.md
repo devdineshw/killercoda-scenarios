@@ -3,7 +3,7 @@
 
     `mkdir apim1/wso2am-4.2.0/repository/deployment/server/webapps/authenticationendpoint/extensions/images`{{exec}}
 
-    `cp resources/devportal/logo.png apim1/wso2am-4.2.0/repository/deployment/server/webapps/authenticationendpoint/extensions/images/`{{exec}}
+    `cp resources/images/logo.png apim1/wso2am-4.2.0/repository/deployment/server/webapps/authenticationendpoint/extensions/images/`{{exec}}
 
 - Update the styling
   - make a copy of the default header file to extensions directory
@@ -29,7 +29,9 @@
 
       `File customCSSFile = new File("extensions/css/tn.css");`
 
-  - Save the file and Start teh WSO2 APIM server. Then try the login page again. 
+  - Save the file. Restart the WSO2 APIM server if needed. Then go to the devportal and try the login page again. 
+
+    {{TRAFFIC_HOST1_80}}/devportal
   
   > NOTE: Similarly you could customize the accountrecoveryendpoint, which is the app provides self registration, password reconvary, etc.
 
