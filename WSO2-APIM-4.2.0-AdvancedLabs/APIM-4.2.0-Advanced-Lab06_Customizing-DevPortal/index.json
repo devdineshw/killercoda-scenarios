@@ -23,9 +23,9 @@
     },
     "assets": {
       "host01": [
-        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"},
-        {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"},
-        {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"}
+        {"file": "resources/apim-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-deployment.toml", "target": "~/resources", "chmod": "+w"}
       ]
     }
   },
