@@ -1,6 +1,6 @@
 {
-  "title": "WSO2 APIM 4.2.0 Advanced - Lab 06",
-  "description": "Customizing the DevPortal UI",
+  "title": "WSO2 APIM 4.2.0 Featured - Keycloak as KM",
+  "description": "Configuring Keycloak as the KM",
   "difficulty": "Intermediate",
   "time": "1 hour",
   "details": {
@@ -11,10 +11,10 @@
     },
     "steps": [
       {
-        "title": "Start the WSO2 APIM",
+        "title": "Configure the keycloak",
         "text": "step1/step1.md"
       },{
-        "title": "Customize the UI components",
+        "title": "Configure the APIM",
         "text": "step2/step2.md"
       }
     ],
@@ -23,9 +23,9 @@
     },
     "assets": {
       "host01": [
-        {"file": "apim-nginx.conf", "target": "~/", "chmod": "+w"},
-        {"file": "original-nginx.conf", "target": "~/", "chmod": "+w"},
-        {"file": "original-deployment.toml", "target": "~/", "chmod": "+w"}
+        {"file": "resources/apim-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-deployment.toml", "target": "~/resources", "chmod": "+w"}
       ]
     }
   },
@@ -34,6 +34,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu-4GB"
   }
 }
