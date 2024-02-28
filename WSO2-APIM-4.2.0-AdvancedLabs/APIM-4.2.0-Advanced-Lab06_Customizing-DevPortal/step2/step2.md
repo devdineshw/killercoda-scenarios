@@ -7,17 +7,19 @@
 
 - Open the custom theme file and update relevent section
 
-    `vi wso2am-4.2.0/repository/deployment/server/webapps/devportal/site/public/theme/userTheme.json`{{exec}}
+    `vi apim1/wso2am-4.2.0/repository/deployment/server/webapps/devportal/site/public/theme/userTheme.json`{{exec}}
 
     > NOTE: Please add required sections under the custom element in the userTheme.json. You could update the userTheme file while the server is running and save and check the impact of each section by refreshing the browser.
-    ```{
+    ```
+    {
         "custom": {
             "landingPage": {
                "active": false
             }
             // updates should goes here
         }
-    }```
+    }
+    ```
 
     - Update the header section theaming (changing the logo and colors)
     
@@ -42,6 +44,16 @@
             "color": "#B81D09"
         }
       ```{{copy}}
+
+    - Update the left menu style
+      ```
+        "leftMenu": {
+            "background": "#FFD9B9",
+            "backgroundImage": "",
+            "leftMenuActive": "#EE871E",
+            "leftMenuActiveSubmenu": "#F6993A"
+        }
+      ```
 
     - Update the tag cloud style
     
