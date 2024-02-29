@@ -34,7 +34,8 @@
         {"file": "resources/nginx.key", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/editor.png", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/CustomLogHandler-1.0-SNAPSHOT.jar", "target": "~/resources", "chmod": "+w"},
-        {"file": "resources/CustomLogHandler/**/*.*", "target": "/CustomLogHandler"}
+        {"file": "resources/CustomLogHandler/src/main/java/org/wso2/samples/handlers/CustomLogHandler.java", "target": "/CustomLogHandler/src/main/java/org/wso2/samples/handlers/"},
+        {"file": "resources/CustomLogHandler/pom.xml", "target": "/CustomLogHandler/"}
       ]
     }
   },
