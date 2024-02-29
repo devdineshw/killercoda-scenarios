@@ -42,14 +42,14 @@
 
     [[apim.throttling.url_group]]
     traffic_manager_urls = ["tcp://127.0.0.1:9611"]
-    traffic_manager_auth_urls = ["ssl://127.0.0.1:7911"]
+    traffic_manager_auth_urls = ["ssl://127.0.0.1:9711"]
     type = "loadbalance"
 
     [[apim.throttling.url_group]]
     traffic_manager_urls = ["tcp://127.0.0.1:9612"]
     traffic_manager_auth_urls = ["ssl://127.0.0.1:9712"]
     type = "loadbalance"
-    ```
+    ```{{copy}}
 
   - Check the Gateway environment endpoints. This is preconfigured to match with this playground. In the other environments, you should update the hostname accordingly
 
