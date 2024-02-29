@@ -33,6 +33,24 @@
     password="root"
     ```{{copy}}
 
+
+  - Add the throttling configuration for APIM1 (Point the event duplicate URL to APIM 2)
+
+    ```
+    [apim.throttling]
+    event_duplicate_url = ["tcp://127.0.0.1:5673"]
+
+    [[apim.throttling.url_group]]
+    traffic_manager_urls = ["tcp://127.0.0.1:9611"]
+    traffic_manager_auth_urls = ["ssl://127.0.0.1:7911"]
+    type = "loadbalance"
+
+    [[apim.throttling.url_group]]
+    traffic_manager_urls = ["tcp://127.0.0.1:9612"]
+    traffic_manager_auth_urls = ["ssl://127.0.0.1:9712"]
+    type = "loadbalance"
+    ```
+
   - Check the Gateway environment endpoints. This is preconfigured to match with this playground. In the other environments, you should update the hostname accordingly
 
     ```
@@ -74,3 +92,10 @@
     [server]
     offset=1
     ```{{}}
+
+  - Update the throttling configuration for APIM2 (Point the event duplicate URL to APIM 1)
+
+    ```
+    [apim.throttling]
+    event_duplicate_url = ["tcp://127.0.0.1:5672"]
+    ```
