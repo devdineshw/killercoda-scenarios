@@ -1,71 +1,43 @@
-- Copy the required resources to server
-    - create a directory for images and copy the log file under the devportal
+- Go to the carbon management console and login as the admin user
 
-      `mkdir apim1/wso2am-4.2.0/repository/deployment/server/webapps/devportal/site/public/theme/images`{{exec}}
+  {{TRAFFIC_HOST1_80}}/carbon
 
-      `cp resources/images/logo.png apim1/wso2am-4.2.0/repository/deployment/server/webapps/devportal/site/public/theme/images/`{{exec}}
+- Go to the registry browser
 
-- Open the custom theme file and update relevent section
+  > Main Menu > Resources > Browse
 
-    `vi wso2am-4.2.0/repository/deployment/server/webapps/devportal/site/public/theme/userTheme.json`{{exec}}
+- Open the '/_system/governance/apimgt/applicationdata/workflow-extensions.xml' in 'Edit as text' mode
 
-    > NOTE: Please add required sections under the custom element in the userTheme.json. You could update the userTheme file while the server is running and save and check the impact of each section by refreshing the browser.
-    ```{
-        "custom": {
-            "landingPage": {
-               "active": false
-            }
-            // updates should goes here
-        }
-    }```
+- Look for the 'ApplicationCreation' element inside the 'WorkFlowExtensions' element. Default configuration should look like below sample
 
-    - Update the header section theaming (changing the logo and colors)
-    
-      ```
-        "appBar": {
-            "logo": "/site/public/theme/images/logo.png",
-            "logoHeight": 50,
-            "logoWidth": 250,
-            "background": "#B81D09",
-            "activeBackground": "#EE871E",
-            "backgroundImage" : ""
-        }
-      ```{{copy}}
-    
-    - Update the footer section theaming (changing the text and colors)
-    
-      ```
-        "footer": {
-            "active": true,
-            "text": "Eatalion Pizza | © All rights reserved",
-            "background": "#FFD9B9",
-            "color": "#B81D09"
-        }
-      ```{{copy}}
+  ```
+  <ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationSimpleWorkflowExecutor">
+  <!--ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationApprovalWorkflowExecutor"-->
+  ```
 
-    - Update the tag cloud style
-    
-      ```
-        "tagCloud": {
-            "active": true,
-            "leftMenu": {
-                "background": '#FFD9B9',
-                "color": '#B81D09'
-            }
-        }
-      ```{{copy}}
+- Comment out the currently enabled 'ApplicationCreationSimpleWorkflowExecutor' and enable the 'ApplicationCreationApprovalWorkflowExecutor' class. Final version should look like below sample
 
-    - Update the title text
-    
-      ```
-        "title": {
-            "prefix": "Eatalion Pizza - ",
-            "sufix": "[API Portal]"
-        }
-      ```{{copy}}
+  ```
+  <!--ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationSimpleWorkflowExecutor"-->
+  <ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationApprovalWorkflowExecutor">
+  ```
 
-    - Save the file. Refresh the browser and check the new style. 
+- Save the file, go to the developer portal and login
 
-    > NOTE: Similarly you could update the publisher portal too.
+  {{TRAFFIC_HOST1_80}}/devportal
+
+- Create an application from the devportal. You will notice that the applicatoin will enter into 'INACTIVE' (waiting for approval) state instead of directly becoming 'ACTIVE'
+
+- Go to the admin portal to approve the pending application creation requests. In the dashboard itself you will see the pending task list. Also you could see the full list under Task > Application Creatoin page.
+
+  {{TRAFFIC_HOST1_80}}/admin
+
+- Approve the resquest and go back to the devportal to see the state change of the application you created.
+
+  > Similarly you could enable approval workflows for following operations
+  >   - User Creation (through self user registration)
+  >   - Application Deletion
+  >   - Subscription Creation, Modification and Deletion
+  >   - Application Registration (key generation)
 
 Continue to the next section.

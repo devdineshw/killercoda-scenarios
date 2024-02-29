@@ -53,7 +53,7 @@
             "leftMenuActive": "#EE871E",
             "leftMenuActiveSubmenu": "#F6993A"
         }
-      ```
+      ```{{copy}}
 
     - Update the tag cloud style
     

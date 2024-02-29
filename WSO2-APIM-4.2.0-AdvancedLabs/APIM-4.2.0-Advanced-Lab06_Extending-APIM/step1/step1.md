@@ -10,8 +10,4 @@
 
     {{TRAFFIC_HOST1_80}}/publisher
 
-- Go to the API DevPortal and check the current UI
-
-    {{TRAFFIC_HOST1_80}}/devportal
-
 Continue to the next section.
