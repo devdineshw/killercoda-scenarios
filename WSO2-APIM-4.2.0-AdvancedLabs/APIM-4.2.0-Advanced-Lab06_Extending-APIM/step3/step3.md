@@ -7,7 +7,7 @@
     > Switch to the 'Editor' mode to use the online IDE.
     > ![Scan results](../assets/resources/editor.png)
 
-  - Switch to the terminal and Compile the code using Maven. (This step will take around 30 mins to download all the dependancies from the maven repository as this is a fresh environment)
+  - Switch to the terminal and Compile the code using Maven. (this step will take around 30 mins to download all the dependancies from the maven repository as this is a fresh environment)
 
     `cd /root/CustomLogHandler`{{exec}}
 
