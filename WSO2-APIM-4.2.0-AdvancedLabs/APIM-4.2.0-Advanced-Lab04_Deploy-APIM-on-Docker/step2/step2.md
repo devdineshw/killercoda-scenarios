@@ -4,20 +4,18 @@
 
         `cd docker-compose/apim-with-analytics/`{{execute}}
 
-    - [Optional] Update the following configarations (Required to do only in this playground environment)
+    - Update the necessary configaration changes
 
-        - Update the required APIM configurations
+        `vi conf/apim/repository/conf/deployment.toml`{{execute}}
 
-            `vi conf/apim/repository/conf/deployment.toml`{{execute}}
-
-            > [Important] Disable analytics by commenting out the analytics configuration or set a auth_token to configure the analytics.
-            >
-            > ```
-            > #[apim.analytics]
-            > #enable = false
-            > #config_endpoint = "https://analytics-event-auth.choreo.dev/auth/v1"
-            > #auth_token = "<on-prem-key>"
-            > ```
+    > [Important] Disable analytics by commenting out the analytics configuration or set a auth_token to configure the analytics.
+    >
+    > ```
+    > #[apim.analytics]
+    > #enable = false
+    > #config_endpoint = "https://analytics-event-auth.choreo.dev/auth/v1"
+    > #auth_token = "<on-prem-key>"
+    > ```
 
 
 - Choose the docker registry to use
@@ -42,7 +40,7 @@
     `docker-compose up --build`{{execute}}
 
     Incase if you face a problem while starting the APIM container, please try stop (Ctrl+c) and starting the setup using the following command (without building the images again)
-    
+
     `docker-compose up`{{exec}}
     
     ```
