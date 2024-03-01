@@ -17,8 +17,11 @@
         "title": "Adding custom workflow",
         "text": "step2/step2.md"
       },{
-        "title": "Writing a custom handler",
+        "title": "Engaging a custom handler",
         "text": "step3/step3.md"
+      },{
+        "title": "Using custom policies",
+        "text": "step4/step4.md"
       }
     ],
     "finish": {
