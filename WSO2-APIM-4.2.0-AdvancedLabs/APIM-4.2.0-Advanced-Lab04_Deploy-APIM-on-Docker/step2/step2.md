@@ -48,5 +48,11 @@
     ERROR: Encountered errors while bringing up the project.
     ```
 
+    OR
+
+    ```
+    ERROR - DefaultRealm nullType class java.lang.reflect.InvocationTargetException
+    ```
+
 
 Once all the containers are up, continue to the next section.
