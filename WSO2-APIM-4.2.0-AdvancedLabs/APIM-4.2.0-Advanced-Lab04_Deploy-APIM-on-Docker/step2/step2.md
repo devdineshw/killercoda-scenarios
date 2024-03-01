@@ -41,7 +41,9 @@
 
     `docker-compose up --build`{{execute}}
 
-    Incase if you face a problem while starting the APIM container, please try stop (Ctrl+c) and starting the setup using `docker-compose up` command again.
+    Incase if you face a problem while starting the APIM container, please try stop (Ctrl+c) and starting the setup using the following command (without building the images again)
+    
+    `docker-compose up`{{exec}}
     
     ```
     ERROR: for api-manager  Container "xxxxxxxxxxx" is unhealthy.
