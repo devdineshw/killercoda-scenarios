@@ -1,0 +1,1 @@
+cp /root/resources/original-deployment.toml /root/docker-apim/docker-compose/apim-with-analytics/conf/apim/repository/conf/deployment.toml
