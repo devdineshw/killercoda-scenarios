@@ -18,6 +18,10 @@
 
     Please note that you have to update the hostname, port, Authorization header according to your enavironment. Using the JSON payload, this API let's you enable correlation logs for specific components instead of enabling for all.
 
+- Check the correlation logs
+
+  `tail -f apim1/wso2am-4.2.0/repository/logs/correlation.log`{{exec}}
+
   More details about correlation logs available <a href="https://apim.docs.wso2.com/en/4.2.0/observe/api-manager/monitoring-correlation-logs/">here</a>
 
 Continue to the next section.

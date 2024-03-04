@@ -34,6 +34,8 @@
 
 - Invoke the API again and check the logs. (No need to restart the server after changing log4j2.properties file)
 
+  `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
+
   In a single roundtrip of an API request/response, you can observe the following message flows via the Wire log.
 
   - Incoming request to API Gateway from API client (HTTPS-Listener xxx >>)
