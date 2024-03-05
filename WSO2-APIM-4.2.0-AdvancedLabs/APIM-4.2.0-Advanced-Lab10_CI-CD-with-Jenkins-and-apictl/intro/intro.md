@@ -1,4 +1,4 @@
-This scenario shows how to enable logs and observability for gateway
+This scenario shows how to configure a ci/cd process with jenkins, github and apictl tool
 
 ![Scan results](../assets/resources/images/cicd-jenkins-arch.png)
 
