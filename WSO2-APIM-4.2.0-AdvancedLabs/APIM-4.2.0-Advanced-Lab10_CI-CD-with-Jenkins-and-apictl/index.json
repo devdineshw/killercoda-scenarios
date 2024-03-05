@@ -1,0 +1,45 @@
+{
+  "title": "WSO2 APIM 4.2.0 Advanced - Lab 10",
+  "description": "CI/CD with Jenkins and APICTL",
+  "difficulty": "Intermediate",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Prepare the environment",
+        "text": "step1/step1.md"
+      },{
+        "title": "Configure Jenkins, Github and JFrog",
+        "text": "step2/step2.md"
+      },{
+        "title": "Test the scenario",
+        "text": "step3/step3.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/apim-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-nginx.conf", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-deployment.toml", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/client-truststore.jks", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/nginx.crt", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/nginx.key", "target": "~/resources", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
