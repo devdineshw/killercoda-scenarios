@@ -14,11 +14,17 @@
         "title": "Prepare the environment",
         "text": "step1/step1.md"
       },{
-        "title": "Configure Jenkins, Github and JFrog",
+        "title": "Configure Github",
         "text": "step2/step2.md"
       },{
-        "title": "Test the scenario",
+        "title": "Configure JFrod",
         "text": "step3/step3.md"
+      },{
+        "title": "Configure Jenkins",
+        "text": "step4/step4.md"
+      },{
+        "title": "Testing the scenario",
+        "text": "step5/step5.md"
       }
     ],
     "finish": {
