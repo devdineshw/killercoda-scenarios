@@ -1,7 +1,7 @@
 - Configure the pre-requisites
     - Install JSON parser for linux
 
-        `apt install jq`
+        `apt install jq -y`
     - Install Jenkins
         
         - Add the jenkins repository
@@ -10,13 +10,20 @@
 
         - Update the repository cache and install jenkins
 
-            `apt update && apt install jenkins`{{exec}}
+            `apt update && apt install jenkins -y`{{exec}}
 
         - Complete the jenkins installation from the UI. Select the Default options and continue
 
-            {{TRAFFIC_HOST1_8080}}/jenkins
+            - Go to the jenkins admin portal and login
 
-        ``
+                {{TRAFFIC_HOST1_8080}}
+
+                Get the temp password from the following command
+
+                `cat /var/lib/jenkins/secrets/initialAdminPassword`
+            - Click 'Install suggested plugins' option. Incase if you face an error, please try again.
+
+            - 
 
     - Download and extract the apictl tool
 
