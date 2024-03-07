@@ -40,6 +40,8 @@ environments:
 
     - Push the 'api-deploy-state-repository' changes first.
 
+        `cd /root/api-deploy-state-repository/`{{exec}}
+
     - Push the 'api-source-repository'
 
         {{TRAFFIC_HOST1_8080}}
