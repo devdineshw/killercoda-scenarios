@@ -2,7 +2,7 @@ This scenario shows how to configure a ci/cd process with jenkins, github and ap
 
 Please note that the purpose of this lab is to show how to utilize the APICTL tool to build a API deployment automation. Even we use Jenkins and github for this scenario, you could use any CI/CD tool and create your own workfrow.
 
-![Scan results](../assets/resources/images/cicd-jenkins-arch.png)
+![Scan results](../assets/resources/images/cicd-jenkins-arch.jpg)
 
 <b>[Important]
 
