@@ -58,7 +58,7 @@ environments:
 
         `git commit -m 'adding petstore api deploy configs'`{{exec}}
 
-    - Push to remote repo
+    - Push to remote repository dev branch
 
         `git push origin -u dev`{{exec}}
 
