@@ -1,4 +1,6 @@
-This scenario shows how to configure a ci/cd process with jenkins, github and apictl tool
+This scenario shows how to configure a ci/cd process with jenkins, github and apictl tool. 
+
+Please note that the purpose of this lab is to show how to utilize the APICTL tool to build a API deployment automation. Even we use Jenkins and github for this scenario, you could use any CI/CD tool and create your own workfrow.
 
 ![Scan results](../assets/resources/images/cicd-jenkins-arch.png)
 
@@ -9,21 +11,8 @@ Please complete the followings steps before you click the 'Start' button.
 - Create two git repositories under your github account
     - `api-source-repository` to store the API source projects
     - `api-deploy-state-repository` to mantain the deployment status
-    
-- Create a free jfrog account and configure
-    - Create a new account
-        https://jfrog.com/start-free/
-        
-    - Login as admin and create a new user (Identity and Access > Users). Select all the roles from the list.
 
-        username: jfroguser<br>
-        password: jfrog@123<br>
-
-    - Go to Security > Settings and select Allow Anonymous Access
-
-    - Create a repository to upload the artifacts. 
-
-        Go to Repositories and select Add Repositories. Select 'Generic' type and provide a name ({{api_repository}})
+We are not using JFrog in this lab, just to save time.
 </b>
 
 

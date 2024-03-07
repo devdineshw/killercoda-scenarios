@@ -17,7 +17,7 @@
         "title": "Configure Github",
         "text": "step2/step2.md"
       },{
-        "title": "Configure JFrod",
+        "title": "Configure JFrog Artifactory",
         "text": "step3/step3.md"
       },{
         "title": "Configure Jenkins",
@@ -37,7 +37,8 @@
         {"file": "resources/original-deployment.toml", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/client-truststore.jks", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/nginx.crt", "target": "~/resources", "chmod": "+w"},
-        {"file": "resources/nginx.key", "target": "~/resources", "chmod": "+w"}
+        {"file": "resources/nginx.key", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/JenkinsFile", "target": "~/resources", "chmod": "+w"}
       ]
     }
   },
