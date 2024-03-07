@@ -25,11 +25,13 @@
 
         `apictl gen deployment-dir --source /root/api-source-repository/PetstoreAPI --destination /root/api-deploy-state-repository`{{exec}}
 
-    - Open the 'params.yaml' from the generated deployment config folder and update as below. We are going to configure only the dev environment, but in actual use cases, you should configure the higher environments too.
+    - Open the 'params.yaml' from the generated deployment config folder. We are going to configure ONLY the dev environment, but in actual use cases, you should configure the higher environments too.
 
         `vi /root/api-deploy-state-repository/DeploymentArtifacts_SwaggerPetstore-1.0.0/params.yaml`{{exec}}
+    
+        use the below content
 
-        ```
+```
 environments:
     - name: dev
       configs:
@@ -40,37 +42,53 @@ environments:
             - displayOnDevportal: true
               deploymentEnvironment: Default
               deploymentVhost : localhost
-        ```{{copy}}
+```
 
-    - Push the 'api-deploy-state-repository' changes first.
+
+- Push the 'api-deploy-state-repository' changes first.
+    - go to the git repository
 
         `cd /root/api-deploy-state-repository/`{{exec}}
 
+    - Add all the files
+    
         `git add .`{{exec}}
+
+    - Commit the changes
 
         `git commit -m 'adding petstore api deploy configs'`{{exec}}
 
+    - Push to remote repo
+
         `git push origin -u dev`{{exec}}
 
-    - Push the 'api-source-repository'
+- Push the 'api-source-repository' changes
+
+    - go to the git repository
 
         `cd /root/api-source-repository/`{{exec}}
 
+    - Add all the files
+
         `git add .`{{exec}}
+
+    - Commit the changes
 
         `git commit -m 'adding petstore api'`{{exec}}
 
+    - Push to remote repo
+
         `git push`{{exec}}
 
-    - Go to the Jenkins dashboard and check the 
+- Go to the Jenkins dashboard and check the 
 
-        {{TRAFFIC_HOST1_8080}}
+    {{TRAFFIC_HOST1_8080}}
 
-        Once you push the 'api-source-repository' you could go to the jenkins and notice that there is a build triggered automatically.
+    Once you push the 'api-source-repository' you should notice that there is a build triggered automatically.
 
-    - Go to the API Publisher and see the created API
+- Go to the API Publisher and see the created API
         
-        {{TRAFFIC_HOST1_8180}}/publisher
+    {{TRAFFIC_HOST1_8180}}/publisher
 
 
 Continue to the next section.
