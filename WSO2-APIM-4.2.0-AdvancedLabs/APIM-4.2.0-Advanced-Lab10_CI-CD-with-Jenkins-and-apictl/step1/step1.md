@@ -1,18 +1,27 @@
+- Start the WSO2 API Manager on this node. We will use this instance as the DEV environment in our scenario
+
+    `sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{exec}}
+
+    Check the logs. Let it start, continue to the following steps while the API Manager is starting.
+
+    `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
+
 - Install JSON parser for linux
 
-    `apt install jq -y`
+    `apt install jq -y`{{exec}}
 
 - Download and extract the apictl tool
     - Download the archive file
+
         `wget -O apictl-4.2.4-linux-amd64.tar.gz https://github.com/wso2/product-apim-tooling/releases/download/v4.2.4/apictl-4.2.4-linux-amd64.tar.gz`{{exec}}
 
     - Extract to a prefered location
     
-        `tar -xvf apictl-4.2.4-linux-amd64.tar.gz`{{exec}}
+        `tar -xvf apictl-4.2.4-linux-amd64.tar.gz -C /var/lib/`{{exec}}
 
     - Set the update the environment variables
 
-        `echo "export PATH='/root/apictl/:$PATH'" >> /etc/profile && source /etc/profile`{{exec}}
+        `echo "export PATH='/var/lib/apictl/:$PATH'" >> /etc/profile && source /etc/profile`{{exec}}
 
 - Install Jenkins
     
@@ -38,11 +47,12 @@
             ```
 
         - Update the configuration cache and restart the jenkins service
+
             `systemctl daemon-reload && systemctl restart jenkins.service`{{exec}}
 
     - Complete the jenkins installation from the UI. 
 
-        - Get the tempory admin password from the following command
+        - Copy the tempory admin password from the following command output
 
             `cat /var/lib/jenkins/secrets/initialAdminPassword`{{exec}}
 
@@ -52,12 +62,12 @@
             
         - Click 'Install suggested plugins' option. Incase if you face an error, please try again. 
         
-        - Create an admin user with the below details once the plugin instaltion is done.
+        - Create an admin user with the below details once the plugin instalation is done.
 
-            Username: {{admin}} <br>
-            Password: {{admin}} <br>
-            Fullname: {{Admin}} <br>
-            Email: {{admin@jenkins.com}}
+            Username: admin <br>
+            Password: admin <br>
+            Fullname: Admin <br>
+            Email: admin@jenkins.com
 
     - Install the 'generic-webhook-trigger' plugin, Make sure to select the Restart Jenkins after plugin installation option at the bottom of the page to enable the plugin.
 
@@ -66,5 +76,12 @@
     - Configure apictl tool in jenkins
 
         ![Scan results](../assets/resources/images/env_setup.png)
+
+        ```
+        Name            Value 
+        CTL_HOME        /var/lib/apictl 
+        PATH+CTL_HOME   /var/lib/apictl 
+        APIM_DEV_HOST   {{TRAFFIC_HOST1_8180}} 
+        ```
 
 Continue to the next section.
