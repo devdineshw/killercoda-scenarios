@@ -1,5 +1,9 @@
 - Make sure the API manager is running. We conside this instance as the DEV environment.
 
+    - Go to the home directory.
+
+        `cd /root/`{{exec}}
+
     - Check the logs.
 
         `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
@@ -25,7 +29,7 @@
 
         `vi /root/api-deploy-state-repository/DeploymentArtifacts_SwaggerPetstore-1.0.0/params.yaml`{{exec}}
 
-```
+        ```
 environments:
     - name: dev
       configs:
@@ -36,7 +40,7 @@ environments:
             - displayOnDevportal: true
               deploymentEnvironment: Default
               deploymentVhost : localhost
-```
+        ```{{copy}}
 
     - Push the 'api-deploy-state-repository' changes first.
 

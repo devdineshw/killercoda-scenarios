@@ -48,7 +48,12 @@
         `cd /root/`{{exec}}
     
     - Clone the 'api-deploy-state-repository' repository
+    
         `git clone https://github.com/<youraccount>/api-deploy-state-repository.git`
+
+    - Go to the cloned repository
+
+        `cd api-source-repository`{{exec}}
 
     - Create a new branchfor DEV environment
 
