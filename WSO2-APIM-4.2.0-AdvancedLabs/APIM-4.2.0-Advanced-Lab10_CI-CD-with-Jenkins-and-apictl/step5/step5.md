@@ -42,7 +42,23 @@ environments:
 
         `cd /root/api-deploy-state-repository/`{{exec}}
 
+        `git add .`{{exec}}
+
+        `git commit -m 'adding petstore api deploy configs'`{{exec}}
+
+        `git push origin -u dev`{{exec}}
+
     - Push the 'api-source-repository'
+
+        `cd /root/api-source-repository/`{{exec}}
+
+        `git add .`{{exec}}
+
+        `git commit -m 'adding petstore api'`{{exec}}
+
+        `git push`{{exec}}
+
+    - Go to the Jenkins dashboard and check the 
 
         {{TRAFFIC_HOST1_8080}}
 
