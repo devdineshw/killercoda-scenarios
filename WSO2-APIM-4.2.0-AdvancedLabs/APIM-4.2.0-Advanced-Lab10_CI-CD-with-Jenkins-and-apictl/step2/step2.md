@@ -4,7 +4,7 @@
 
     - `api-deploy-state-repository` to mantain the deployment status
 
-- Configura the git webhook for 'api-source-repository' to trigger jenkins on code changes
+- Configure the git webhook for 'api-source-repository' to trigger jenkins on code changes
 
     - Go to the 'webhooks' under the 'api-source-repository' repository 'settings' page
 
@@ -22,7 +22,7 @@
 
 - Clone the source repository and initialize
     
-    - Clone the 'api-source-repository' repository
+    - Clone the 'api-source-repository' repository. Please replace the account name.
 
         `git clone https://github.com/<youraccount>/api-source-repository.git`
 
@@ -47,8 +47,8 @@
 
         `cd /root/`{{exec}}
     
-    - Clone the 'api-deploy-state-repository' repository
-    
+    - Clone the 'api-deploy-state-repository' repository. Please replace the account name.
+
         `git clone https://github.com/<youraccount>/api-deploy-state-repository.git`
 
     - Go to the cloned repository
