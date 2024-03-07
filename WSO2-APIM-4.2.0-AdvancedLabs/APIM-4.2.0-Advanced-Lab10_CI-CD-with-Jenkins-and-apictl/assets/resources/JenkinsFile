@@ -83,7 +83,7 @@ pipeline {
                                 paramPath="../api-deploy-state-repository/DeploymentArtifacts_"$deploymentName
                                 echo "Param path :"$paramPath
 
-                                message=$(apictl import api -f $name --params $paramPath -e dev --update -k)
+                                message=$(apictl import api -f $file --params $paramPath -e dev --update -k)
                                 if [ "$message" = "Successfully imported API." ]; then
                                     echo "Successfully imported API."
                                 else
