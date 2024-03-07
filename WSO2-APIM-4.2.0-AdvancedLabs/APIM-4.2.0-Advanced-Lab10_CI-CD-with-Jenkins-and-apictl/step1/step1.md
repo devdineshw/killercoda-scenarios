@@ -6,7 +6,7 @@
 
     `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
 
-- Install JSON parser for linux
+- Install JSON parser for linux, which will be used by the pipelines
 
     `apt install jq -y`{{exec}}
 
