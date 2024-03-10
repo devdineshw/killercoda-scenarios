@@ -85,6 +85,7 @@ environments:
     {{TRAFFIC_HOST1_8080}}
 
     Once you push the 'api-source-repository' you should notice that there is a build triggered automatically.
+    Incase if it is not trggered automatically, please click the 'Build now' in the pipeline job.
 
 - Go to the API Publisher and see the created API
         
