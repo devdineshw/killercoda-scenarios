@@ -10,8 +10,4 @@
 
     {{TRAFFIC_HOST1_80}}/publisher
 
-- Go to the API DevPortal, subscribe to the API, generate tokens and test the API
-
-    {{TRAFFIC_HOST1_80}}/devportal
-
 Continue to the next section.

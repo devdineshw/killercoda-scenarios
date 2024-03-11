@@ -4,6 +4,8 @@ apt install nginx -y
 apt install openjdk-11-jdk -y
 echo "export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/'" >> /etc/profile && source /etc/profile
 
+apt install npm -y
+
 sed 's/PORT/80/g' /etc/killercoda/host > /tmp/uihost
 sed -i 's|https://||g' /tmp/uihost
 sed 's/PORT/8080/g' /etc/killercoda/host > /tmp/apihost
