@@ -1,6 +1,6 @@
 - Download and extract the WSO2 Micro Integrator
     
-    - Download the archive file
+    - Download the MI distribution
 
       `wget -O /root/wso2mi-4.2.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/MI/4.2.0/wso2mi-4.2.0.zip?download=true`{{exec}}
 
