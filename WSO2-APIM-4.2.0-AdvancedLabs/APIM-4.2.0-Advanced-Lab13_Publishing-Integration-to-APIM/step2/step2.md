@@ -30,9 +30,9 @@
 
 - Start the micro integrator
 
-    `sh /root/mi/wso2mi-4.2.0/bin/integrator.sh start`{{execute}}
+    `sh /root/mi/wso2mi-4.2.0/bin/micro-integrator.sh start`{{execute}}
 
-    Check the logs and wait till it starts
+    Check the logs and wait till the server starts
 
     `tail -f /root/mi/wso2mi-4.2.0/repository/logs/wso2carbon.log`{{exec}}
     
