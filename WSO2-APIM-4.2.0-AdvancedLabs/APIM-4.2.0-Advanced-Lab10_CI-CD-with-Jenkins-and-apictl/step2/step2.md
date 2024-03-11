@@ -53,7 +53,7 @@
 
     - Go to the cloned repository
 
-        `cd api-source-repository`{{exec}}
+        `cd api-deploy-state-repository`{{exec}}
 
     - Create a new branchfor DEV environment
 
