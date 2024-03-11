@@ -2,7 +2,7 @@
     
     - Download the archive file
 
-      `wget -O /root/wso2am-4.2.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/APIM/4.2.0/wso2am-4.2.0.zip?download=true`{{exec}}
+      `wget -O /root/wso2mi-4.2.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/MI/4.2.0/wso2mi-4.2.0.zip?download=true`{{exec}}
 
     - Create a directory and extract the MI
     
@@ -26,7 +26,6 @@
         enable = true
         username = "admin"
         password = "admin"
-
         ```{{copy}}
 
 - Start the micro integrator
