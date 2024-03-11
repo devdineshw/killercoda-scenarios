@@ -1,5 +1,3 @@
-This scenario shows how to utilize the apictl tool to promote APIs from lower environment to higher environments
-
-![Scan results](../assets/resources/images/api-import-export.jpg)
+This scenario shows how to publish integrations to API Manager as available services and create APIs out of the published services
 
 > **_NOTE:_** Please wait until the playground is ready to start the scenario.
