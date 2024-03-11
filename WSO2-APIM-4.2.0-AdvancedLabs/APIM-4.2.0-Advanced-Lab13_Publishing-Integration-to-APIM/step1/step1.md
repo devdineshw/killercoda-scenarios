@@ -4,7 +4,7 @@
 
     Check the logs and wait till server starts.
 
-    `tail -f apim/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
+    `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
 
 - Go to the Publisher portal and make sure there is no existing API or Service in the service catalog area
 
