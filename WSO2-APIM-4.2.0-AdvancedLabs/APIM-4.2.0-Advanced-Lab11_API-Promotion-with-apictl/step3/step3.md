@@ -12,7 +12,7 @@
 
     - Extracted the API archive to working directory
 
-        `unzip PizzaShackAPI_1.0.0.zip`{{exec}}
+        `unzip /root/.wso2apictl/exported/apis/dev/PizzaShackAPI_1.0.0.zip`{{exec}}
 
     - Generate the deplotment config directory
 
@@ -22,7 +22,7 @@
 
     - edit the params.yaml file and update the environment details
 
-        `vi deployment_config/DeploymentArtifacts_PizzaShackAPI-1.0.0/params.yaml`
+        `vi deployment_config/DeploymentArtifacts_PizzaShackAPI-1.0.0/params.yaml`{{exec}}
 
         Replace the content with following, then Save and exit the editor
 
@@ -48,7 +48,7 @@ environments:
 
     - Option 1: Single API Import
 
-        `apictl import api -f PizzaShackAPI-1.0.0/ -e prod --preserve-provider=false --update=true --rotate-revision --params deployment_config/DeploymentArtifacts_PizzaShackAPI-1.0.0/`
+        `apictl import api -f PizzaShackAPI-1.0.0/ -e prod --preserve-provider=false --update=true --rotate-revision --params deployment_config/DeploymentArtifacts_PizzaShackAPI-1.0.0/`{{exec}}
 
         Once this is done, you could log into the PROD api publisher and check the API.
 
