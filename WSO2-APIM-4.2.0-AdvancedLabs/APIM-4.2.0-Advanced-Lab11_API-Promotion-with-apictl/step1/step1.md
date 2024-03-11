@@ -18,6 +18,6 @@
 
 - Go to the DEV Publisher portal and deploy the sample PizzaShack API
 
-    {{TRAFFIC_HOST1_8180}}/publisher
+    {{TRAFFIC_HOST1_8040}}/publisher
 
 Continue to the next section.
