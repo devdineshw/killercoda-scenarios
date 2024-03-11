@@ -20,4 +20,9 @@
 
     {{TRAFFIC_HOST1_8040}}/publisher
 
+
+- Go to the PROD publisher portal and make sure there is no API
+
+    {{TRAFFIC_HOST1_8050}}/publisher
+
 Continue to the next section.
