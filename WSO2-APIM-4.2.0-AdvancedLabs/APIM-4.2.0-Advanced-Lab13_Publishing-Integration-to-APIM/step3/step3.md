@@ -1,6 +1,6 @@
 - [Optional] Create and Build the integration project.
 
-    Follow the instruction in the official documentation and create a integration project. 
+    Follow the instruction in the official documentation and create an integration project. 
     
     https://apim.docs.wso2.com/en/latest/tutorials/integration-tutorials/service-catalog-tutorial/
     
@@ -14,10 +14,12 @@
 - Deploy the integration carbon application to micro integrator
 
     - Option 1: Deploy the pre-compiled artifact
-    `cp /root/resources/HealthcareIntegrationProjectCompositeExporter_1.0.0.car mi/wso2mi-4.2.0/repository/deployment/server/carbonapps/`{{exec}}
+
+        `cp /root/resources/HealthcareIntegrationProjectCompositeExporter_1.0.0.car mi/wso2mi-4.2.0/repository/deployment/server/carbonapps/`{{exec}}
 
     - Option 2: Deploy the artifact built from the above step 1.
-    `cp /root/resources/HealthcareIntegrationProject/HealthcareIntegrationProjectCompositeExporter/target/HealthcareIntegrationProjectCompositeExporter_1.0.0.car /root/mi/wso2mi-4.2.0/repository/deployment/server/carbonapps/`{{exec}}
+
+        `cp /root/resources/HealthcareIntegrationProject/HealthcareIntegrationProjectCompositeExporter/target/HealthcareIntegrationProjectCompositeExporter_1.0.0.car /root/mi/wso2mi-4.2.0/repository/deployment/server/carbonapps/`{{exec}}
 
 - Check the micro integrator logs
 
