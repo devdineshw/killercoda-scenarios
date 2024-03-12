@@ -31,8 +31,12 @@
     `vi /root/react-pizzashack-client/src/components/Menu.js`{{exec}}
 
     ```
-    const API_URL = '{{TRAFFIC_HOST1_80}}/pizzashack/1.0.0';
+    const API_URL = '{{TRAFFIC_HOST1_8080}}/pizzashack/1.0.0';
     ```
+
+  - Move to the react webapp directory
+
+    `cd react-pizzashack-client`{{exec}}
 
   - Install the dependancies
 
