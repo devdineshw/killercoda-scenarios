@@ -2,6 +2,11 @@
 
   {{TRAFFIC_HOST1_80}}/carbon
 
+- Create a new user from the 'Users and Roles' > 'Add' > 'Add New User'. No need to assign any roles, create the user with just username and password.
+
+  Name: `peter`
+  Password: `peter`
+
 - Go to Service Providers > List. Click 'Edit' next to the generated service provider for the web application.
 
 - Update the application
@@ -14,7 +19,7 @@
 
   - Enter the following URL as the 'Callback URL' of the web app.
 
-    {{TRAFFIC_HOST1_3000}}/callback
+    `{{TRAFFIC_HOST1_3000}}/callback`
 
   - Click 'Update' from the bottom of the page and click 'Update' again in the service provider page.
 

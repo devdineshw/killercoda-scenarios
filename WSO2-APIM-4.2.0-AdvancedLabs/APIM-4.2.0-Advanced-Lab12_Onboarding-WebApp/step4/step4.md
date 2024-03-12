@@ -46,9 +46,4 @@
 
     `npm start`{{exec}}
 
-  - Access the webapp
-  
-    {{TRAFFIC_HOST1_3000}}
-
-
 Continue to the next section.
