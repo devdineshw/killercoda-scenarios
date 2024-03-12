@@ -1,0 +1,49 @@
+{
+  "title": "WSO2 APIM 4.2.0 Advanced - Lab 12",
+  "description": "Onboarding a standard web application",
+  "difficulty": "Intermediate",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Prepare the environment",
+        "text": "step1/step1.md"
+      },{
+        "title": "Create an application and generate keys",
+        "text": "step2/step2.md"
+      },{
+        "title": "Configure the service provider",
+        "text": "step3/step3.md"
+      },{
+        "title": "Configure the webapp and deploy",
+        "text": "step4/step4.md"
+      },{
+        "title": "Test the scenario",
+        "text": "step5/step5.md"
+      },{
+        "title": "Configuring Adaptive Authentication",
+        "text": "step6/step6.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
