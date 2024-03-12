@@ -25,6 +25,9 @@
       },{
         "title": "Test the scenario",
         "text": "step5/step5.md"
+      },{
+        "title": "Configuring Adaptive Authentication",
+        "text": "step6/step6.md"
       }
     ],
     "finish": {
