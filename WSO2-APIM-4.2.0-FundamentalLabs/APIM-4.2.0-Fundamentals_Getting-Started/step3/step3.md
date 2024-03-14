@@ -22,6 +22,8 @@
 
     `sh apim1/wso2am-4.2.0/bin/api-manager.sh stop`{{execute}}
 
-Make sure the instance is stoped by checking the logs again
+- Make sure the instance is stoped by checking the logs again
 
     `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{execute}}
+
+Continue to the next section.
