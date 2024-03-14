@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "path": "WSO2-APIM-4.2.0-FundamentalLabs",
+            "title": "Practical exercises from the WSO2 APIM Fundamental training"
+        },
+        {
+            "path": "WSO2-APIM-4.2.0-AdvancedLabs",
+            "title": "Practical exercises from the WSO2 APIM Advanced training"
+        },
+        {
+            "path": "WSO2-APIM-4.2.0-FeaturedLabs",
+            "title": "Scenarios to explain the use of WSO2 APIM with other tools and technologies"
+        },
+        {
+            "path": "WSO2-APK",
+            "title": "Practical labs to showcase WSO2 APK features"
+        }
+    ]
+}
