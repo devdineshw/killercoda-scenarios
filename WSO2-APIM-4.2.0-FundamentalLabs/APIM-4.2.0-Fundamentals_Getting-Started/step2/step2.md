@@ -13,3 +13,5 @@ Download the WSO2 APIM binary.
 - Extract the WSO2 APIM binary to the new folder
 
     `unzip wso2am-4.2.0.zip -d apim1/`{{execute}}
+
+Continue to the next section.

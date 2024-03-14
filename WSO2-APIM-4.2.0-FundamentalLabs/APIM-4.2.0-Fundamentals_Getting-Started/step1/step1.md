@@ -23,4 +23,4 @@ Once the Java runtime is installed, JAVA_HOME environment variable needs to be c
 
     `java --version`{{execute}}
 
-Go to the next section
+Continue to the next section.
