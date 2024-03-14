@@ -1,1 +1,3 @@
-cp /root/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
+if ! [ -f /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml ]; then
+    cp /root/resources/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
+fi

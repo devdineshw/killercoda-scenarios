@@ -1,5 +1,9 @@
 WSO2 API Manager requires Java runtime as a dependancy, We need to install a supported Java 11 version.
-Please follow the below steps to install OpenJDK 11 from the Ubuntu package repository. Instead, you could use your own java runtime also in local system.
+Please follow the below steps to install OpenJDK 11 from the Ubuntu package repository. 
+
+Instead, you could use your own java runtime (Oracle JDK, Amazon Corretto, etc) also in in your rnvironment. WSo2 APIM 4.2.0 supported JDK versions mentioned in the below documentation page
+
+https://apim.docs.wso2.com/en/4.2.0/install-and-setup/setup/reference/product-compatibility/#tested-jdks
 
 - Update the ubuntu package index before installing
 
@@ -9,7 +13,7 @@ Please follow the below steps to install OpenJDK 11 from the Ubuntu package repo
 
 `apt install openjdk-11-jdk -y`{{execute}}
 
-Once the Java runtime is installed, JAVA_HOME environment variable needs to be configured. Following command will append the environment variable to your profile configuration.
+Once the Java runtime is installed, JAVA_HOME environment variable needs to be configured. Following command will append the environment variable to your profile configuration. Incase you want to set the JAVA_HOME only for the API Manager runtime, you could even add the JAVA_HOME in the API Manager startup script (<APIM_HOME>/bin/api-manager.sh) too.
 
 - Create environment variable
 
