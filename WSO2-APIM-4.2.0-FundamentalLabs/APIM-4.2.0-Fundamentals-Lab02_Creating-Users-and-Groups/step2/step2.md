@@ -46,6 +46,9 @@
 
     Optionally, you could assign different set of scopes based on your usecase from the 'Custom scope assignments' section.
 
+Similarly, you could create any other role to do API publishing, subscription or different combination based on your needs.
+
 > Please note that it could take up to 15 minutes to reflect the new permission changes in the UI. Optionally you could restart the API Manager instance to force the changes.
+
 
 Continue to the next section.

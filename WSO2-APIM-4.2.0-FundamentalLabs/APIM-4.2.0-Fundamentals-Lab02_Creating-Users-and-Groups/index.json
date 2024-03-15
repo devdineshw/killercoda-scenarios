@@ -2,7 +2,7 @@
   "title": "WSO2 APIM 4.2.0 Fundamentals - Lab 02",
   "description": "Creating Users and Roles",
   "difficulty": "Beginner",
-  "time": "1 hour",
+  "time": "30 Minutes",
   "details": {
     "intro":{
       "text" : "intro/intro.md",
