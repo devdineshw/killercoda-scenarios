@@ -14,11 +14,14 @@
         "title": "Prepare the environment",
         "text": "step1/step1.md"
       },{
-        "title": "Creating the API",
+        "title": "Creating the configuring API",
         "text": "step2/step2.md"
       },{
-        "title": "Publishing the API",
+        "title": "Defining Resources",
         "text": "step3/step3.md"
+      },{
+        "title": "Publishing API",
+        "text": "step4/step4.md"
       }
     ],
     "finish": {

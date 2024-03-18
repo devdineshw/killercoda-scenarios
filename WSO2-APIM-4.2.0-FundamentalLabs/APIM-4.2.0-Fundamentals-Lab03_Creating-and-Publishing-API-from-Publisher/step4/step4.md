@@ -48,6 +48,19 @@
   - Response Caching: Disabled <i>(Response caching is used to enable caching of response messages per API. Caching protects the backend systems from being exhausted due to serving the same response (for same request) multiple times. If you select the enable option, specify the cache timeout value (in seconds) within which the system tries to retrieve responses from the cache without going to the backend.)</i>
   - Maximum Backend Throughput: Unlimited <i>(Limits the total number of calls the API Manager is allowed to make to the backend. While the other throttling levels define the quota the API invoker gets, they do not ensure that the backend is protected from overuse. Hard throttling limits the quota the backend can handle.)</i>
 
-  Once done, Click 'Save' 
+- Configure Resources
+
+  Go to the 'Resources' tab under the 'API Configurations' section in the left menu. Add the following Resources.
+
+  ```
+  Resource Name          HTTP Methods  
+  -------------------------------------
+  menu                   GET
+  order                  POST
+  order/{orderid}        GET, PUT
+  ```
+
+  - Configure the Scopes.
+    
 
 Continue to the next section.
