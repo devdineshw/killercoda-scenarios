@@ -2,7 +2,7 @@
 
     `sh apim1/wso2am-4.2.0/bin/api-manager.sh start`{{exec}}
 
-    Check the logs and wait till server starts.
+    Wait few seconds and check the logs. Wait till the server starts.
 
     `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
 
