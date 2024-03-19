@@ -20,8 +20,11 @@
         "title": "Defining Resources",
         "text": "step3/step3.md"
       },{
-        "title": "Publishing API",
+        "title": "Deploying API",
         "text": "step4/step4.md"
+      },{
+        "title": "Publishing API",
+        "text": "step5/step5.md"
       }
     ],
     "finish": {
