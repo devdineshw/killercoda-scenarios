@@ -1,4 +1,4 @@
-- Go to the API Publisher portal and login in with a user who has creator/publisher permissions. 
+- Go to the API Publisher portal and login in with a user who has creator permissions. 
 
   For this lab, you could use the `admin` user, who has all the permissions.
 
@@ -24,7 +24,7 @@
   
     https://raw.githubusercontent.com/wso2/product-app-manager/master/modules/samples/PizzaShack/pizza-shack-web/src/main/webapp/images/shack-logo.png
 
-  - Description: `PizzaShackAPI: Allows to manage pizza orders (create, update, retrieve orders)`
+  - Description: `PizzaShackAPI: Allows to manage pizza orders (create, update, retrieve orders)`{{copy}}
   - Publisher Access Control: 'All'
   - Developer Portal Visibility: 'Public'
   - Tags: `pizza`, `order`, `pizza-menu`

@@ -4,13 +4,15 @@
 
   - By default API manager adds the '/*' resource when you create an API from scratch.  You could click 'Mark all for delete' option to remove all the default resources when you save the API. Mark all for delete and add the following resources.
 
-  ```
-  HTTP Verb        URL Pattern
-  -------------------------------------
-  GET              menu           
-  POST             order          
-  GET, PUT         order/{orderid}
-  ```
+    ```
+    HTTP Verb        URL Pattern
+    -------------------------------------
+    GET              menu           
+    POST             order          
+    GET, PUT         order/{orderid}
+    ```
+  Click 'Save' to apply the changes.
+
 
 - Configuring scopes
   - Creating the Scopes
