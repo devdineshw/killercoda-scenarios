@@ -8,7 +8,7 @@
 
   - Customer info API
 
-    - Download the customer-info-api definition file from the below location
+    - Download the customer-info-api definition file from the below location (right click the link and select 'Save link as..' option)
 
       https://apim.docs.wso2.com/en/4.2.0/assets/attachments/learn/customer-info-api.yaml
 
@@ -29,7 +29,7 @@
 
   - Leasing API
 
-    - Download the leasing-api definition file from the below location
+    - Download the leasing-api definition file from the below location (right click the link and select 'Save link as..' option)
 
       https://apim.docs.wso2.com/en/4.2.0/assets/attachments/learn/leasing-api.yaml
 

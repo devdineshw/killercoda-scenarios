@@ -12,8 +12,16 @@
   - Context: `/customer-leasing`
 
 - Select the API resources
-  - Click 'Customer Infomation' API from the API list (left column) and select (tick) 'GET /customers' and 'GET /customers/{customerId}' resources from the available resources section. Click 'Add Selected >>' button.
-  - Click 'Leasing API' from the API list (left column) and select (tick) 'GET /assets/{assetId}' and 'POST /assets' resources from the available resources section. Click 'Add Selected >>' button.
+  - Click 'CustomerInfomation' API from the API list (left column) and move the following resources to right side
+  
+    - GET /customers
+    - GET /customers/{customerId}
+
+  - Click 'LeasingAPI' from the API list (left column) and move the following resources to right side
+    - GET /assets/{assetId}
+    - POST /assets
+
+  ![Scan results](../assets/resources/images/api-product.png)
 
 - Click 'Create & Publish'
 
