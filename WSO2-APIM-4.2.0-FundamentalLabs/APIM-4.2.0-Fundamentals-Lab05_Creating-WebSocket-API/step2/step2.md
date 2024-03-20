@@ -64,7 +64,7 @@
   - Click 'Publish' button to perform the publish operation.
 
 
-Now your WebSocket API is ready for testing
+Now your WebSocket API is ready
 
 
 Continue to the next section.
