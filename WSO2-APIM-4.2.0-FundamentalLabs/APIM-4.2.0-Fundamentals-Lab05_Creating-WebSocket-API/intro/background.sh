@@ -8,7 +8,7 @@ apt install npm -y
 
 sed 's/PORT/80/g' /etc/killercoda/host > /tmp/uihost
 sed -i 's|https://||g' /tmp/uihost
-sed 's/PORT/8080/g' /etc/killercoda/host > /tmp/apihost
+sed 's/PORT/8043/g' /etc/killercoda/host > /tmp/apihost
 sed -i 's|https://||g' /tmp/apihost
 
 sed -ie "s|<WSO2_WEB_HOST>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/resources/apim-nginx.conf
