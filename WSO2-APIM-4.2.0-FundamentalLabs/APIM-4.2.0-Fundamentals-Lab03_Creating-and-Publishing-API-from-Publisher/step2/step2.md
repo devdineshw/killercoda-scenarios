@@ -1,6 +1,6 @@
 - Go to the API Publisher portal and login in with a user who has creator permissions. 
 
-  For this lab, you could use the `admin` user, who has all the permissions.
+  Note: You need 'creator' permission to create APIs and 'publisher' permission to perform the publish operation. For this lab, you could use the `admin` user, who has all the permissions.
 
   {{TRAFFIC_HOST1_80}}/publisher
 
