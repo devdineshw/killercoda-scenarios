@@ -6,6 +6,8 @@ echo "export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/'" >> /etc/profile &&
 
 apt install npm -y
 
+npm install -g wscat
+
 sed 's/PORT/80/g' /etc/killercoda/host > /tmp/uihost
 sed -i 's|https://||g' /tmp/uihost
 sed 's/PORT/8043/g' /etc/killercoda/host > /tmp/apihost
@@ -33,5 +35,7 @@ mkdir /root/apim1
 unzip /root/wso2am-4.2.0.zip -d /root/apim1/
 cp /root/resources/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
 cp /root/resources/client-truststore.jks /root/apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks
+
+cd /root/resources/websocket-backend && npm install && (npm run start&)
 
 echo done > /tmp/background0
