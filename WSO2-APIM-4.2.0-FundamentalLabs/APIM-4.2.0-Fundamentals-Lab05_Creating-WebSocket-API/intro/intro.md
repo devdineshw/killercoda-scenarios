@@ -10,4 +10,4 @@ In this lab, following pre-requisites are getting configured in the background.
   - WSCAT client tool
     
 
-> **_NOTE:_** Please wait until the playground is ready to start the scenario.
+> **_NOTE:_** Please wait until the playground is ready to start the scenario. Usually it will take around 5 mins to load.

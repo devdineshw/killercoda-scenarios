@@ -4,7 +4,7 @@
   
     For this lab, you could use the `admin` user, who has all the permissions.
 
-    {{TRAFFIC_HOST1_80}}/publisher
+    {{TRAFFIC_HOST1_80}}/devportal
 
   - Click the 'Chats' WebSocket API
   - Click 'Subscriptions' from the left menu and go to the subscription page.
@@ -18,7 +18,9 @@
 - Execute the API
 
   - Subscribe to notifications
-    - Open a new terminal tab (Tab 2) in the playground environment.
+    - Open a new terminal tab (Tab 2) in the playground environment by clicking the '+' next to the current terminal tab.
+
+        ![Scan results](../assets/resources/images/new-tab.png)
 
     - Copy the following command and replace the '<accesstoken>' with the generated access token from previous step. Then, execute the command in the new terminal tab (Tab 2).
 
@@ -33,7 +35,7 @@
       ```
 
   - Trigger an event
-    - Open a new terminal tab (Tab 3) in the playground environment.
+    - Open another terminal tab (Tab 3) in the playground environment.
 
     - Copy the following command and replace the '<accesstoken>' with the generated access token from previous step.Then, execute the command in the new terminal tab (Tab 3).
 
