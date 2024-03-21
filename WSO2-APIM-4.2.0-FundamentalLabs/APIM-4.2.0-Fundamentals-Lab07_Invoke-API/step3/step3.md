@@ -14,7 +14,7 @@ A sample web app is already available in this lab environment. Follow the steps 
 
   `tail -f /root/apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
 
-  > Please note that, deploying custom webapps to WSO2 API Manager is not recomanded. We are using this approach only for this lab.
+  > Please note that, deploying custom webapps to WSO2 API Manager is not recomanded. You should be using a web container such as tomcat to host web apps. We are using this approach only for lab.
 
 - Edit the web.xml and update the consumer key/secret.
 
