@@ -12,10 +12,17 @@
 
     {{TRAFFIC_HOST1_80}}/publisher
 
-  - Click 'Rest API' and then select 'Deploy Sample API'. This will deploy the 'PizzaShack' API for us to use during this lab.
+  - Click 'Rest API' and then select 'Deploy Sample API'. This will deploy the 'PizzaShack' API for us to use for this lab.
 
-- Logout from the portals
+- Subscribe to the 'PizzaShack' API
 
-  If you are still logged in as the 'Admin' user to any of the portals, click the username 'Admin' in the top right corner and then click 'Logout'.
+  - Go to the Developer portal and login in with 'admin' user. 
+
+    {{TRAFFIC_HOST1_80}}/devportal
+
+  - Go to the 'Applications' page and select the 'DefaultApplication'
+
+  - Subscribe to the 'PizzaShack' API from the 'Subscriptions' page
+  - Generate 'Production Keys'
 
 Continue to the next section.

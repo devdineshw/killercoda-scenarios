@@ -12,7 +12,7 @@
 
   - Enter 'Application Name' and choose the preferred 'Shared Quota for Application Tokens'
 
-    'Shared Quota for Application Tokens' is the Maximum number of API calls could be made with an 'Application' type token (e.g.: Generated with 'ClientCredentials' grant type)
+    'Shared Quota for Application Tokens' is the Maximum number of API calls could be made with a given access token for the duration.
 
   - Click 'Save' to create the application. You will be take into the applicatoin details page once the application is created.
 
