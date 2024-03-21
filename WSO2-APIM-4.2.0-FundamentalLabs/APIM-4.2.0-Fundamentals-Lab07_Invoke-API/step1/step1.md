@@ -12,7 +12,7 @@
 
     {{TRAFFIC_HOST1_80}}/publisher
 
-  - Click 'Rest API' and then select 'Deploy Sample API'. This will deploy the 'PizzaShack' API for us to use for this lab.
+  - Click 'Rest API' and then select 'Deploy Sample API'. This will deploy the 'PizzaShack' API for us to use during this lab.
 
 - Subscribe to the 'PizzaShack' API
 
