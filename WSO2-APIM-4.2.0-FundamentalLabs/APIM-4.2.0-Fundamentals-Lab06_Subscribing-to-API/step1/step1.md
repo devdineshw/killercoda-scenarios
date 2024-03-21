@@ -12,10 +12,10 @@
 
     {{TRAFFIC_HOST1_80}}/publisher
 
-  - Click 'Rest API' and then select 'Deploy Sample API'
+  - Click 'Rest API' and then select 'Deploy Sample API'. This will deploy the 'PizzaShack' API for us to use for this lab.
 
 - Logout from the portals
 
-  If you are still logged in as the 'Admin' user to any of the portals, click the username 'Admin' in the top right corner and then click 'logout'.
+  If you are still logged in as the 'Admin' user to any of the portals, click the username 'Admin' in the top right corner and then click 'Logout'.
 
 Continue to the next section.
