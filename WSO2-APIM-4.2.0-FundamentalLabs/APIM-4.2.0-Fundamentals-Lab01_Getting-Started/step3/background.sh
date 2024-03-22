@@ -1,0 +1,2 @@
+cp /root/resources/original-deployment.toml /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml
+cp /root/resources/client-truststore.jks /root/apim1/wso2am-4.2.0/repository/resources/security/client-truststore.jks

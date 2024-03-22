@@ -1,0 +1,46 @@
+{
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Lab 03",
+  "description": "Creating and Publishing API from Publisher UI",
+  "difficulty": "Beginner",
+  "time": "30 Minutes",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Prepare the environment",
+        "text": "step1/step1.md"
+      },{
+        "title": "Creating the configuring API",
+        "text": "step2/step2.md"
+      },{
+        "title": "Defining Resources",
+        "text": "step3/step3.md"
+      },{
+        "title": "Deploying API",
+        "text": "step4/step4.md"
+      },{
+        "title": "Publishing API",
+        "text": "step5/step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
