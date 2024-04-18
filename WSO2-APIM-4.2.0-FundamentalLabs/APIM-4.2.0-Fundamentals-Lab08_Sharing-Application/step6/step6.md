@@ -7,11 +7,13 @@
 
     - Click 'Edit' icon next to the 'PizzaOrderApp'
 
-    - You will see the name of current owner 'admin', Change is to 'peter' and click 'Save'.
+    - You will see the name of current owner 'admin', Change it to 'peter' and click 'Save'.
 
 - Validate the Application transfer
 
     - Go to the devportal and login in with 'peter'
+
+    {{TRAFFIC_HOST1_80}}/devportal
 
     - Check the application list and see whether full access is granted for the application.
 
