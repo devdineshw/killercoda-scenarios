@@ -22,7 +22,7 @@ A sample web app is already available in this lab environment. Follow the steps 
 
 - Edit the web.xml and update the consumer key/secret.
 
-  `vi /root/apim1/wso2am-4.2.0/repository/deployment/server/webapps/pizzashack/WEB-INF/web.xml`
+  `vi /root/apim1/wso2am-4.2.0/repository/deployment/server/webapps/pizzashack/WEB-INF/web.xml`{{exec}}
 
   Look for the following section and replace the values accordingly.
 
