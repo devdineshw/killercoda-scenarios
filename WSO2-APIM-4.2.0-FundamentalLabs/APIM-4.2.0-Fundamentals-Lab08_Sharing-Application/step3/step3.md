@@ -1,13 +1,25 @@
-- Subscribe to the 'PizzaShack' API
+- Go to the carbon management console and login in using the 'admin' user
+  
+  {{TRAFFIC_HOST1_80}}/carbon
 
-  - Go to the Developer portal and login in with 'admin' user. 
+- Create a new user. This user will be the other team member who is going to manage the application we are going to create.
 
-    {{TRAFFIC_HOST1_80}}/devportal
+  - click 'Add' under 'Users and Roles' in the 'Main' menu
+  - Click 'Add New User'
+  - Create a new user called `peter` and assign the 'internal/subscriber' role
 
-  - Go to the 'Applications' page and create a new application called `PizzaOrderApp`
-    
+- Update the organization claim
+  - List the users and click 'profile' of the newly created user 'peter'
 
-  - Subscribe to the 'PizzaShack' API from the 'Subscriptions' page
-  - Generate 'Production Keys'
+    ![Scan results](../assets/resources/images/user_list.png)
+
+  - Click 'default' under the available profiles
+  - Update the required fields and Enter `PizzaManiaInc` as the organization
+
+    ![Scan results](../assets/resources/images/user_profile.png)
+
+Instead of creating the user from carbon console, Self sign-up also an option. You could define the Organization during the self signup process.
+
+![Scan results](../assets/resources/images/self-signup.png)
 
 Continue to the next section.

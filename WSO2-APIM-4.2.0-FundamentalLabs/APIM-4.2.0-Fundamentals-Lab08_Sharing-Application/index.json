@@ -16,15 +16,18 @@
       },{
         "title": "Starting the APIM and Create an API",
         "text": "step2/step2.md"
-      },{
-        "title": "Creating and Sharing an application",
+      },,{
+        "title": "Create a new user",
         "text": "step3/step3.md"
       },{
-        "title": "Testing the scenario",
+        "title": "Creating and Sharing an application",
         "text": "step4/step4.md"
       },{
-        "title": "Transfer an Application",
+        "title": "Testing the scenario",
         "text": "step5/step5.md"
+      },{
+        "title": "Transfering the ownership of Application",
+        "text": "step6/step6.md"
       }
     ],
     "finish": {
