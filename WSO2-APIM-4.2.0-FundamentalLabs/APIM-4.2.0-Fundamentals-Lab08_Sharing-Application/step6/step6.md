@@ -17,4 +17,11 @@
 
     - Check the application list and see whether full access is granted for the application.
 
+
+Note: You can disable the automatic 'DefaultApplication' creation for each devportal user by adding the following configuration into the tenant-config.json from the carbon management console
+    
+```
+"DisableDefaultApplicationCreation" : true
+```
+
 Continue to the next section.
