@@ -2,7 +2,7 @@
 
   `vi /root/apim1/wso2am-4.2.0/repository/conf/deployment.toml`{{exec}}
 
-- Add the application sharing configurations
+- Update the configuration under the 'apim.devportal' section to match with following.
 
   ```
   [apim.devportal]
