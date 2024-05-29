@@ -1,0 +1,38 @@
+{
+  "title": "Micro Integrator standalone sandbox",
+  "description": "Test your micro integrator scenarios",
+  "difficulty": "Beginner",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Start the micro integrator",
+        "text": "step1.md"
+      },
+      {
+        "title": "Test your scenario",
+        "text": "step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
