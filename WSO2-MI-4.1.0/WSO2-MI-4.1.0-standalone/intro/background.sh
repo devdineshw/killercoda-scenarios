@@ -35,8 +35,10 @@ cp /root/resources/nginx.conf /etc/nginx/nginx.conf
 /etc/init.d/nginx restart
 
 wget -O /root/wso2mi-4.1.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/MI/4.1.0/wso2mi-4.1.0.zip?download=true
+wget -O /root/wso2mi-dashboard-4.1.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/MI/4.1.0/wso2mi-dashboard-4.1.0.zip?download=true
 mkdir /root/mi1
 unzip /root/wso2mi-4.1.0.zip -d /root/mi1/
+unzip /root/wso2mi-dashboard-4.1.0.zip -d /root/mi1/
 cp /root/resources/deployment.toml /root/mi1/wso2mi-4.1.0/conf/deployment.toml
 cp /root/resources/client-truststore.jks /root/mi1/wso2mi-4.1.0/repository/resources/security/client-truststore.jks
 
