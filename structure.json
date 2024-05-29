@@ -19,6 +19,11 @@
             "path": "WSO2-APK",
             "title": "WSO2 API Platform for K8s",
             "description": "Practical labs to showcase WSO2 APK features"
+        },
+        {
+            "path": "WSO2-MI-4.1.0",
+            "title": "WSO2 Micro Integrator 4.1.0",
+            "description": "Sandbox environments to tryout the WSO2 Micro Integrator"
         }
     ]
 }
