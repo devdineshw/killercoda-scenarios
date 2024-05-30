@@ -11,7 +11,7 @@
     },
     "steps": [
       {
-        "title": "Start the micro integrator",
+        "title": "Start the services",
         "text": "step1.md"
       },
       {
