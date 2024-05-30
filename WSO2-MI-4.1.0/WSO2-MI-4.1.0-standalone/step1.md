@@ -16,7 +16,7 @@ Start the micro integrator
 
 Start the micro integrator dashborad
 
-- move to the MI directory
+- move to the MI dashboard directory
 
     `cd /root/mi1/wso2mi-dashboard-4.1.0/bin/`{{exec}}
 
