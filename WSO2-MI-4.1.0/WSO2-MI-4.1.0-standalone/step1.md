@@ -12,6 +12,7 @@ Start the micro integrator
     
     `tail -f ../repository/logs/wso2carbon.log`{{exec}}
 
+    Note:  You could stop tha tail with `Ctrl+C`
 
 Start the micro integrator dashborad
 
