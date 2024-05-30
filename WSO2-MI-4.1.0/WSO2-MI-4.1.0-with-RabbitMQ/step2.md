@@ -9,4 +9,13 @@ Test the scenario
     {{TRAFFIC_HOST1_80}}/login
 
     Username: admin
+    
     Password: admin
+
+- Connect to the RabbitMQ UI
+
+    {{TRAFFIC_HOST1_15672}}/
+
+    Username: wso2
+    
+    Password: wso2

@@ -9,7 +9,12 @@ echo "export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/'" >> /etc/profile &&
 #unzip apache-maven-3.5.4-bin.zip
 #echo "export PATH='/root/apache-maven-3.5.4/bin:$PATH'" >> /etc/profile && source /etc/profile
 
-wget -O /root/rabbitmq-server_3.13.2-1_all.deb https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.13.2/rabbitmq-server_3.13.2-1_all.deb
+#wget -O /root/rabbitmq-server_3.13.2-1_all.deb https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.13.2/rabbitmq-server_3.13.2-1_all.deb
+apt install rabbitmq-server -y
+rabbitmq-plugins enable rabbitmq_management
+rabbitmqctl add_user wso2 wso2
+rabbitmqctl set_permissions -p / wso2 ".*" ".*" ".*"
+rabbitmqctl set_user_tags wso2 administrator
 
 sed 's/PORT/80/g' /etc/killercoda/host > /tmp/uihost
 sed -i 's|https://||g' /tmp/uihost
