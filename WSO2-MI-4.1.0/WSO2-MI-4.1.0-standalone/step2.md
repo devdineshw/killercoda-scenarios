@@ -7,3 +7,6 @@ Test the scenario
 - Connect to the MI dashboard
 
     {{TRAFFIC_HOST1_80}}/login
+
+    Username: admin
+    Password: admin
