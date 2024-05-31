@@ -17,14 +17,11 @@
         "title": "Download and Configure the API CTL tool",
         "text": "step2/step2.md"
       },{
-        "title": "Create API Project",
+        "title": "Create and Publish API Project",
         "text": "step3/step3.md"
       },{
-        "title": "Publishing API",
-        "text": "step4/step4.md"
-      },{
         "title": "Testing the scenario",
-        "text": "step5/step5.md"
+        "text": "step4/step4.md"
       }
     ],
     "finish": {

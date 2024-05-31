@@ -14,11 +14,11 @@
 
   - Check the generated project structure and files.
 
-    `ls -la PetstoreAPI`
+    `ls -la PetstoreAPI`{{exec}}
   
 - Update the API project files
 
-  Open the 'api.yaml' file and update the API backend details, API lifecycle state, etc.
+  Open the 'api.yaml' file and update the API backend details and API lifecycle state as follows.
 
     `vi PetstoreAPI/api.yaml`{{exec}}
 
@@ -29,5 +29,9 @@
     sandbox_endpoints:
         url: https://petstore.swagger.io/v2
     ```
+
+- Publish the API project
+
+    `apictl import api --file ./PetstoreAPI --environment dev -k --rotate-revision`{{exec}}
 
 Continue to the next section.
