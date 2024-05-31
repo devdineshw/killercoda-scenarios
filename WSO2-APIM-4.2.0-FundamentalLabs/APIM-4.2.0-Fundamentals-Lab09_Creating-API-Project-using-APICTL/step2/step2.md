@@ -8,8 +8,28 @@
 
     `tar -xvf apictl-4.2.4-linux-amd64.tar.gz`{{exec}}
 
-  - Add the apictl location to PATH environment variable
+  - Add the apictl root location to PATH environment variable
 
-    `export PATH=/home/root/apictl/:$PATH`{{exec}}
+    `export PATH=/root/apictl/:$PATH`{{exec}}
+
+  - Check whether APICTL tool works. Execute the apictl help command
+
+    `apictl -h`{{exec}}
+
+- Register the API Manager environment with local APICTL tool
+
+  - Run the 'add env' sub command to register an API Manager environment with the API CTL tool. 
+  
+    `apictl add env dev --apim https://localhost:9443`{{exec}}
+
+    Once executed you should see a response like below.
+
+    ```
+    Successfully added environment 'dev'
+    ```
+
+    'dev' is the name we will be using to refer to this specific environment, you could register any number of environments like this with different environment names.
+
+    This is the simplest way of registering a all-in-one API Manager environment. You could execute 'apictl add env --help' to see other options of adding complex API Manager environments
 
 Continue to the next section.
