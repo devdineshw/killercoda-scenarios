@@ -8,5 +8,5 @@ Test the scenario
 
     {{TRAFFIC_HOST1_80}}/login
 
-    Username: admin
+    Username: admin<br>
     Password: admin
