@@ -34,4 +34,8 @@
 
     `apictl import api --file ./PetstoreAPI --environment dev -k --rotate-revision`{{exec}}
 
+    it could ask for the credentials, please use the default admin credentials<br>
+    Username: admin<br>
+    password: admin
+
 Continue to the next section.
