@@ -1,18 +1,15 @@
-- Check the API in publisher portal
-
-    - Go to the publisher portal and login as 'admin'
-
-    {{TRAFFIC_HOST1_80}}/publisher
-
-
-- Check the API in developer portal
-
-    - Go to the publisher portal and login as 'admin'
+- Go to the developer portal
 
     {{TRAFFIC_HOST1_80}}/devportal
 
-- Test the API in developer portal
+- Click the 'carbon.super' option and access the super tenant developer portal. Make sure that the API is not available in the super tenant.
 
-    Go to the API tryout page and test the API
+- Go back to the portal selection page and select the 'pizzashack.com'
+
+    {{TRAFFIC_HOST1_80}}/devportal
+
+- Login with the 'admin@pizzashack.com' user
+
+- To test the API in developer portal, go to the 'Try out' page and invoke the API after subscribing and generating the tokens.
 
 Continue to the next section.
