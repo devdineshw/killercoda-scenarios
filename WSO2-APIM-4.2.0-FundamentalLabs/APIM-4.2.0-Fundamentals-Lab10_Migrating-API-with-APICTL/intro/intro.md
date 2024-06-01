@@ -1,4 +1,4 @@
-This scenario shows how to utilize the apictl tool to promote APIs from lower environment to higher environments
+This scenario shows how to utilize the apictl tool to migrate APIs from one environment to another
 
 ![Scan results](../assets/resources/images/api-import-export.jpg)
 
