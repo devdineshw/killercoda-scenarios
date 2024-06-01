@@ -8,9 +8,9 @@
 
         `apictl get api-products -e dev -k`{{exec}}
 
-    - Export the API
+    - Export the API. Please update the parameters.
 
-        `apictl export api-product -e dev -n <API-Product-name> --rev <revision-number> -r admin -k`{{exec}}
+        `apictl export api-product -e dev -n <API_PRODUCT_NAME> -v <VERSION> -r admin -k`
 
 - Import the API
 
@@ -18,9 +18,9 @@
 
         `apictl login prod -u admin -p admin -k`{{exec}}
     
-    - Import the API
+    - Import the API. Please update the parameters
 
-        `apictl import api-product -e prod -f <EXPORTED_API_PRODUCT_PATH> --import-apis=true --rotate-revision -k`{{exec}}
+        `apictl import api-product -e prod -f <EXPORTED_API_PRODUCT_PATH> --import-apis=true --rotate-revision -k`
 
 - Validate
 
