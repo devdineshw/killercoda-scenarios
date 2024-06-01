@@ -6,7 +6,7 @@
 
     - Check the available API list
 
-        `apictl get apis -e dev -k`
+        `apictl get apis -e dev -k`{{exec}}
 
     - Export the API
 
@@ -20,6 +20,12 @@
     
     - Import the API
 
-        `apictl import api -e prod -f PizzaShackAPI_1.0.0.zip --rotate-revision`{{exec}}
+        `apictl import api -e prod -f /root/.wso2apictl/exported/apis/dev/PizzaShackAPI_1.0.0.zip --rotate-revision`{{exec}}
+
+- Validate
+
+    - Go to the PROD publisher portal and check the API
+
+    {{TRAFFIC_HOST1_8050}}/publisher
 
 Continue to the next section.
