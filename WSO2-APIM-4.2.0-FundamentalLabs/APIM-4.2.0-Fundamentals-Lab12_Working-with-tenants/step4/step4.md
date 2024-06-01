@@ -8,7 +8,7 @@
 
     {{TRAFFIC_HOST1_80}}/devportal
 
-- Login with the 'admin@pizzashack.com' user
+- Login with the admin@pizzashack.com user
 
 - To test the API in developer portal, go to the 'Try out' page and invoke the API after subscribing and generating the tokens.
 

@@ -4,7 +4,7 @@
 
     {{TRAFFIC_HOST1_80}}/publisher
 
-    Username: admin@pizzashack.com <br>
+    Username: admin@pizzashack.com<br>
     Password: admin
 
   - Click 'SOAP API' option and click 'Import WSDL'. Use the following values and click 'Next'.
