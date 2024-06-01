@@ -26,6 +26,6 @@
 
     - Go to the PROD publisher portal and check the API
 
-    {{TRAFFIC_HOST1_8050}}/publisher
+        {{TRAFFIC_HOST1_8050}}/publisher
 
 Continue to the next section.
