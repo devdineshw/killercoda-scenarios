@@ -16,7 +16,7 @@
             "description": "Scenarios to explain the use of WSO2 APIM with other tools and technologies"
         },
         {
-            "path": "WSO2-APK",
+            "path": "WSO2-APK-1.1.0",
             "title": "WSO2 API Platform for K8s",
             "description": "Practical labs to showcase WSO2 APK features"
         },
