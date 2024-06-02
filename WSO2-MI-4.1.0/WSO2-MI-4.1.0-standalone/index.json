@@ -15,8 +15,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Test your scenario",
+        "title": "Test services",
         "text": "step2.md"
+      },
+      {
+        "title": "Connect with IDE and Deploy services",
+        "text": "step3.md"
       }
     ],
     "finish": {

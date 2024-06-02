@@ -21,3 +21,9 @@ Deploy Carbon Apps
 - Click 'Add and Remove...' option from the list. Move the carbon apps from the list and click 'Finish'.
 
     ![Scan results](assets/resources/images/add-remove-capps.png)
+
+Test the services
+
+- Invoke the services following hostname
+
+    {{TRAFFIC_HOST1_8080}}
