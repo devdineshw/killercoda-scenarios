@@ -24,6 +24,6 @@ Deploy Carbon Apps
 
 Test the services
 
-- Invoke the services following hostname
+- Invoke the services using the following hostname
 
     {{TRAFFIC_HOST1_8080}}
