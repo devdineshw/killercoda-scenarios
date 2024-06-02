@@ -1,4 +1,4 @@
-Test the scenario
+Test the Services
 
 - Make a request to the server using the following command to check the health
 
@@ -10,3 +10,5 @@ Test the scenario
 
     Username: admin<br>
     Password: admin
+    
+Continue to the next section.
