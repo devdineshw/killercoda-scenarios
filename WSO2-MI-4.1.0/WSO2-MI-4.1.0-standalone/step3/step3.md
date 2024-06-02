@@ -16,11 +16,11 @@ Deploy Carbon Apps
 
 - Go to the 'Servers' view on the Integration Studio and right click the remote WSO2 Micro Integrator connection.
 
-    ![Scan results](assets/resources/images/servers.png)
+    ![Scan results](../assets/resources/images/servers.png)
 
 - Click 'Add and Remove...' option from the list. Move the carbon apps from the list and click 'Finish'.
 
-    ![Scan results](assets/resources/images/add-remove-capps.png)
+    ![Scan results](../assets/resources/images/add-remove-capps.png)
 
 Test the services
 
