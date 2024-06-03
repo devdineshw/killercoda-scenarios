@@ -1,0 +1,43 @@
+{
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Lab 09",
+  "description": "Creating and Publishing API Using APICTL",
+  "difficulty": "Beginner",
+  "time": "30 Minutes",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Start the API Manager",
+        "text": "step1/step1.md"
+      },{
+        "title": "Download and Configure the API CTL tool",
+        "text": "step2/step2.md"
+      },{
+        "title": "Create and Publish API Project",
+        "text": "step3/step3.md"
+      },{
+        "title": "Testing the scenario",
+        "text": "step4/step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
