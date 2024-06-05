@@ -46,6 +46,8 @@ cp /root/resources/nginx.conf /etc/nginx/nginx.conf
 
 wget -O /root/wso2mi-4.1.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/MI/4.1.0/wso2mi-4.1.0.zip?download=true
 wget -O /root/wso2mi-dashboard-4.1.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/MI/4.1.0/wso2mi-dashboard-4.1.0.zip?download=true
+wget -O /root/Hospital-Service-JDK11-2.0.0.jar https://github.com/wso2-docs/WSO2_EI/raw/master/Back-End-Service/Hospital-Service-JDK11-2.0.0.jar?download=true
+
 mkdir /root/mi1
 unzip /root/wso2mi-4.1.0.zip -d /root/mi1/
 unzip /root/wso2mi-dashboard-4.1.0.zip -d /root/mi1/
