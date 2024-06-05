@@ -22,8 +22,4 @@ Deploy Carbon Apps
 
     ![Scan results](../assets/resources/images/add-remove-capps.png)
 
-Test the services
-
-- Invoke the services using the following hostname
-
-    {{TRAFFIC_HOST1_8080}}
+Continue to the next section.

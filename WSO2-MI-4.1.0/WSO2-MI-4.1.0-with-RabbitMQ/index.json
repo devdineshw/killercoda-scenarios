@@ -12,15 +12,15 @@
     "steps": [
       {
         "title": "Start the services",
-        "text": "step1.md"
+        "text": "step1/step1.md"
       },
       {
         "title": "Connecting the IDE",
-        "text": "step2.md"
+        "text": "step2/step2.md"
       },
       {
         "title": "Test your scenario",
-        "text": "step2.md"
+        "text": "step3/step2.md"
       }
     ],
     "finish": {

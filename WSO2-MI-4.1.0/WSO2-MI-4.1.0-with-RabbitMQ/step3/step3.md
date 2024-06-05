@@ -18,4 +18,8 @@ Test the scenarios
     Username: wso2<br>
     Password: wso2
 
+- Invoke the deployed services using the following hostname
+
+    {{TRAFFIC_HOST1_8080}}
+
 Continue to the next section.
