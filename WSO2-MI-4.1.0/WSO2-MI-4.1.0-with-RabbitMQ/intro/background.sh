@@ -22,10 +22,13 @@ sed 's/PORT/8080/g' /etc/killercoda/host > /tmp/apihost
 sed -i 's|https://||g' /tmp/apihost
 sed 's/PORT/8090/g' /etc/killercoda/host > /tmp/healthhost
 sed -i 's|https://||g' /tmp/healthhost
+sed 's/PORT/9154/g' /etc/killercoda/host > /tmp/mgthost
+sed -i 's|https://||g' /tmp/mgthost
 
 sed -ie "s|<WSO2_WEB_HOST>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/resources/mi-nginx.conf
 sed -ie "s|<WSO2_API_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/resources/mi-nginx.conf
 sed -ie "s|<WSO2_HEALTH_HOST>|$(sed 's:http:http:g' /tmp/healthhost)|g" /root/resources/mi-nginx.conf
+sed -ie "s|<WSO2_MGT_HOST>|$(sed 's:http:http:g' /tmp/mgthost)|g" /root/resources/mi-nginx.conf
 
 sed -ie "s|<HOST_NAME>|$(sed 's:http:http:g' /tmp/uihost)|g" /root/resources/deployment.toml
 sed -ie "s|<GW_HOST>|$(sed 's:http:http:g' /tmp/apihost)|g" /root/resources/deployment.toml
