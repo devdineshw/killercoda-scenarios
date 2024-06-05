@@ -7,19 +7,19 @@ Creating the Subscription Plan
 
 - Enter the following information and click 'Save'
 
-    <b>General Details</b><br>
-    Name: `Platinum`<br>
-    Description: `25 requests per min`<br>
-    <b>Quota Limits</b><br>
-    Quota limit option: 'Request Count'<br>
-    Request Count: `25`<br>
-    Unit Time: `1`<br>
-    Unit: 'Minute(s)'<br>
-    <b>Burst Control</b><br>
-    Request Rate: `5`<br>
-    <b>Policy Flags</b><br>
-    Billing Plan: 'Free'
-    Stop On Quota Reach: 'On'
+    General Details<br>
+    ~ Name: `Platinum`<br>
+    ~ Description: `25 requests per min`<br>
+    Quota Limits<br>
+    ~ Quota limit option: 'Request Count'<br>
+    ~ Request Count: `25`<br>
+    ~ Unit Time: `1`<br>
+    ~ Unit: 'Minute(s)'<br>
+    Burst Control<br>
+    ~ Request Rate: `5`<br>
+    Policy Flags<br>
+    ~ Billing Plan: 'Free'
+    ~ Stop On Quota Reach: 'On'
 
 Engaging the subcription plan to API
 

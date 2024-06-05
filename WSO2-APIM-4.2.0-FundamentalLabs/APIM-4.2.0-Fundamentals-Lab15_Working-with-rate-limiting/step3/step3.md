@@ -7,22 +7,22 @@ Creating an Advanced policy
 
 - Enter the following information and click 'Save'
 
-    <b>General Details</b><br>
-    Name: `30kPerMin`<br>
-    Description: `Allow 30,000 requests per min`<br>
-    <b>Default Limits</b><br>
-    Default limit option: 'Request Count'<br>
-    Request Count: `30000`<br>
-    Unit Time: `1`<br>
-    Unit: 'Minute(s)'<br>
-    <b>Conditional groups</b> (Click 'Add' next to 'Header Condition Policy' and use the following details in the pop-up window, then click 'Save')<br>
-    Header Name: `User-Agent`<br>
-    Header Value: `Googlebot/2.1`<br>
-    <b>Default Limit Option</b><br>
-    Request Count: `1000`
-    Unit Time: `1`<br>
-    Unit: 'Minute(s)'<br>
-    Description: `Sample condition group description`<br>
+    General Details<br>
+    ~ Name: `30kPerMin`<br>
+    ~ Description: `Allow 30,000 requests per min`<br>
+    Default Limits<br>
+    ~ Default limit option: 'Request Count'<br>
+    ~ Request Count: `30000`<br>
+    ~ Unit Time: `1`<br>
+    ~ Unit: 'Minute(s)'<br>
+    Conditional groups (Click 'Add' next to 'Header Condition Policy' and use the following details in the pop-up window, then click 'Save')<br>
+    ~ Header Name: `User-Agent`<br>
+    ~ Header Value: `Googlebot/2.1`<br>
+    Default Limit Option<br>
+    ~ Request Count: `1000`
+    ~ Unit Time: `1`<br>
+    ~ Unit: 'Minute(s)'<br>
+    ~ Description: `Sample condition group description`<br>
 
 Engaging the Advanced policy to API
 

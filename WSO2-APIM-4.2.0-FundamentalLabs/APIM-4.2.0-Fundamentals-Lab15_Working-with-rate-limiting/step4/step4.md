@@ -8,7 +8,7 @@ Creating a custom policy
 - Enter the following information and click 'Add'
 
     Name: `CustomRule`<br>
-    Descriptino: `Allow 5 requests per min for admin user`<br>
+    Description: `Allow 5 requests per min for admin user`<br>
     Key Template: `userId:apiContext:$apiVersion`<br>
     Siddhi Query:
 
