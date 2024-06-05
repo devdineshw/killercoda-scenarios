@@ -1,8 +1,8 @@
 {
-  "title": "Micro Integrator with RabbitMQ",
-  "description": "Test your micro integrator + RabbitMQ scenarios",
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Lab 15",
+  "description": "Working with rate limiting (Throttling)",
   "difficulty": "Beginner",
-  "time": "1 hour",
+  "time": "30 Minutes",
   "details": {
     "intro":{
       "text" : "intro/intro.md",
@@ -11,16 +11,20 @@
     },
     "steps": [
       {
-        "title": "Start the services",
+        "title": "Start the API Manager",
         "text": "step1/step1.md"
-      },
-      {
-        "title": "Connecting the IDE",
+      },{
+        "title": "Subscription policies",
         "text": "step2/step2.md"
-      },
-      {
-        "title": "Test your scenario",
+      },{
+        "title": "Advanced Policies",
         "text": "step3/step3.md"
+      },{
+        "title": "Custom Policies",
+        "text": "step4/step4.md"
+      },{
+        "title": "Deny Policies",
+        "text": "step5/step5.md"
       }
     ],
     "finish": {

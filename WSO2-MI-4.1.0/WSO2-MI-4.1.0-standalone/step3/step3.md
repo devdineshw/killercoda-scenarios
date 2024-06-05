@@ -1,29 +1,18 @@
-Connect with Integration Studio
+Test the Services
 
-- Open the Integration studio
+- Make a request to the server using the following command to check the health
 
-- Click 'Add Server' from the 'Getting Started' page
+    {{TRAFFIC_HOST1_8090}}/healthz
 
-- Select 'WSO2 Remote Server' option under 'WSO2'. Provide the hostname from the below URL. Provide a unique server name too then click 'Next'.
+- Connect to the MI dashboard
 
-    {{TRAFFIC_HOST1_9154}}/management
+    {{TRAFFIC_HOST1_80}}/login
 
-- Add the above URL as the server URL
+    Username: admin<br>
+    Password: admin
 
-- Click 'Next' and then click 'Finish'
-
-Deploy Carbon Apps
-
-- Go to the 'Servers' view on the Integration Studio and right click the remote WSO2 Micro Integrator connection.
-
-    ![Scan results](../assets/resources/images/servers.png)
-
-- Click 'Add and Remove...' option from the list. Move the carbon apps from the list and click 'Finish'.
-
-    ![Scan results](../assets/resources/images/add-remove-capps.png)
-
-Test the services
-
-- Invoke the services using the following hostname
+- Invoke the deployed services using the following hostname
 
     {{TRAFFIC_HOST1_8080}}
+
+Continue to the next section.

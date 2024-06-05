@@ -1,4 +1,4 @@
-Test the scenario
+Test the scenarios
 
 - Make a request to the server using the following command to check the health
 
@@ -17,3 +17,9 @@ Test the scenario
 
     Username: wso2<br>
     Password: wso2
+
+- Invoke the deployed services using the following hostname
+
+    {{TRAFFIC_HOST1_8080}}
+
+Continue to the next section.
