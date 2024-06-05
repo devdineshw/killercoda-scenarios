@@ -14,7 +14,7 @@ Start the micro integrator
 
     Note:  You could stop tha tail with `Ctrl+C`
 
-Start the micro integrator dashborad
+Start the micro integrator dashborad (Optional)
 
 - move to the MI dashboard directory
 

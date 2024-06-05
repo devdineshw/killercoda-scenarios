@@ -1,4 +1,4 @@
-Test the Services
+Test the scenarios
 
 - Make a request to the server using the following command to check the health
 
@@ -10,5 +10,12 @@ Test the Services
 
     Username: admin<br>
     Password: admin
-    
+
+- Connect to the RabbitMQ UI
+
+    {{TRAFFIC_HOST1_15672}}/
+
+    Username: wso2<br>
+    Password: wso2
+
 Continue to the next section.
