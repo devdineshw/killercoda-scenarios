@@ -1,0 +1,46 @@
+{
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Lab 15",
+  "description": "Working with rate limiting (Throttling)",
+  "difficulty": "Beginner",
+  "time": "30 Minutes",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Start the API Manager",
+        "text": "step1/step1.md"
+      },{
+        "title": "Subscription policies",
+        "text": "step2/step2.md"
+      },{
+        "title": "Advanced Policies",
+        "text": "step3/step3.md"
+      },{
+        "title": "Custom Policies",
+        "text": "step4/step4.md"
+      },{
+        "title": "Deny Policies",
+        "text": "step5/step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
