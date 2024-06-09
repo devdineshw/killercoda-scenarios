@@ -2,9 +2,9 @@
 
     ![Scan results](../assets/resources/images/new-terminal.png)
 
-- Connect to MySQL
+- Connect to MySQL. Enter 'root' as the password
 
-  `mysql -u root -p root`{{exec}}
+  `mysql -u root -p`{{exec}}
 
 Sample database and table creation steps (You could create your own table structure)
 
