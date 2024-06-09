@@ -44,6 +44,4 @@ Start the micro integrator dashborad (Optional)
     
     `tail -f ../logs/wso2carbon.log`{{exec}}
 
-Please note that RabbitMQ is configured and running in this lab environment. You could find the steps to setup RabbitMQ in the WSO2 documentation <a href="https://apim.docs.wso2.com/en/4.1.0/install-and-setup/setup/mi-setup/brokers/deploy-rabbitmq/"  target="_blank">here</a>
-
 Continue to the next section.

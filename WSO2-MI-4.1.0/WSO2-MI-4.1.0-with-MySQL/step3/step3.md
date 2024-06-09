@@ -6,6 +6,8 @@
 
   `mysql -u root -p root`{{exec}}
 
+Sample database and table creation steps (You could create your own table structure)
+
 - Create a schemas in the MySQL
 
   `CREATE database Employees CHARACTER SET latin1;`{{exec}}
