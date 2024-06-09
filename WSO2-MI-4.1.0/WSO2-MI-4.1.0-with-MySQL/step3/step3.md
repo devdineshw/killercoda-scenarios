@@ -2,13 +2,13 @@
 
     ![Scan results](../assets/resources/images/new-terminal.png)
 
-- Connect to MySQL. Hit Enter as there is no password.
+- Connect to MySQL
 
-  `mysql -u root -p`{{exec}}
+  `mysql -u root -p root`{{exec}}
 
 - Create a schemas in the MySQL
 
-  `create database Employees CHARACTER SET latin1;`{{exec}}
+  `CREATE database Employees CHARACTER SET latin1;`{{exec}}
 
 - Switch to the Employee database
 
@@ -20,7 +20,7 @@
 
 - Insert sample data
 
-  `INSERT INTO Employees (EmployeeNumber, FirstName, LastName, Email, Salary) values (3, "Edgar", "Code", "edgar@rdbms.com", 100000);`{{exec}}
+  `INSERT INTO Employees (EmployeeNumber, FirstName, LastName, Email, Salary) values (1, "John", "doe", "johndoe@wso2.com", 100000);`{{exec}}
 
 - Check inserted data
 
