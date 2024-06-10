@@ -20,8 +20,11 @@
         "title": "Create API and Testing",
         "text": "step3/step3.md"
       },{
-        "title": "Choreo dashboards",
+        "title": "Choreo analytics dashboard",
         "text": "step4/step4.md"
+      },{
+        "title": "Configuring Alerts in Choreo",
+        "text": "step5/step5.md"
       }
     ],
     "finish": {
