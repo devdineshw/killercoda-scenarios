@@ -1,0 +1,46 @@
+{
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Lab 16",
+  "description": "Analyzing runtime statistics with Choreo analytics",
+  "difficulty": "Beginner",
+  "time": "30 Minutes",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Setup Choreo account",
+        "text": "step1/step1.md"
+      },{
+        "title": "Configure and start the API Manager",
+        "text": "step2/step2.md"
+      },{
+        "title": "Create API and Testing",
+        "text": "step3/step3.md"
+      },{
+        "title": "Choreo analytics dashboard",
+        "text": "step4/step4.md"
+      },{
+        "title": "Configuring Alerts in Choreo",
+        "text": "step5/step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
