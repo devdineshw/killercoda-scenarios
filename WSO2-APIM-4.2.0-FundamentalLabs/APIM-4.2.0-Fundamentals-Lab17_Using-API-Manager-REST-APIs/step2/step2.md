@@ -35,10 +35,10 @@
 
 - Generate the basic auth header using the clientId and clientSecret. Store the generated base64 value securely for future use. Replace the <BASE64_TOKEN> with this value in the next steps.
 
-  `echo '<CLIENT_ID>:<CLIENT_SECRET>' | base64`{{copy}}
+  `echo -n '<CLIENT_ID>:<CLIENT_SECRET>' | base64`{{copy}}
 
   e.g.:
 
-  `echo '_Wg2sMkl852Jdr8uICj0chCXVaUa:GGdOKRhownFv45AI_6gTG1EImFIa' | base64`
+  `echo -n '_Wg2sMkl852Jdr8uICj0chCXVaUa:GGdOKRhownFv45AI_6gTG1EImFIa' | base64`
 
 Continue to the next section.
