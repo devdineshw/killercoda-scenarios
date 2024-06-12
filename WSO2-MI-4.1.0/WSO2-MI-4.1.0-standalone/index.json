@@ -15,12 +15,20 @@
         "text": "step1/step1.md"
       },
       {
-        "title": "Connect with IDE and Deploy services",
+        "title": "Start the Dashboard [optional]",
         "text": "step2/step2.md"
       },
       {
-        "title": "Test services",
+        "title": "Configure the APICTL [optional]",
         "text": "step3/step3.md"
+      },
+      {
+        "title": "Connect with IDE and Deploy services",
+        "text": "step4/step4.md"
+      },
+      {
+        "title": "Test services",
+        "text": "step5/step5.md"
       }
     ],
     "finish": {

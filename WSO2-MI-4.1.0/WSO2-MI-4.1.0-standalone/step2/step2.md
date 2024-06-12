@@ -1,25 +1,17 @@
-Connect with Integration Studio
+- Start the micro integrator dashborad
 
-- Open the Integration studio
+    - move to the MI dashboard directory
 
-- Click 'Add Server' from the 'Getting Started' page
+        `cd /root/mi1/wso2mi-dashboard-4.1.0/bin/`{{exec}}
 
-- Select 'WSO2 Remote Server' option under 'WSO2'. Provide the hostname from the below URL. Provide a unique server name too then click 'Next'.
+    - Start the service in background
+        
+        `./dashboard.sh start`{{exec}}
 
-    {{TRAFFIC_HOST1_9154}}/management
+    - Tail the logs
+        
+        `tail -f ../logs/wso2carbon.log`{{exec}}
 
-- Add the above URL as the server URL
-
-- Click 'Next' and then click 'Finish'
-
-Deploy Carbon Apps
-
-- Go to the 'Servers' view on the Integration Studio and right click the remote WSO2 Micro Integrator connection.
-
-    ![Scan results](../assets/resources/images/servers.png)
-
-- Click 'Add and Remove...' option from the list. Move the carbon apps from the list and click 'Finish'.
-
-    ![Scan results](../assets/resources/images/add-remove-capps.png)
+        You could stop the tail with `Ctrl+C`
 
 Continue to the next section.
