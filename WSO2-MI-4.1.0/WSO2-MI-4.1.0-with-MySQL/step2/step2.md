@@ -1,25 +1,73 @@
-Connect with Integration Studio
+- Configure the database
 
-- Open the Integration studio
+    - Connect to MySQL. Enter 'root' as the password
 
-- Click 'Add Server' from the 'Getting Started' page
+        `mysql -u root -p`{{exec}}
 
-- Select 'WSO2 Remote Server' option under 'WSO2'. Provide the hostname from the below URL. Provide a unique server name too then click 'Next'.
+    - Create a schemas and switch the new schema
 
-    {{TRAFFIC_HOST1_9154}}/management
+        `CREATE database MI_USER_DB CHARACTER SET latin1;`{{exec}}
 
-- Add the above URL as the server URL
+        `USE MI_USER_DB;`{{exec}}
 
-- Click 'Next' and then click 'Finish'
+    - Import the Table structure
 
-Deploy Carbon Apps
+        `source /root/mi1/wso2mi-4.1.0/dbscripts/mysql/mysql_user.sql;`{{exec}}
 
-- Go to the 'Servers' view on the Integration Studio and right click the remote WSO2 Micro Integrator connection.
+    - Exit from the MySQl sesion
 
-    ![Scan results](../assets/resources/images/servers.png)
+        `exit`{{exec}}
 
-- Click 'Add and Remove...' option from the list. Move the carbon apps from the list and click 'Finish'.
+- Update the MI configuration to use RDBMS User store
 
-    ![Scan results](../assets/resources/images/add-remove-capps.png)
+    - Open the configuration file
+
+        `vi /root/mi1/wso2mi-4.1.0/conf/deployment.toml`
+
+    - Comment the existing file base used store
+
+        ```
+        [internal_apis.file_user_store]
+        enable = false
+        ```
+
+    - Add the User store DB connection
+
+        ```
+        [[datasource]]
+        id = "WSO2CarbonDB"
+        url= "jdbc:mysql://localhost:3306/MI_USER_DB"
+        username="root"
+        password="root"
+        driver="com.mysql.jdbc.Driver"
+        pool_options.maxActive=50
+        pool_options.maxWait = 60000
+        pool_options.testOnBorrow = true
+        ```
+
+    - Add the user store configuration
+
+        ```
+        [user_store]
+        class = "org.wso2.micro.integrator.security.user.core.jdbc.JDBCUserStoreManager"
+        type = "database"
+        ```
+    - Save the file
+
+- Restart the micro integrator
+
+    - move to the MI directory
+
+        `cd /root/mi1/wso2mi-4.1.0/bin/`{{exec}}
+
+    - Start the service in background
+        
+        `./micro-integrator.sh restart`{{exec}}
+
+    - Tail the logs
+        
+        `tail -f ../repository/logs/wso2carbon.log`{{exec}}
+
+        You could stop the tail with `Ctrl+C`
 
 Continue to the next section.

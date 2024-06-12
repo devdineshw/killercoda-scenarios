@@ -1,18 +1,32 @@
-Test the scenarios
+- Configure the database
+  - Open a new terminal window
 
-- Make a request to the server using the following command to check the health
+    ![Scan results](../assets/resources/images/new-terminal.png)
 
-    {{TRAFFIC_HOST1_8090}}/healthz
+  - Connect to MySQL. Enter 'root' as the password.
 
-- Connect to the MI dashboard
+    `mysql -u root -p`{{exec}}
 
-    {{TRAFFIC_HOST1_80}}/login
+  Sample database and table creation steps (You could create your own table structure)
 
-    Username: admin<br>
-    Password: admin
+  - Create a schemas in the MySQL
 
-- Invoke the deployed services using the following hostname
+    `CREATE database Employees CHARACTER SET latin1;`{{exec}}
 
-    {{TRAFFIC_HOST1_8080}}
+  - Switch to the Employee database
+
+    `USE Employees;`{{exec}}
+
+  - Create the Employees table
+
+    `CREATE TABLE Employees (EmployeeNumber int(11) NOT NULL, FirstName varchar(255) NOT NULL, LastName varchar(255) DEFAULT NULL, Email varchar(255) DEFAULT NULL, Salary varchar(255));`{{exec}}
+
+  - Insert sample data
+
+    `INSERT INTO Employees (EmployeeNumber, FirstName, LastName, Email, Salary) values (1, "John", "doe", "johndoe@wso2.com", 100000);`{{exec}}
+
+  - Check inserted data
+
+    `SELECT * from Employees;`{{exec}}
 
 Continue to the next section.

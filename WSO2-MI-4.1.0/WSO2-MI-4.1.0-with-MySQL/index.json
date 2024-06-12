@@ -11,20 +11,28 @@
     },
     "steps": [
       {
-        "title": "Start the services",
+        "title": "Start micro integrator",
         "text": "step1/step1.md"
       },
       {
-        "title": "Connecting the IDE",
+        "title": "Configure RDBMS Userstore [optional]",
         "text": "step2/step2.md"
       },
       {
-        "title": "Setup the Database",
+        "title": "Start the Dashboard [optional]",
         "text": "step3/step3.md"
       },
       {
-        "title": "Test your scenario",
+        "title": "Setup database for data service",
         "text": "step4/step4.md"
+      },
+      {
+        "title": "Connecting the IDE",
+        "text": "step5/step5.md"
+      },
+      {
+        "title": "Test your scenario",
+        "text": "step6/step6.md"
       }
     ],
     "finish": {
