@@ -6,9 +6,15 @@
 
     `tail -f apim1/wso2am-4.2.0/repository/logs/wso2carbon.log`{{exec}}
 
-- Create a directory to store the request payload files and move to it.
+    Use 'Ctrl+C' to exit from te log
 
-    `mkdir /root/requests & cd /root/requests`{{exec}}
+- Create a directory to store the request payload files during the next steps
+
+    `mkdir /root/requests`{{exec}}
+
+    Move into the directory
+
+    `cd /root/requests`{{exec}}
 
 > Note: Each API manager version has it's own REST API version. Version number in the endpoint URL from one API manager version to could be different.
 
