@@ -1,32 +1,17 @@
-- Open a new terminal window
+- Start the micro integrator dashborad
 
-    ![Scan results](../assets/resources/images/new-terminal.png)
+    - move to the MI dashboard directory
 
-- Connect to MySQL. Enter 'root' as the password
+        `cd /root/mi1/wso2mi-dashboard-4.1.0/bin/`{{exec}}
 
-  `mysql -u root -p`{{exec}}
+    - Start the service in background
+        
+        `./dashboard.sh start`{{exec}}
 
-Sample database and table creation steps (You could create your own table structure)
+    - Tail the logs
+        
+        `tail -f ../logs/wso2carbon.log`{{exec}}
 
-- Create a schemas in the MySQL
-
-  `CREATE database Employees CHARACTER SET latin1;`{{exec}}
-
-- Switch to the Employee database
-
-  `USE Employees;`{{exec}}
-
-- Create the Employees table
-
-  `CREATE TABLE Employees (EmployeeNumber int(11) NOT NULL, FirstName varchar(255) NOT NULL, LastName varchar(255) DEFAULT NULL, Email varchar(255) DEFAULT NULL, Salary varchar(255));`{{exec}}
-
-- Insert sample data
-
-  `INSERT INTO Employees (EmployeeNumber, FirstName, LastName, Email, Salary) values (1, "John", "doe", "johndoe@wso2.com", 100000);`{{exec}}
-
-- Check inserted data
-
-  `SELECT * from Employees;`{{exec}}
-
+        You could stop the tail with `Ctrl+C`
 
 Continue to the next section.
