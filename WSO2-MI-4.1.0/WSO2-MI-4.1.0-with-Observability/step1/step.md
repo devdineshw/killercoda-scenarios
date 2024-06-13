@@ -12,7 +12,7 @@
         class="org.wso2.micro.integrator.observability.metric.handler.MetricHandler"
         ```
 
-    - Open the MI startup script and add the following JVM parameter
+    - Open the MI startup script and add the following JVM parameter. Also, this can be pass as a parameter when starting the service.
 
         `vi /root/mi1/wso2mi-4.1.0/bin/micro-integrator.sh`{{exec}}
 

@@ -12,27 +12,35 @@
     "steps": [
       {
         "title": "Configure and Start MI",
-        "text": "step1/step1.md"
+        "text": "step1/step.md"
       },
       {
         "title": "Configure Prometheus",
-        "text": "step2/step2.md"
+        "text": "step2/step.md"
       },
       {
         "title": "Configure Loki",
-        "text": "step3/step3.md"
+        "text": "step3/step.md"
+      },
+      {
+        "title": "Configure Fluent Bit",
+        "text": "step4/step.md"
+      },
+      {
+        "title": "Configure Jaeger",
+        "text": "step5/step.md"
       },
       {
         "title": "Configure Grafana",
-        "text": "step4/step4.md"
+        "text": "step7/step.md"
       },
       {
         "title": "Connect with IDE and Deploy services",
-        "text": "step6/step6.md"
+        "text": "step8/step.md"
       },
       {
         "title": "Invoke services and Check dashboards",
-        "text": "step7/step7.md"
+        "text": "step9/step.md"
       }
     ],
     "finish": {

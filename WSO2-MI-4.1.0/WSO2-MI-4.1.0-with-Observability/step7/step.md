@@ -43,6 +43,14 @@
 
             - Enter 'http://localhost:3100' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
 
+        - Jaeger 
+
+            - Go to the 'Configuration' > 'Data Sources' page.
+
+            - Click 'Add Data Source' and select 'Jaeger' from the list
+
+            - Enter 'http://localhost:8080' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
+
     - Configure dashboards
 
         - Go to the Grafana dashboard repository and get the dashboard IDs. You could find the IDs in the below table

@@ -9,7 +9,7 @@
 
     - Extract the archive file to prefered location and set execute permission
 
-      `mkdir /root/loki/ && unzip loki-linux-amd64.zip -d /root/loki && chmod u+x /root/loki/loki-linux-amd64`{{exec}}
+      `mkdir /root/loki/ && unzip /root/loki-linux-amd64.zip -d /root/loki && chmod u+x /root/loki/loki-linux-amd64`{{exec}}
 
     - Create loki configuration
 
