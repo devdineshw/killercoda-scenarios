@@ -2,62 +2,45 @@
 
     ![Scan results](../assets/resources/images/new-terminal.png)
 
-- Install Grafana
-    - Download the compatible grafana version
+- Configure Prometheus
 
-        `wget -O /root/grafana-7.1.1.linux-amd64.tar.gz https://dl.grafana.com/oss/release/grafana-7.1.1.linux-amd64.tar.gz`{{exec}}
+    - Download the Prometheus binary
 
-    - Extract the archive file to prefered location
-        `mkdir /root/grafana && tar xf /root/grafana-7.1.1.linux-amd64.tar.gz -C /root/grafana --strip-components 1`{{exec}}
+        `wget -O /root/prometheus-2.53.0-rc.1.linux-amd64.tar.gz https://github.com/prometheus/prometheus/releases/download/v2.53.0-rc.1/prometheus-2.53.0-rc.1.linux-amd64.tar.gz`{{exec}}
 
-- Start Grafana
-    - Move to the grafana bin directory
+    - Extract the Prometheus 
 
-        `cd /root/grafana/bin/`
+        `mkdir /root/prometheus && tar xf /root/prometheus-2.53.0-rc.1.linux-amd64.tar.gz -C /root/prometheus --strip-components 1`{{exec}}
+
+    - Open the prometheus configuration file, and in the scrape_configs section, add a configuration as follows
+        
+        `vi /root/prometheus/prometheus.yml`{{exec}}
+
+        ```
+        global:
+          scrape_interval:     15s 
+          evaluation_interval: 15s 
+
+        scrape_configs:
+          - job_name: 'prometheus'
+            static_configs:
+            - targets: ['localhost:9090']
+          - job_name: esb_stats
+            metrics_path: /metric-service/metrics
+            static_configs:
+             - targets: ['localhost:9201']
+        ```
+
+- Start Prometheus
+
+    - go to the prometheus directory
+
+        `cd /root/prometheus`{{exec}}
 
     - Start the service. Keep this service running through out the lab
 
-        `./grafana-server`{{exec}}
+        `./prometheus`{{exec}}
 
     Switch back to the terminal tab 1 and continue
-
-- Configure grafana
-
-    - Log into the Grafana UI. Use 'admin' as both username and password. Skip the password change page.
-
-        {{TRAFFIC_HOST1_3000}}
-
-    - Configure data source
-
-        - Go to the 'Configuration' > 'Data Sources' page.
-
-        - Select 'Prometheus' from the list
-
-        - Select 'Browser' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
-
-
-    - Configure dashboards
-
-        - Go to the Grafana dashboard repository and identify the required dashboards for your use-cases.
-
-            `https://grafana.com/orgs/wso2/dashboards`
-
-            ```
-            Dashboard Name                   Dashboard ID
-            MicroGateway Dashboard           12061 
-            WSO2 API Metrics                 12888
-            WSO2 Inbound Endpoint Metrics    12890
-            WSO2 Integration Cluster Metrics 12783
-            WSO2 Integration Node Metrics    12887
-            WSO2 Proxy Service Metrics       12889
-            ```
-        - Go to the Grafana UI
-
-        - Go to 'Dashboards' > 'Manage' from the left side menu
-
-        - Click 'Import' button and enter the dashboard ID in the 'Import via grafana.com' text box. Then click 'Load'. Repeast the same process for all the dashbaords.
-
-    - 
-
 
 Continue to the next section.

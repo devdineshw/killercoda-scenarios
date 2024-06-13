@@ -1,46 +1,46 @@
-- Open a new terminal window
+- Configure the micro integrator
 
-    ![Scan results](../assets/resources/images/new-terminal.png)
+    - Open the MI configuratoin file
 
-- Configure Prometheus
+        `vi /root/mi1/wso2mi-4.1.0/conf/deployment.toml`{{exec}}
 
-    - Download the Prometheus binary
+    - Append the following section 
 
-        `wget -O /root/prometheus-2.53.0-rc.1.linux-amd64.tar.gz https://github.com/prometheus/prometheus/releases/download/v2.53.0-rc.1/prometheus-2.53.0-rc.1.linux-amd64.tar.gz`{{exec}}
+        ```
+        [[synapse_handlers]]
+        name="CustomObservabilityHandler"
+        class="org.wso2.micro.integrator.observability.metric.handler.MetricHandler"
+        ```
 
-    - Extract the Prometheus 
+    - Open the MI startup script and add the following JVM parameter
 
-        `mkdir /root/prometheus && tar xf /root/prometheus-2.53.0-rc.1.linux-amd64.tar.gz -C /root/prometheus --strip-components 1`{{exec}}
+        `vi /root/mi1/wso2mi-4.1.0/bin/micro-integrator.sh`{{exec}}
 
-    - Open the prometheus configuration file, and in the scrape_configs section, add a configuration as follows
+        `-DenablePrometheusApi=true \`
+
+        ```
+        ...
+        -DenableManagementApi=true \
+        -DenablePrometheusApi=true \
+        -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector \
+        ...
+        ```
+
+- Start the micro integrator
+
+    - move to the MI directory
+
+        `cd /root/mi1/wso2mi-4.1.0/bin/`{{exec}}
+
+    - Start the service in background
         
-        `vi /root/prometheus/prometheus.yml`{{exec}}
+        `./micro-integrator.sh start`{{exec}}
 
-        ```
-        global:
-          scrape_interval:     15s 
-          evaluation_interval: 15s 
+    - Tail the logs
+        
+        `tail -f /root/mi1/wso2mi-4.1.0/repository/logs/wso2carbon.log`{{exec}}
 
-        scrape_configs:
-          - job_name: 'prometheus'
-            static_configs:
-            - targets: ['localhost:9090']
-          - job_name: esb_stats
-            metrics_path: /metric-service/metrics
-            static_configs:
-             - targets: ['localhost:9201']
-        ```
+        You could stop the tail with `Ctrl+C`
 
-- Start Prometheus
-
-    - go to the prometheus directory
-
-        `cd /root/prometheus`{{exec}}
-
-    - Start the service. Keep this service running through out the lab
-
-        `./prometheus`{{exec}}
-
-    Switch back to the terminal tab 1 and continue
 
 Continue to the next section.
