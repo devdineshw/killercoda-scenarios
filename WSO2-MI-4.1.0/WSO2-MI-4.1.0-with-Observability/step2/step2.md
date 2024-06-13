@@ -6,13 +6,13 @@
 
     - Download the Prometheus binary
 
-        `wget -O /root/prometheus-2.53.0-rc.1.linux-amd64.tar.gz https://github.com/prometheus/prometheus/releases/download/v2.53.0-rc.1/prometheus-2.53.0-rc.1.linux-amd64.tar.gz`{{exec}}
+        `wget -O /root/prometheus-2.52.0.linux-amd64.tar.gz https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz`{{exec}}
 
     - Extract the Prometheus 
 
-        `mkdir /root/prometheus && tar xf /root/prometheus-2.53.0-rc.1.linux-amd64.tar.gz -C /root/prometheus --strip-components 1`{{exec}}
+        `mkdir /root/prometheus && tar xf /root/prometheus-2.52.0.linux-amd64.tar.gz -C /root/prometheus --strip-components 1`{{exec}}
 
-    - Open the prometheus configuration file, and in the scrape_configs section, add a configuration as follows
+    - Open the prometheus configuration file, and replace with below configuration
         
         `vi /root/prometheus/prometheus.yml`{{exec}}
 
