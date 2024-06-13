@@ -1,8 +1,12 @@
 - Download and configure the API CTL Tool
 
+  - Move to the root directory
+
+    `cd /root`{{exec}}
+
   - Download the APICTL binary from the folowing command. This will download the Ubuntu supported distribution. If you want to download a different OS supported version download it from <a href="https://apim.docs.wso2.com/en/4.1.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller">here</a>
 
-    `wget -O apictl-4.1.2-linux-x64.tar.gz https://apim.docs.wso2.com/en/4.1.0/assets/attachments/learn/api-controller/apictl-4.1.2-linux-x64.tar.gz`{{exec}}
+    `wget -O /root/apictl-4.1.2-linux-x64.tar.gz https://apim.docs.wso2.com/en/4.1.0/assets/attachments/learn/api-controller/apictl-4.1.2-linux-x64.tar.gz`{{exec}}
   
   - Extract the archive file.
 

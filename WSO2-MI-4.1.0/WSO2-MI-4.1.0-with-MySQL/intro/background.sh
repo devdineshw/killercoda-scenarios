@@ -57,6 +57,6 @@ mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY
 mysql -e "FLUSH PRIVILEGES;"
 #mysql -e "create database wso2am_db CHARACTER SET latin1;"
 
-wget -O mysql-connector-java-8.0.27.jar https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-8.0.27.zip
+wget -O mysql-connector-java-8.0.27.jar https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.27/mysql-connector-java-8.0.27.jar
 
 echo done > /tmp/background0
