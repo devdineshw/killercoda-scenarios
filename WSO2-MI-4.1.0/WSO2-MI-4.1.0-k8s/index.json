@@ -1,0 +1,50 @@
+{
+  "title": "Micro Integrator on K8s",
+  "description": "Test your micro integrator scenarios on K8s",
+  "difficulty": "Beginner",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Start the services",
+        "text": "step1/step1.md"
+      },
+      {
+        "title": "Start the Dashboard [optional]",
+        "text": "step2/step2.md"
+      },
+      {
+        "title": "Configure the APICTL [optional]",
+        "text": "step3/step3.md"
+      },
+      {
+        "title": "Connect with IDE and Deploy services",
+        "text": "step4/step4.md"
+      },
+      {
+        "title": "Test services",
+        "text": "step5/step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

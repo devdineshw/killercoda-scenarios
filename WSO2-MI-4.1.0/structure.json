@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "path": "WSO2-MI-4.1.0-standalone",
+            "title": "WSO2 Micro Integrator 4.1.0 - Standalone setup",
+            "description": "Try out integration scenarios with WSO2 MI"
+        },
+        {
+            "path": "WSO2-MI-4.1.0-with-MySQL",
+            "title": "WSO2 Micro Integrator 4.1.0 - MI with MySQL",
+            "description": "Try out WSO2 MI Data services and External Userstore scenarios"
+        },
+        {
+            "path": "WSO2-MI-4.1.0-with-RabbitMQ",
+            "title": "WSO2 Micro Integrator 4.1.0 - MI with RabbitMQ",
+            "description": "Try out Reliable messaging, JMS transport scenarios"
+        },
+        {
+            "path": "WSO2-MI-4.1.0-k8s",
+            "title": "WSO2 Micro Integrator 4.1.0 - MI on K8s",
+            "description": "Try out WSO2 MI on k8s"
+        }
+    ]
+}
