@@ -18,6 +18,8 @@
 
         `-DenablePrometheusApi=true \`
 
+        e.g.: 
+
         ```
         ...
         -DenableManagementApi=true \

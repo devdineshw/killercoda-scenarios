@@ -19,25 +19,33 @@
 
         `./grafana-server`{{exec}}
 
-    Switch back to the terminal tab 1 and continue
-
 - Configure grafana
 
     - Log into the Grafana UI. Use 'admin' as both username and password. Skip the password change page.
 
         {{TRAFFIC_HOST1_3000}}
 
-    - Configure data source
+    - Configure data sources
 
-        - Go to the 'Configuration' > 'Data Sources' page.
+        - Prometheus
 
-        - Select 'Prometheus' from the list
+            - Go to the 'Configuration' > 'Data Sources' page.
 
-        - Select 'Browser' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
+            - Click 'Add Data Source' and select 'Prometheus' from the list
+
+            - Enter 'http://localhost:9090' as the 'HTTP' > 'URL' and click 'Save and Test' at the bottom.
+
+        - Loki 
+
+            - Go to the 'Configuration' > 'Data Sources' page.
+
+            - Click 'Add Data Source' and select 'Loki' from the list
+
+            - Enter 'http://localhost:3100' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
 
     - Configure dashboards
 
-        - Go to the Grafana dashboard repository and identify the required dashboards for your use-cases.
+        - Go to the Grafana dashboard repository and get the dashboard IDs. You could find the IDs in the below table
 
             `https://grafana.com/orgs/wso2/dashboards`
 
@@ -50,13 +58,11 @@
             WSO2 Integration Node Metrics    12887
             WSO2 Proxy Service Metrics       12889
             ```
+
         - Go to the Grafana UI
 
-        - Go to 'Dashboards' > 'Manage' from the left side menu
+        - Open 'Dashboards' > 'Manage' page from the left side menu
 
-        - Click 'Import' button and enter the dashboard ID in the 'Import via grafana.com' text box. Then click 'Load'. Repeast the same process for all the dashbaords.
-
-    - 
-
+        - Click 'Import' button and enter the dashboard ID in the 'Import via grafana.com' text box. Then click 'Load'. Repeat the same process for all the dashbaords.
 
 Continue to the next section.

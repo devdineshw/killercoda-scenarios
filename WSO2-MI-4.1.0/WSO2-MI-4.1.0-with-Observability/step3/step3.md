@@ -5,10 +5,11 @@
 - Install Loki
     - Download the compatible grafana version
 
-        `wget -O /root/loki-linux-amd64.zip https://github.com/grafana/loki/releases/download/v2.2.1/loki-linux-amd64.zip`{{exec}}
+      `wget -O /root/loki-linux-amd64.zip https://github.com/grafana/loki/releases/download/v2.2.1/loki-linux-amd64.zip`{{exec}}
 
     - Extract the archive file to prefered location and set execute permission
-        `mkdir /root/loki/ && unzip loki-linux-amd64.zip -d /root/loki && chmod u+x /root/loki/loki-linux-amd64`{{exec}}
+
+      `mkdir /root/loki/ && unzip loki-linux-amd64.zip -d /root/loki && chmod u+x /root/loki/loki-linux-amd64`{{exec}}
 
     - Create loki configuration
 
@@ -64,6 +65,6 @@
 
 - Start Loki service. Keep this service running through out the lab
 
-  `. /root/loki/loki-linux-amd64 -config.file=/root/loki/loki-local-config.yaml`{{exec}}
+  `/root/loki/loki-linux-amd64 -config.file=/root/loki/loki-local-config.yaml`{{exec}}
 
 Continue to the next section.

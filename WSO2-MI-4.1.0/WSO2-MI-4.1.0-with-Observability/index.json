@@ -1,6 +1,6 @@
 {
-  "title": "Micro Integrator standalone sandbox",
-  "description": "Test your micro integrator scenarios",
+  "title": "Micro Integrator Observability on VM",
+  "description": "Configure observability for micro integrator",
   "difficulty": "Beginner",
   "time": "1 hour",
   "details": {
@@ -11,24 +11,28 @@
     },
     "steps": [
       {
-        "title": "Start the services",
+        "title": "Configure and Start MI",
         "text": "step1/step1.md"
       },
       {
-        "title": "Start the Dashboard [optional]",
+        "title": "Configure Prometheus",
         "text": "step2/step2.md"
       },
       {
-        "title": "Configure the APICTL [optional]",
+        "title": "Configure Loki",
         "text": "step3/step3.md"
       },
       {
-        "title": "Connect with IDE and Deploy services",
+        "title": "Configure Grafana",
         "text": "step4/step4.md"
       },
       {
-        "title": "Test services",
-        "text": "step5/step5.md"
+        "title": "Connect with IDE and Deploy services",
+        "text": "step6/step6.md"
+      },
+      {
+        "title": "Invoke services and Check dashboards",
+        "text": "step7/step7.md"
       }
     ],
     "finish": {
