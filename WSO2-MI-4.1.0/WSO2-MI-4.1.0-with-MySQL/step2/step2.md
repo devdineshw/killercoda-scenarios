@@ -22,7 +22,7 @@
 
     - Open the configuration file
 
-        `vi /root/mi1/wso2mi-4.1.0/conf/deployment.toml`
+        `vi /root/mi1/wso2mi-4.1.0/conf/deployment.toml`{{exec}}
 
     - Comment the existing file base used store
 
@@ -45,7 +45,7 @@
         pool_options.testOnBorrow = true
         ```
 
-    - Add the user store configuration
+    - Replace the existing user store configuration with following
 
         ```
         [user_store]
