@@ -11,24 +11,12 @@
     },
     "steps": [
       {
-        "title": "Start the services",
+        "title": "Setup the k8s cluster",
         "text": "step1/step1.md"
       },
       {
-        "title": "Start the Dashboard [optional]",
+        "title": "Deploy integration using k8s operator",
         "text": "step2/step2.md"
-      },
-      {
-        "title": "Configure the APICTL [optional]",
-        "text": "step3/step3.md"
-      },
-      {
-        "title": "Connect with IDE and Deploy services",
-        "text": "step4/step4.md"
-      },
-      {
-        "title": "Test services",
-        "text": "step5/step5.md"
       }
     ],
     "finish": {
