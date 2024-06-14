@@ -1,0 +1,38 @@
+{
+  "title": "Micro Integrator on K8s",
+  "description": "Test your micro integrator scenarios on K8s",
+  "difficulty": "Beginner",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Setup the k8s cluster",
+        "text": "step1/step1.md"
+      },
+      {
+        "title": "Deploy integration using k8s operator",
+        "text": "step2/step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

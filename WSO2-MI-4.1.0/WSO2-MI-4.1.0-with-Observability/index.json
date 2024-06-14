@@ -1,0 +1,62 @@
+{
+  "title": "Micro Integrator Observability on VM",
+  "description": "Configure observability for micro integrator",
+  "difficulty": "Beginner",
+  "time": "1 hour",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Configure and Start MI",
+        "text": "step1/step.md"
+      },
+      {
+        "title": "Configure Prometheus",
+        "text": "step2/step.md"
+      },
+      {
+        "title": "Configure Loki",
+        "text": "step3/step.md"
+      },
+      {
+        "title": "Configure Fluent Bit [Optional]",
+        "text": "step4/step.md"
+      },
+      {
+        "title": "Configure Jaeger [Optional]",
+        "text": "step5/step.md"
+      },
+      {
+        "title": "Configure Grafana",
+        "text": "step7/step.md"
+      },
+      {
+        "title": "Connect with IDE and Deploy services",
+        "text": "step8/step.md"
+      },
+      {
+        "title": "Invoke services and Check dashboards",
+        "text": "step9/step.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
