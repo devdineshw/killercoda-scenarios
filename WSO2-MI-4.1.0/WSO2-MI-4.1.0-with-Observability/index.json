@@ -23,11 +23,11 @@
         "text": "step3/step.md"
       },
       {
-        "title": "Configure Fluent Bit",
+        "title": "Configure Fluent Bit [Optional]",
         "text": "step4/step.md"
       },
       {
-        "title": "Configure Jaeger",
+        "title": "Configure Jaeger [Optional]",
         "text": "step5/step.md"
       },
       {

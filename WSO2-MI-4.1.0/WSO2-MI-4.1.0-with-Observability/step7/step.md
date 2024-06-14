@@ -49,7 +49,7 @@
 
             - Click 'Add Data Source' and select 'Jaeger' from the list
 
-            - Enter 'http://localhost:8080' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
+            - Enter 'http://localhost:16686' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
 
     - Configure dashboards
 
@@ -71,6 +71,10 @@
 
         - Open 'Dashboards' > 'Manage' page from the left side menu
 
-        - Click 'Import' button and enter the dashboard ID in the 'Import via grafana.com' text box. Then click 'Load'. Repeat the same process for all the dashbaords.
+        - Click 'Import' button and enter the dashboard ID in the 'Import via grafana.com' text box. Then click 'Load'. 
+        
+        - Select the relevent data sources (Prometheus, Loki, Jaeger) from the bottom section and click 'Import'
+        
+        Repeat the same process for all the dashbaords.
 
 Continue to the next section.
