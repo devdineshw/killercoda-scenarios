@@ -1,9 +1,0 @@
-{
-    "items": [
-        {
-            "path": "WSO2-MI-4.1.0-k8s",
-            "title": "WSO2 Micro Integrator 4.1.0 - MI on K8s",
-            "description": "Try out WSO2 MI on k8s"
-        }
-    ]
-}
