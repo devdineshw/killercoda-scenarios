@@ -1,10 +1,6 @@
 {
     "items": [
         {
-            "path": "MI-4.1.0",
-            "title": "WSO2 Micro Integrator 4.1.0",
-            "description": "Try out integration scenarios with WSO2 MI 4.1.0"
-        },{
             "path": "WSO2-MI-4.1.0-standalone",
             "title": "WSO2 Micro Integrator 4.1.0 - Standalone setup",
             "description": "Try out integration scenarios with WSO2 MI"
