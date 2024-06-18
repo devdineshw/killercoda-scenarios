@@ -35,7 +35,7 @@ cp /root/resources/client-truststore.jks /root/apim1/wso2am-4.2.0/repository/res
 wget -O /root/wso2is-5.11.0.zip https://github.com/wso2/product-is/releases/download/v5.11.0/wso2is-5.11.0.zip?download=true
 mkdir /root/ldap
 unzip /root/wso2is-5.11.0.zip -d /root/ldap/
-cp /root/resources/is-deployment /root/ldap/wso2is-5.11.0/repository/conf/deployment.toml
+cp /root/resources/is-deployment.toml /root/ldap/wso2is-5.11.0/repository/conf/deployment.toml
 
 
 echo done > /tmp/background0
