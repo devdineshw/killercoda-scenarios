@@ -9,7 +9,7 @@
     ![Scan results](../assets/resources/images/userstore-menu.png)
 
     UniqueIDReadWriteLDAPUserStoreManager
-  - Use the following values and create the userstore. After few seconds you will see a popup message saying the userstore is successfully created.
+  - Use the following values and create the userstore.
 
     User Store Manager Class : 'UniqueIDReadWriteLDAPUserStoreManager'<br>
     Domain name: `wso2.com`<br>
