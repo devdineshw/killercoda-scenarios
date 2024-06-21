@@ -38,7 +38,7 @@
     logs = true
     manager_host = "localhost"
     agent_host = "localhost"
-    ```
+    ```{{copy}}
 
   - Restart the MI service
 

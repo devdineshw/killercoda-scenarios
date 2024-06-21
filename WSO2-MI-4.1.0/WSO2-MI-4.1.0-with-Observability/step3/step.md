@@ -61,7 +61,7 @@
       table_manager:
         retention_deletes_enabled: false
         retention_period: 0s
-      ```
+      ```{{copy}}
 
 - Start Loki service. Keep this service running through out the lab
 

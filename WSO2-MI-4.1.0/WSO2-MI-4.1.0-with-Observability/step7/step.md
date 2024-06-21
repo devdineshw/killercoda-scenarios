@@ -33,7 +33,7 @@
 
             - Click 'Add Data Source' and select 'Prometheus' from the list
 
-            - Enter 'http://localhost:9090' as the 'HTTP' > 'URL' and click 'Save and Test' at the bottom.
+            - Enter `http://localhost:9090`{{copy}} as the 'HTTP' > 'URL' and click 'Save and Test' at the bottom.
 
         - Loki 
 
@@ -41,7 +41,7 @@
 
             - Click 'Add Data Source' and select 'Loki' from the list
 
-            - Enter 'http://localhost:3100' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
+            - Enter `http://localhost:3100`{{copy}} under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
 
         - Jaeger 
 
@@ -49,7 +49,7 @@
 
             - Click 'Add Data Source' and select 'Jaeger' from the list
 
-            - Enter 'http://localhost:16686' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
+            - Enter `http://localhost:16686`{{copy}} under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
 
     - Configure dashboards
 
