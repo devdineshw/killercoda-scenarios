@@ -12,9 +12,44 @@
 
     `mkdir /root/jaeger/ && tar xvf /root/jaeger-1.57.0-linux-amd64.tar.gz -C /root/jaeger --strip-components 1`{{exec}}
 
-- Start Jaeger and leave the tab running
+- Create a linux service for jaeger (optional, but do it for this lab)
 
-  `/root/jaeger/jaeger-all-in-one`{{exec}}
+    - Create file
+
+        `vi /etc/systemd/system/jaeger.service`{{exec}}
+
+    - Update the configuration
+
+        ```
+        [Unit]
+        Description=Jaeger Service
+        After=network.target
+
+        [Service]
+        Type=simple
+        ExecStart=/root/jaeger/jaeger-all-in-one
+
+        [Install]
+        WantedBy=multi-user.target
+        ```{{copy}}
+
+- Start Jaeger
+  
+  - If you have created a linux service,
+
+    - Start the service
+
+        `service jaeger start`{{exec}}
+
+    - Check the service status
+
+        `service jaeger status`{{exec}}
+
+    You could close this terminal tab if you use this method.
+  
+  - If a linux service is not created,
+
+    `/root/jaeger/jaeger-all-in-one`{{exec}}
 
 
 - Update the MI configurations and restart the service

@@ -85,9 +85,44 @@
 
     `make fluent-bit-plugin`{{exec}}
 
-- Run the fluent bit
+- Create a linux service for fluent-bit (optional, but do it for this lab)
 
-  `/opt/fluent-bit/bin/fluent-bit -e /root/fluentbit/loki/clients/cmd/fluent-bit/out_grafana_loki.so -c /root/fluentbit/fluentbit.conf`{{exec}}
+    - Create file
+
+        `vi /etc/systemd/system/fluentbit.service`{{exec}}
+
+    - Update the configuration
+
+        ```
+        [Unit]
+        Description=Fluentbit Service
+        After=network.target
+
+        [Service]
+        Type=simple
+        ExecStart=/opt/fluent-bit/bin/fluent-bit -e /root/fluentbit/loki/clients/cmd/fluent-bit/out_grafana_loki.so -c /root/fluentbit/fluentbit.conf
+
+        [Install]
+        WantedBy=multi-user.target
+        ```{{copy}}
+
+- Run the fluent bit
+  
+  - If you have created a linux service,
+
+    - Start the service
+
+        `service fluentbit start`{{exec}}
+
+    - Check the service status
+
+        `service fluentbit status`{{exec}}
+
+    You could close this terminal tab if you use this method.
+  
+  - If a linux service is not created,
+
+    `/opt/fluent-bit/bin/fluent-bit -e /root/fluentbit/loki/clients/cmd/fluent-bit/out_grafana_loki.so -c /root/fluentbit/fluentbit.conf`{{exec}}
 
 
 Continue to the next section.

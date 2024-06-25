@@ -10,14 +10,50 @@
     - Extract the archive file to prefered location
         `mkdir /root/grafana && tar xf /root/grafana-7.1.1.linux-amd64.tar.gz -C /root/grafana --strip-components 1`{{exec}}
 
+- Create a linux service for grafana (optional, but do it for this lab)
+
+    - Create file
+
+        `vi /etc/systemd/system/grafana.service`{{exec}}
+
+    - Update the configuration
+
+        ```
+        [Unit]
+        Description=Grafana Service
+        After=network.target
+
+        [Service]
+        Type=simple
+        ExecStart=/root/grafana/bin/grafana-server
+
+        [Install]
+        WantedBy=multi-user.target
+        ```{{copy}}
+
 - Start Grafana
-    - Move to the grafana bin directory
+    
+    - If you have created a linux service,
 
-        `cd /root/grafana/bin/`{{exec}}
+        - Start the service
 
-    - Start the service. Keep this service running through out the lab
+            `service grafana start`{{exec}}
 
-        `./grafana-server`{{exec}}
+        - Check the service status
+
+            `service grafana status`{{exec}}
+
+        You could close this terminal tab if you use this method.
+  
+    - If a linux service is not created,
+
+        - Move to the grafana bin directory
+
+            `cd /root/grafana/bin/`{{exec}}
+
+        - Start the service. Keep this service running through out the lab
+
+            `./grafana-server`{{exec}}
 
 - Configure grafana
 

@@ -29,13 +29,13 @@
             metrics_path: /metric-service/metrics
             static_configs:
              - targets: ['localhost:9201']
-        ```{{copy}}
+        ```
 
-- Create a linux service for prometheus (optional)
+- Create a linux service for prometheus (optional, but do it for this lab)
 
     - Create file
 
-        `vi /etc/systemd/system/prometheus.service`
+        `vi /etc/systemd/system/prometheus.service`{{exec}}
 
     - Update the configuration
 
@@ -58,11 +58,11 @@
 
         - Start the service
 
-            `service prometheus start`
+            `service prometheus start`{{exec}}
 
         - Check the service status
 
-            `service prometheus status`
+            `service prometheus status`{{exec}}
 
         You could close this terminal tab if you use this method.
 
