@@ -17,7 +17,7 @@
     - Name: `Chats`
     - Channel: `/chats`
     - Version: `1.0.0`
-    - Protocol: WebSocker
+    - Protocol: WebSocket
     - Endpoint: `ws://localhost:8080`
     
     Then click the 'Create' button
