@@ -10,14 +10,51 @@
     - Extract the archive file to prefered location
         `mkdir /root/grafana && tar xf /root/grafana-7.1.1.linux-amd64.tar.gz -C /root/grafana --strip-components 1`{{exec}}
 
+- Create a linux service for grafana (optional, but do it for this lab)
+
+    - Create file
+
+        `vi /etc/systemd/system/grafana.service`{{exec}}
+
+    - Update the configuration
+
+        ```
+        [Unit]
+        Description=Grafana Service
+        After=network.target
+
+        [Service]
+        Type=simple
+        WorkingDirectory=/root/grafana/bin/
+        ExecStart=/root/grafana/bin/grafana-server
+
+        [Install]
+        WantedBy=multi-user.target
+        ```{{copy}}
+
 - Start Grafana
-    - Move to the grafana bin directory
+    
+    - If you have created a linux service,
 
-        `cd /root/grafana/bin/`{{exec}}
+        - Start the service
 
-    - Start the service. Keep this service running through out the lab
+            `service grafana start`{{exec}}
 
-        `./grafana-server`{{exec}}
+        - Check the service status
+
+            `service grafana status`{{exec}}
+
+        You could close this terminal tab if you use this method.
+  
+    - If a linux service is not created,
+
+        - Move to the grafana bin directory
+
+            `cd /root/grafana/bin/`{{exec}}
+
+        - Start the service. Keep this service running through out the lab
+
+            `./grafana-server`{{exec}}
 
 - Configure grafana
 
@@ -33,7 +70,7 @@
 
             - Click 'Add Data Source' and select 'Prometheus' from the list
 
-            - Enter 'http://localhost:9090' as the 'HTTP' > 'URL' and click 'Save and Test' at the bottom.
+            - Enter `http://localhost:9090`{{copy}} as the 'HTTP' > 'URL' and click 'Save and Test' at the bottom.
 
         - Loki 
 
@@ -41,7 +78,7 @@
 
             - Click 'Add Data Source' and select 'Loki' from the list
 
-            - Enter 'http://localhost:3100' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
+            - Enter `http://localhost:3100`{{copy}} under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
 
         - Jaeger 
 
@@ -49,7 +86,7 @@
 
             - Click 'Add Data Source' and select 'Jaeger' from the list
 
-            - Enter 'http://localhost:16686' under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
+            - Enter `http://localhost:16686`{{copy}} under the 'HTTP' > 'Access' and click 'Save and Test' at the bottom.
 
     - Configure dashboards
 

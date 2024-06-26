@@ -22,7 +22,7 @@
         "log_level": "log_level",
         "service": "service"
       }
-      ```
+      ```{{copy}}
     - parsers.conf
 
       `vi /root/fluentbit/parsers.conf`{{exec}}
@@ -38,8 +38,8 @@
         Format      regex
         Regex       \[(?<date>\d{2,4}\-\d{2,4}\-\d{2,4} \d{2,4}\:\d{2,4}\:\d{2,4}\,\d{1,6})\]  (?<log_level>[^\s]+) \{(?<class>[\s\S]*)\} ([-]) (?<service>\{[\s\S]*\})?(?<message>.*)
         Time_Key    date
-            Time_Format %Y-%m-%d %H:%M:%S,%L
-      ```
+        Time_Format %Y-%m-%d %H:%M:%S,%L
+      ```{{copy}}
 
     - fluentbit.conf
 
@@ -47,27 +47,27 @@
 
       ```
       [SERVICE]
-        Flush        1
-        Daemon       Off
-        Log_Level    info
-        Parsers_File /root/fluentbit/parsers.conf
+          Flush        1
+          Daemon       Off
+          Log_Level    info
+          Parsers_File /root/fluentbit/parsers.conf
 
       [INPUT]
-        Name tail
-        Path /root/mi1/wso2mi-4.1.0/repository/logs/*.log
-        Mem_Buf_Limit  500MB
-        Parser wso2
+          Name tail
+          Path /root/mi1/wso2mi-4.1.0/repository/logs/*.log
+          Mem_Buf_Limit  500MB
+          Parser wso2
 
       [OUTPUT]
-        Name loki
-        Match *
-        Url http://localhost:3100/loki/api/v1/push
-        BatchWait 1
-        BatchSize 30720
-        Labels {job="fluent-bit"}
-        LineFormat json
-        LabelMapPath /root/fluentbit/labelmap.json
-      ```
+          Name grafana-loki
+          Match *
+          Url http://localhost:3100/loki/api/v1/push
+          BatchWait 1
+          BatchSize 30720
+          Labels {job="fluent-bit"}
+          LineFormat json
+          LabelMapPath /root/fluentbit/labelmap.json
+      ```{{copy}}
 
 - Configure Fluent Bit grafana plugin
 
@@ -81,10 +81,48 @@
 
     `cd /root/fluentbit/loki`{{exec}}
 
+    `git checkout tags/v2.9.1`{{exec}}
+
     `make fluent-bit-plugin`{{exec}}
 
-- Run the fluent bit
+- Create a linux service for fluent-bit (optional, but do it for this lab)
 
-  `fluent-bit -e /root/fluentbit/loki/out_loki.so c /root/fluentbit/fluentbit.conf`{{exec}}
+    - Create file
+
+        `vi /etc/systemd/system/fluentbit.service`{{exec}}
+
+    - Update the configuration
+
+        ```
+        [Unit]
+        Description=Fluentbit Service
+        After=network.target
+
+        [Service]
+        Type=simple
+        ExecStart=/opt/fluent-bit/bin/fluent-bit -e /root/fluentbit/loki/clients/cmd/fluent-bit/out_grafana_loki.so -c /root/fluentbit/fluentbit.conf
+
+        [Install]
+        WantedBy=multi-user.target
+        ```{{copy}}
+
+- Run the fluent bit
+  
+  - If you have created a linux service,
+
+    - Start the service
+
+        `service fluentbit start`{{exec}}
+
+    - Check the service status
+
+        `service fluentbit status`{{exec}}
+
+    You could close this terminal tab if you use this method.
+  
+  - If a linux service is not created,
+
+    `/opt/fluent-bit/bin/fluent-bit -e /root/fluentbit/loki/clients/cmd/fluent-bit/out_grafana_loki.so -c /root/fluentbit/fluentbit.conf`{{exec}}
+
 
 Continue to the next section.

@@ -1,0 +1,40 @@
+{
+  "title": "WSO2 APIM 4.2.0 Fundamentals - Lab 14",
+  "description": "Associating roles with scopes",
+  "difficulty": "Beginner",
+  "time": "30 Minutes",
+  "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "Start the API Manager",
+        "text": "step1/step1.md"
+      },{
+        "title": "Creating Roles and Scope mapping",
+        "text": "step2/step2.md"
+      },{
+        "title": "Creating Users and Testing",
+        "text": "step3/step3.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "resources/**/*.*", "target": "~/", "chmod": "+w"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

@@ -61,10 +61,46 @@
       table_manager:
         retention_deletes_enabled: false
         retention_period: 0s
-      ```
+      ```{{copy}}
+
+- Create a linux service for loki (optional, but do it for this lab)
+
+    - Create file
+
+        `vi /etc/systemd/system/loki.service`{{exec}}
+
+    - Update the configuration
+
+        ```
+        [Unit]
+        Description=Loki Service
+        After=network.target
+
+        [Service]
+        Type=simple
+        ExecStart=/root/loki/loki-linux-amd64 -config.file=/root/loki/loki-local-config.yaml
+
+        [Install]
+        WantedBy=multi-user.target
+        ```{{copy}}
+
 
 - Start Loki service. Keep this service running through out the lab
 
-  `/root/loki/loki-linux-amd64 -config.file=/root/loki/loki-local-config.yaml`{{exec}}
+  - If you have created a linux service,
+
+    - Start the service
+
+        `service loki start`{{exec}}
+
+    - Check the service status
+
+        `service loki status`{{exec}}
+
+    You could close this terminal tab if you use this method.
+
+  - If a linux service is not created,
+  
+    `/root/loki/loki-linux-amd64 -config.file=/root/loki/loki-local-config.yaml`{{exec}}
 
 Continue to the next section.
