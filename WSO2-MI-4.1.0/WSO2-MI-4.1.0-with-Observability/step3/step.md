@@ -63,7 +63,7 @@
         retention_period: 0s
       ```{{copy}}
 
-- Create a linux service for prometheus (optional, but do it for this lab)
+- Create a linux service for loki (optional, but do it for this lab)
 
     - Create file
 

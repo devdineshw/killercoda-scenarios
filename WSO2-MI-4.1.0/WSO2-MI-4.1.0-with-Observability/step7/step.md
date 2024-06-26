@@ -25,6 +25,7 @@
 
         [Service]
         Type=simple
+        WorkingDirectory=/root/grafana/bin/
         ExecStart=/root/grafana/bin/grafana-server
 
         [Install]
