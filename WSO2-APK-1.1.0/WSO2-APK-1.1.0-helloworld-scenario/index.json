@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Installing Gateway API CRD",
+        "title": "Prepare the k8s cluster",
         "text": "step1.md"
       },
       {
