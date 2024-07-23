@@ -1,7 +1,3 @@
-- Install Helm
-
-`curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 && chmod 700 get_helm.sh && ./get_helm.sh`{{execute}}
-
 - Add helm repo and update index
 
 `helm repo add wso2apk https://github.com/wso2/apk/releases/download/1.1.0 && helm repo update`{{execute}}
