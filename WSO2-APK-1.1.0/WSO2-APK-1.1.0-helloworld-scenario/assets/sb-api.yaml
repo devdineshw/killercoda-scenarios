@@ -1,4 +1,4 @@
-apiVersion: dp.wso2.com/v1alpha1
+apiVersion: dp.wso2.com/v1alpha2
 kind: API
 metadata:
   name: springboot-helloworld-api
@@ -9,7 +9,7 @@ spec:
   basePath: /spring/1.0.0
   organization: default
   production:
-  - httpRouteRefs:
+  - routeRefs:
     - prod-http-route-springboot-helloworld
 ---
 apiVersion: gateway.networking.k8s.io/v1beta1
@@ -23,7 +23,7 @@ spec:
   parentRefs:
     - group: gateway.networking.k8s.io
       kind: Gateway
-      name: default
+      name: wso2-apk-default
       sectionName: httpslistener
   rules:
   - backendRefs:
