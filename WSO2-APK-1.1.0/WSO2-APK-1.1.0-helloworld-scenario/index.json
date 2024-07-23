@@ -4,9 +4,14 @@
   "difficulty": "Beginner",
   "time": "1 hour",
   "details": {
+    "intro":{
+      "text" : "intro/intro.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
     "steps": [
       {
-        "title": "Installing Gateway API CRD",
+        "title": "Prepare the k8s cluster",
         "text": "step1.md"
       },
       {

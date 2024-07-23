@@ -8,7 +8,7 @@
 
   - Click the 'Chats' WebSocket API
   - Click 'Subscriptions' from the left menu and go to the subscription page.
-  - Click 'Subscription and Key Generation Wizard' option available in teh top of the page.
+  - Click 'Subscription and Key Generation Wizard' option available in the top of the page.
     - Enter a 'Application Name' (e.g.: TestApp) and select the preferred 'Shared Quota for Application Tokens' (a.k.a.: Application throttling policy). Then click 'Next'
     - Keep the 'Application' option as it is and choose the Business plan(e.g.: AsyncUnlimited). Then click 'Next'
     - Click 'Next' in the 'Generate Keys' stage to create Consumer Key/Secret pair for the new application.

@@ -6,7 +6,7 @@ echo "export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/'" >> /etc/profile &&
 
 apt install npm -y
 
-npm install -g wscat
+npm install -g wscat@5.2.0
 
 sed 's/PORT/80/g' /etc/killercoda/host > /tmp/uihost
 sed -i 's|https://||g' /tmp/uihost
