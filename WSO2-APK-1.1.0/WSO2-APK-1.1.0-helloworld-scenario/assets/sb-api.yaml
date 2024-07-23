@@ -5,14 +5,14 @@ metadata:
   labels:
     api-name: "springboot-helloworld-api"
     api-version: "1.0.0"
-    organization: "spring"
+    organization: "default"
     managed-by: "apk"
 spec:
   apiName: SpringBoot Helloworld API
   apiType: REST
   apiVersion: 1.0.0
   basePath: /spring/1.0.0
-  organization: "spring"
+  organization: "default"
   isDefaultVersion: false
   production:
   - routeRefs:
@@ -28,11 +28,11 @@ metadata:
   labels:
     api-name: "springboot-helloworld-api"
     api-version: "1.0.0"
-    organization: "spring"
+    organization: "default"
     managed-by: "apk"
 spec:
   hostnames:
-    - spring.gw.wso2.com
+    - default.gw.wso2.com
   parentRefs:
     - group: gateway.networking.k8s.io
       kind: Gateway
@@ -56,10 +56,10 @@ metadata:
   labels:
     api-name: "springboot-helloworld-api"
     api-version: "1.0.0"
-    organization: "spring"
+    organization: "default"
     managed-by: "apk"
 spec:
-  basePath: /spring
+  basePath: /
   protocol: http
   services:
   - host: spring-helloworld-service.default.svc

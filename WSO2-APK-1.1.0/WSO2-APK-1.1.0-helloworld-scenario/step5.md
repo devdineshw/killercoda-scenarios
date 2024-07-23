@@ -4,4 +4,4 @@
 
 - Invoke the API. Please copy the following command into command line and update the <ACCESS_TOKEN> with the access token from response of previous step, then execute.
 
-`curl -k --location 'https://spring.gw.wso2.com:9095/spring/1.0.0/hello' --header 'Host: spring.gw.wso2.com' --header 'Authorization: Bearer <ACCESS_TOKEN>'`{{copy}}
+`curl -k --location 'https://default.gw.wso2.com:9095/spring/1.0.0/hello' --header 'Host: default.gw.wso2.com' --header 'Authorization: Bearer <ACCESS_TOKEN>'`{{copy}}
