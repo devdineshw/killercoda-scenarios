@@ -1,7 +1,7 @@
-WSO2 API Manager requires Java runtime as a dependancy, We need to install a supported Java 11 version.
-Please follow the below steps to install OpenJDK 11 from the Ubuntu package repository. 
+WSO2 API Manager requires Java runtime as a dependancy, We need to install a supported Java 21 version.
+Please follow the below steps to install OpenJDK 21 from the Ubuntu package repository. 
 
-Instead, you could use your prefered java runtime (Oracle JDK, Amazon Corretto, etc.) in your rnvironment. WSO2 APIM 4.2.0 supported JDK versions are mentioned in the below documentation page
+Instead, you could use your prefered java runtime (Oracle JDK, Amazon Corretto, etc.) in your rnvironment. WSO2 APIM 4.5.0 supported JDK versions are mentioned in the below documentation page
 
 https://apim.docs.wso2.com/en/4.5.0/install-and-setup/setup/reference/product-compatibility/#tested-jdks
 
