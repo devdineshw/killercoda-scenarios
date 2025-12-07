@@ -10,7 +10,7 @@ Configure the WSO2 IS
     offset=1
     ```{{}}
 
-- Update the Database configuration
+- Replace the Database configuration
 
     ```
     [database.shared_db]
@@ -82,7 +82,7 @@ Configure the WSO2 IS
     custom_webapps=["/keymanager-operations/"]
     ```{{copy}}
 
-- Configure the event listener endpoint to publish controller events to the event hub
+- Add the event listener endpoint configuration to publish controller events to the event hub
     ```
     [event_listener.properties]
     notification_endpoint="https://localhost:9443/internal/data/v1/notify"
@@ -110,13 +110,19 @@ Configure the WSO2 IS
     internal_crypto_provider="org.wso2.carbon.crypto.provider.KeyStoreBasedInternalCryptoProvider"
     ```{{copy}}
 
+- Add the below configuration to disable group and role separation in WSO2 Identity Server.
+    ```
+    [authorization_manager.properties]
+    GroupAndRoleSeparationEnabled = false
+    ```{{copy}}
+
 - Save the file and exit from editor
 
 - Download the WSO2 IS Connector and extract
 
-  `wget -O distribution-1.6.8.zip https://repo1.maven.org/maven2/org/wso2/km/ext/wso2is/distribution/1.6.8/distribution-1.6.8.zip`{{execute}}
+  `wget -O wso2is-extensions-1.7.11.zip https://apim.docs.wso2.com/en/4.4.0/assets/attachments/administer/wso2is-extensions-1.7.11.zip`{{execute}}
 
-  `unzip distribution-1.6.8.zip`{{execute}}
+  `unzip wso2is-extensions-1.7.11.zip`{{execute}}
 
 - Copy the JDBC driver to IS
 
@@ -124,11 +130,11 @@ Configure the WSO2 IS
 
 - Copy jar files to the IS dropins directory
 
-  `cp wso2is-extensions-1.6.8/dropins/wso2is*.jar is1/wso2is-6.1.0/repository/components/dropins/`{{execute}}
+  `cp wso2is-extensions-1.7.11.2/dropins/wso2is.*.jar is1/wso2is-6.1.0/repository/components/dropins/`{{execute}}
 
 - Copy the war files to the IS webapp directory
 
-  `cp wso2is-extensions-1.6.8/webapps/keymanager-operations.war is1/wso2is-6.1.0/repository/deployment/server/webapps/`{{execute}}
+  `cp wso2is-extensions-1.7.11.2/webapps/keymanager-operations.war is1/wso2is-6.1.0/repository/deployment/server/webapps/`{{execute}}
 
 - Start the Identity Server
 
