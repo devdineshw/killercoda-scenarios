@@ -6,6 +6,11 @@
             "description": "Practical exercises from the WSO2 APIM Fundamental training"
         },
         {
+            "path": "WSO2-APIM-4.5.0-AdvancedLabs",
+            "title": "API Manager 4.5.0 - Advanced Labs",
+            "description": "Practical exercises from the WSO2 APIM Advanced training"
+        },
+        {
             "path": "WSO2-APK-1.1.0",
             "title": "WSO2 API Platform for K8s 1.1.0",
             "description": "Practical labs to showcase WSO2 APK features"
