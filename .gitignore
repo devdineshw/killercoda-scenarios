@@ -1,0 +1,16 @@
+# macOS specific files
+.DS_Store
+.Trashes
+._*
+.Spotlight-V100
+.TemporaryItems
+.fseventsd
+.VolumeIcon.icns
+Icon?
+
+# Other common files
+.idea/ # IntelliJ IDEA project files
+.vscode/ # VS Code settings
+*.log
+*.swp
+*.bak
