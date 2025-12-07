@@ -1,0 +1,1 @@
+cp /root/original-deployment.toml /root/apim1/wso2am-4.5.0/repository/conf/deployment.toml
