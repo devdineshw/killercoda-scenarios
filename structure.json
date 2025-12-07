@@ -5,21 +5,6 @@
             "title": "API Manager 4.5.0 - Fundamental Labs",
             "description": "Practical exercises from the WSO2 APIM Fundamental training"
         },
-        //{
-        //    "path": "WSO2-APIM-4.2.0-FundamentalLabs",
-        //    "title": "API Manager 4.2.0 - Fundamental Labs",
-        //    "description": "Practical exercises from the WSO2 APIM Fundamental training"
-        //},
-        //{
-        //    "path": "WSO2-APIM-4.2.0-AdvancedLabs",
-        //    "title": "API Manager 4.2.0 - Advanced Labs",
-        //    "description": "Practical exercises from the WSO2 APIM Advanced training"
-        //},
-        //{
-        //    "path": "WSO2-APIM-4.2.0-FeaturedLabs",
-        //    "title": "API Manager 4.2.0 - Featured Labs",
-        //    "description": "Scenarios to explain the use of WSO2 APIM with other tools and technologies"
-        //},
         {
             "path": "WSO2-APK-1.1.0",
             "title": "WSO2 API Platform for K8s 1.1.0",
