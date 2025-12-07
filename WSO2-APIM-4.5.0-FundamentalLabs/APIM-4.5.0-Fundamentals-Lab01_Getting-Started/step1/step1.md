@@ -9,7 +9,7 @@ https://apim.docs.wso2.com/en/4.5.0/install-and-setup/setup/reference/product-co
 
     `apt update`{{execute}}
 
-- Install JDK 11
+- Install JDK
 
     `apt install openjdk-21-jdk -y`{{execute}}
 
