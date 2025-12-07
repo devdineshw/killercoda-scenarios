@@ -66,6 +66,13 @@
     url="https://portal.ourcompany.com/devportal"
     ```{{}}
 
+  - Enable distributed cache invalidation (Optional)
+
+    ```
+    [apim.cache_invalidation]
+    enabled = true
+    ```{{}}
+
   - Save and exit from the editor
 
   - Copy the JDBC driver to APIM
@@ -99,8 +106,3 @@
     [apim.throttling]
     event_duplicate_url = ["tcp://127.0.0.1:5672"]
     ```
-  - Enable distributed cache invalidation (Optional)
-    ```
-    [apim.cache_invalidation]
-    enabled = true
-    ```{{}}
