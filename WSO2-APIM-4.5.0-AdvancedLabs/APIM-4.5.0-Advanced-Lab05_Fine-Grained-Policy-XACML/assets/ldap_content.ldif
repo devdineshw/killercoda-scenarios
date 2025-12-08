@@ -1,0 +1,26 @@
+dn: ou=Users,dc=wso2,dc=org
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Groups,dc=wso2,dc=org
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: uid=admin,ou=Users,dc=wso2,dc=org
+objectClass: inetOrgPerson
+objectClass: shadowAccount
+objectClass: person
+objectClass: identityPerson
+uid: admin
+sn: admin
+givenName: admin
+cn: admin
+displayName: admin
+userPassword: {SSHA}4EtrIGl3qY9gkY1n/5fOqyy64AelsOnV
+
+dn: cn=admin,ou=Groups,dc=wso2,dc=org
+objectClass: groupOfNames
+cn: admin
+member: uid=admin,ou=Users,dc=wso2,dc=org
