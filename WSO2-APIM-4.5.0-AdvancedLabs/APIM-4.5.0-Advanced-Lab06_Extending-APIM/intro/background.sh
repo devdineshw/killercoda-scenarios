@@ -31,7 +31,7 @@ cp /root/resources/original-nginx.conf /etc/nginx/nginx.conf
 
 /etc/init.d/nginx restart
 
-wget -O /root/wso2am-4.5.0.zip https://github.com/devdineshw/resources/raw/main/binaries/WSO2/APIM/4.5.0/wso2am-4.5.0.zip?download=true
+wget -O /root/wso2am-4.5.0.zip https://github.com/wso2/product-apim/releases/download/v4.5.0/wso2am-4.5.0.zip?download=true
 mkdir /root/apim1
 unzip /root/wso2am-4.5.0.zip -d /root/apim1/
 cp /root/resources/original-deployment.toml /root/apim1/wso2am-4.5.0/repository/conf/deployment.toml
