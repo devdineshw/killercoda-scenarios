@@ -21,6 +21,6 @@
 
 - Create the sample Pizza shack API and continue the steps from 11
 
-    https://apim.docs.wso2.com/en/latest/design/api-security/authorization/role-based-access-control-using-xacml/#enabling-role-based-access-control
+    https://apim.docs.wso2.com/en/4.5.0/manage-apis/design/api-security/authorization/role-based-access-control-using-xacml/#enabling-role-based-access-control
 
 Continue to the next section.
