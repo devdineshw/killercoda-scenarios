@@ -2,7 +2,7 @@
 
   - Open the custom handler to check the code
 
-    `vi /root/CustomLogHandler/src/main/java/org/wso2/samples/handlers/CustomLogHandler.java`
+    `vi /root/CustomLogHandler/src/main/java/org/wso2/samples/handlers/CustomLogHandler.java`{{exec}}
 
     > Switch to the 'Editor' mode to use the online IDE.
     > ![Scan results](../assets/resources/editor.png)
@@ -15,11 +15,11 @@
 
 - Copy the handler to APIM dropins directory (this custom handler is developed as a OSGI bundle, hence coping to the dropins directory)
 
-    `cp /root/resources/CustomLogHandler-1.0-SNAPSHOT.jar apim1/wso2am-4.5.0/repository/components/dropins/`{{exec}}
+    `cp /root/resources/CustomLogHandler-1.0-SNAPSHOT.jar /root/apim1/wso2am-4.5.0/repository/components/dropins/`{{exec}}
 
     - [Optional] If you want to use the jar file compiled from previous step, please use below command.
 
-        `cp /root/CustomLogHandler/target/CustomLogHandler-1.0-SNAPSHOT.jar apim1/wso2am-4.5.0/repository/components/dropins/`{{exec}}
+        `cp /root/CustomLogHandler/target/CustomLogHandler-1.0-SNAPSHOT.jar /root/apim1/wso2am-4.5.0/repository/components/dropins/`{{exec}}
 
 - Update the API template file (velocity_template.xml) to include the custom handler.
 

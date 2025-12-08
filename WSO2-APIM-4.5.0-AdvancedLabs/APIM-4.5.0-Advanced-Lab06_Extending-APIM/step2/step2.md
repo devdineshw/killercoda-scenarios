@@ -4,7 +4,7 @@
 
 - Go to the registry browser
 
-  > Main Menu > Resources > Browse
+  > Main Menu > Registry > Browse
 
 - Open the '/_system/governance/apimgt/applicationdata/workflow-extensions.xml' in 'Edit as text' mode
 
