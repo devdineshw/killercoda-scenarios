@@ -11,15 +11,15 @@
 - Look for the 'ApplicationCreation' element inside the 'WorkFlowExtensions' element. Default configuration should look like below sample
 
   ```
-  <ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationSimpleWorkflowExecutor">
-  <!--ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationApprovalWorkflowExecutor"-->
+  <ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationSimpleWorkflowExecutor"/>
+  <!--ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationApprovalWorkflowExecutor"/-->
   ```
 
 - Comment out the currently enabled 'ApplicationCreationSimpleWorkflowExecutor' and enable the 'ApplicationCreationApprovalWorkflowExecutor' class. Final version should look like below sample
 
   ```
-  <!--ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationSimpleWorkflowExecutor"-->
-  <ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationApprovalWorkflowExecutor">
+  <!--ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationSimpleWorkflowExecutor"/-->
+  <ApplicationCreation executor="org.wso2.carbon.apimgt.impl.workflow.ApplicationCreationApprovalWorkflowExecutor"/>
   ```
 
 - Save the file, go to the developer portal and login
