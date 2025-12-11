@@ -17,13 +17,12 @@ pipeline {
             steps{
                 dir('api-source-repository') {
                     git branch: "master",
-                    url: 'https://github.com/devdineshw/api-source-repository.git'
+                    url: 'https://github.com/<GIT_ACCOUNT>/api-source-repository.git'
                 }
                 dir('api-deploy-state-repository') {
                     git branch: "dev",
-                    url: 'https://github.com/devdineshw/api-deploy-state-repository.git'
+                    url: 'https://github.com/<GIT_ACCOUNT>/api-deploy-state-repository.git'
                 }
-                
             }
         }
 

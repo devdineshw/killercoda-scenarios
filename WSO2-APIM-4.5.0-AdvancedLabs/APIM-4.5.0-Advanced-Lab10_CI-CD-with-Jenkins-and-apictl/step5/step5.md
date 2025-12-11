@@ -19,7 +19,7 @@
 
     - Create an API project using the swagger file.
 
-        `apictl init PetstoreAPI --oas https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v2.0/yaml/petstore.yaml`{{exec}}
+        `apictl init PetstoreAPI --oas https://petstore3.swagger.io/api/v3/openapi.json`{{exec}}
 
     - Generate the deployment resource using the apictl. Store it inside the 'api-deploy-state-repository' directory
 
@@ -37,7 +37,7 @@ environments:
       configs:
         endpoints:
             production:
-                url: 'https://petstore.swagger.io/v2/'
+                url: 'https://petstore3.swagger.io/api/v3/'
         deploymentEnvironments:
             - displayOnDevportal: true
               deploymentEnvironment: Default
