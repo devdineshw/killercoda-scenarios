@@ -16,7 +16,7 @@ pipeline {
         stage('Preparation') {
             steps{
                 dir('api-source-repository') {
-                    git branch: "master",
+                    git branch: "main",
                     url: 'https://github.com/<GIT_ACCOUNT>/api-source-repository.git'
                 }
                 dir('api-deploy-state-repository') {

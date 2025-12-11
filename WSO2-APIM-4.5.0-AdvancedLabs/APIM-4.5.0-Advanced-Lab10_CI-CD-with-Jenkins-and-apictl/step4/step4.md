@@ -12,7 +12,7 @@
 
     - Select 'GitHub hook trigger for GITScm polling' under the 'Build Triggers' section to automatically trigger the build from github webhook calls
 
-    - Copy the content from below file to the pipeline script section. Update the git URLs (Line 20 and 24) in the script and save.
+    - Copy the content from below file to the pipeline script section. Update the git URLs (Line 20 and 24) in the script and save. Also update the branch name (main) if it is different in your repo.
 
         `cat /root/resources/JenkinsFile`{{exec}}
 
