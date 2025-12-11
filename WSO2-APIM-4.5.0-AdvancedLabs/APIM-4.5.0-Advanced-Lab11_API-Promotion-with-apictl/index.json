@@ -1,6 +1,6 @@
 {
-  "title": "WSO2 APIM 4.5.0 Advanced - Lab 09",
-  "description": "Enabling logs and observability for gateway",
+  "title": "WSO2 APIM 4.5.0 Advanced - Lab 11",
+  "description": "API Promotion with APICTL",
   "difficulty": "Intermediate",
   "time": "1 hour",
   "details": {
@@ -11,13 +11,13 @@
     },
     "steps": [
       {
-        "title": "Prepare the environment",
+        "title": "Start the WSO2 APIM",
         "text": "step1/step1.md"
       },{
-        "title": "Enable wire logs",
+        "title": "Configure the environment",
         "text": "step2/step2.md"
       },{
-        "title": "Correlation logs",
+        "title": "Export API and Import API",
         "text": "step3/step3.md"
       }
     ],
@@ -29,6 +29,7 @@
         {"file": "resources/apim-nginx.conf", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/original-nginx.conf", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/original-deployment.toml", "target": "~/resources", "chmod": "+w"},
+        {"file": "resources/original-deployment-2.toml", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/client-truststore.jks", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/nginx.crt", "target": "~/resources", "chmod": "+w"},
         {"file": "resources/nginx.key", "target": "~/resources", "chmod": "+w"}

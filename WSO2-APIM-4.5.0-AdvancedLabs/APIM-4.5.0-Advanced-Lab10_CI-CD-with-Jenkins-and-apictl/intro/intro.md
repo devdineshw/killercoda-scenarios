@@ -16,7 +16,7 @@ Please complete the followings steps while waiting for the environment to be rea
 
 We are not using Artifact repository in this lab, just to save time and reduce the complexity. Please refer to the documentation on artifactory based configurations 
 
-https://apim.docs.wso2.com/en/latest/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline/#building-the-pipeline
+https://apim.docs.wso2.com/en/4.5.0/install-and-setup/setup/api-controller/building-jenkins-ci-cd-pipeline/#building-the-pipeline
 </b>
 
 

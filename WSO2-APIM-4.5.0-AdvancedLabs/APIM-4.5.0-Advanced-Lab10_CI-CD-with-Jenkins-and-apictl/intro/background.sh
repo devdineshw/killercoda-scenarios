@@ -1,8 +1,8 @@
 apt update
 apt install nginx -y
 
-apt install openjdk-17-jdk -y
-echo "export JAVA_HOME='/usr/lib/jvm/java-17-openjdk-amd64/'" >> /etc/profile && source /etc/profile
+apt install openjdk-21-jdk -y
+echo "export JAVA_HOME='/usr/lib/jvm/java-21-openjdk-amd64/'" >> /etc/profile && source /etc/profile
 
 sed 's/PORT/8180/g' /etc/killercoda/host > /tmp/uihost
 sed -i 's|https://||g' /tmp/uihost

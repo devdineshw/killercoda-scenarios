@@ -1,4 +1,5 @@
 - Create a new pipeline
+
     - Go to the Jenkins dashboard.
 
         {{TRAFFIC_HOST1_8080}}
@@ -9,9 +10,9 @@
 
     - Choose 'Pipeline' option and click 'Ok'.
 
-    - Select 'GitHub hook trigger for GITScm polling' under the 'B'uild Triggers' section to automatically trigger the build from github webhook calls
+    - Select 'GitHub hook trigger for GITScm polling' under the 'Build Triggers' section to automatically trigger the build from github webhook calls
 
-    - Use the content from below file in the pipeline script section and save the pipeline
+    - Copy the content from below file to the pipeline script section. Update the git URLs (Line 20 and 24) in the script and save.
 
         `cat /root/resources/JenkinsFile`{{exec}}
 
